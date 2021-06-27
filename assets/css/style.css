@@ -1,0 +1,25 @@
+/* Global styles */ 
+
+@import url('https://fonts.googleapis.com/css2?family=Rokkitt&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Mina&display=swap');
+
+body {
+    background-color: #FFECEC;
+    font-family: 'Mina', sans-serif;
+}
+
+h1 {
+    font-family: 'Rokkitt', sans-serif;
+    font-size: 50px;
+    letter-spacing: 16px;
+}
+
+h2 {
+    font-family: 'Rokkitt', sans-serif;
+    font-size: 25px;
+    letter-spacing: 5px;
+}
+
+h3 {
+    font-size: 20px;
+}
