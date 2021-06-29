@@ -1,3 +1,4 @@
+// @ts-check
 // Card array for Easy mode. Credit for object array format: Fakorede Damilola
 let fruitCardsEasy = [
     { name: "banana", img: "../images/fruit-one-banana.png", },
@@ -13,3 +14,16 @@ let fruitCardsEasy = [
     { name: "lime", img: "../images/fruit-six-lime.png", },
     { name: "lime", img: "../images/fruit-six-lime.png", },
 ];
+
+// Global variables
+var gameBoard = document.getElementsByClassName('.gameBoard');
+
+// Event listeners
+document.getElementById('easy-button').addEventListener("click", startEasyGame);
+document.getElementById('moderate-button').addEventListener("click", startModerateGame);
+document.getElementById('hard-button').addEventListener("click", startHardGame);
+
+// Functions
+function startEasyGame() {
+    
+}
