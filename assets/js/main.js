@@ -23,7 +23,22 @@ document.getElementById('easy-button').addEventListener("click", startEasyGame);
 document.getElementById('moderate-button').addEventListener("click", startModerateGame);
 document.getElementById('hard-button').addEventListener("click", startHardGame);
 
-// Functions
+// Functions to be used as nested functions
+function removeIntro() {
+    document.getElementById("introduction-section").remove();
+    document.getElementById("start-game-prompt").remove();
+};
+
+// Functions that trigger the game depending on difficulty
 function startEasyGame() {
-    
-}
+    removeIntro();
+};
+
+function startModerateGame() {
+    removeIntro();
+};
+
+function startHardGame() {
+    removeIntro();
+};
+
