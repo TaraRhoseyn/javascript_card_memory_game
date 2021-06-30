@@ -1,29 +1,21 @@
 // @ts-check
-// Card array for Easy mode. Credit for object array format: Fakorede Damilola
-let fruitCardsEasy = [
-    { name: "banana", img: "../images/fruit-one-banana.png", },
-    { name: "banana", img: "../images/fruit-one-banana.png", },
-    { name: "orange", img: "../images/fruit-two-orange.png", },
-    { name: "orange", img: "../images/fruit-two-orange.png", },
-    { name: "watermelon", img: "../images/fruit-three-watermelon.png", },
-    { name: "watermelon", img: "../images/fruit-three-watermelon.png", },
-    { name: "avocado", img: "../images/fruit-four-avocado.png", },
-    { name: "avocado", img: "../images/fruit-four-avocado.png", },
-    { name: "bluberry", img: "../images/fruit-five-blueberry.png", },
-    { name: "bluberry", img: "../images/fruit-five-blueberry.png", },
-    { name: "lime", img: "../images/fruit-six-lime.png", },
-    { name: "lime", img: "../images/fruit-six-lime.png", },
-];
 
 // Global variables
-var gameBoard = document.getElementsByClassName('.gameBoard');
+
+// Hide game element until level difficulty selected
+document.addEventListener("DOMContentLoaded", function(event) {
+    console.log("DOM fully loaded and parsed");
+});
+
+let gameBoard = document.getElementsByClassName('.gameBoard');
+let fruitCards = document.getElementsByClassName('fruit-card');
 
 // Event listeners
 document.getElementById('easy-button').addEventListener("click", startEasyGame);
 document.getElementById('moderate-button').addEventListener("click", startModerateGame);
 document.getElementById('hard-button').addEventListener("click", startHardGame);
 
-// Functions to be used as nested functions
+// Functions to be used as nested functions repeatedly
 function removeIntro() {
     document.getElementById("introduction-section").remove();
     document.getElementById("start-game-prompt").remove();
@@ -41,4 +33,5 @@ function startModerateGame() {
 function startHardGame() {
     removeIntro();
 };
+
 
