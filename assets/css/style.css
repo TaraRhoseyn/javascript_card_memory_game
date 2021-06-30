@@ -31,3 +31,14 @@ h3 {
 .yes-display {
     visibility: visible;
 }
+
+
+
+.fruitCard {
+    margin: 15px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    height: 150px;
+    width: 150px;
+  }
