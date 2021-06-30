@@ -35,3 +35,7 @@ h3 {
 .no-display {
     display: none;
 }
+
+.yes-display {
+    display: visible;
+}
