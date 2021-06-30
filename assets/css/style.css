@@ -24,18 +24,10 @@ h3 {
     font-size: 20px;
 }
 
-.grid {
-    display: grid;
-}
-
-.fruit-card {
-
-}
-
 .no-display {
-    display: none;
+    visibility: hidden;
 }
 
 .yes-display {
-    display: visible;
+    visibility: visible;
 }

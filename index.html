@@ -108,6 +108,7 @@
                 </div>
             </section>
         </main>
-        <script src="assets/js/main.js" async></script>
+        <!-- Bug fix: 'async' attribute in script tag was causing DOMContentLoaded event listener to fail to execute. 'async' removed -->
+        <script src="assets/js/main.js"></script>
     </body>
 </html>
