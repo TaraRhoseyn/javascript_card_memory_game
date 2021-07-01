@@ -1,4 +1,4 @@
-// @ts-check
+// @ts-nocheck
 
 // Hides game until game difficulty level is selected
 document.addEventListener("DOMContentLoaded", () => {
@@ -7,7 +7,6 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Global variables
 const gameGrid = document.getElementById('game');
-const fruitCards = document.getElementsByClassName('fruit-card');
 
 // Event listeners
 document.getElementById('easy-button').addEventListener("click", startEasyGame);
@@ -40,22 +39,32 @@ const fruitCardsModerate = [
     { name: "lime", img: "./assets/images/fruit-six-lime.png", },
 ];
 
-
-
-// Shuffle based on Fisher-Yates shuffle 
-function shuffleCards() {
+// Credit: Shuffle based on Fisher-Yates shuffle 
+function shuffleCards() {  
     for (var i = gameGrid.children.length; i >= 0; i--) {
         gameGrid.appendChild(gameGrid.children[Math.random() * i | 0]);
     }
 };
 
+// Iterates through the cards array to create
+// DOM element with given data values
+// Credit: Based on function by Tania Rascia
 fruitCardsModerate.forEach(c => {
-    const fruitCard = document.createElement('div');
+    const fruitCard = document.createElement('span');
     fruitCard.classList.add('fruitCard');
     fruitCard.dataset.name = c.name;
     fruitCard.style.backgroundImage = `url(${c.img})`
-    gameGrid.appendChild(fruitCard);
+    gameGrid.appendChild(fruitCard); 
 });
+
+// Grabs selected cards
+var fruitCards = document.getElementsByTagName('span');
+for (var i = 0; i < fruitCards.length; i++) {
+    fruitCards[i].addEventListener("click", function (event) {
+        event.target.classList.add('selected');
+    });
+};
+
 
 // Functions that trigger the game depending on difficulty
 function startEasyGame() {
@@ -67,15 +76,14 @@ function startModerateGame() {
     removeIntro();
     displayGame();
     shuffleCards();
-    // Iterates through the cards array to create
-    // DOM element with given data values
-    // Based on function by Tania Rascia
-    
 };
 
 function startHardGame() {
     removeIntro();
     displayGame();
 };
+
+
+
 
 
