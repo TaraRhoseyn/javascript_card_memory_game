@@ -2,12 +2,12 @@
 
 // Hides game until game difficulty level is selected
 document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById('game').classList.add('no-display');
+    document.getElementById('board').classList.add('no-display');
     document.getElementById('score-text').classList.add('no-display');
 });
 
 // Global variables
-const gameGrid = document.getElementById('game');
+const gameGrid = document.querySelector('#board');
 
 // Event listeners
 document.getElementById('easy-button').addEventListener("click", startEasyGame);
@@ -21,7 +21,7 @@ function removeIntro() {
 };
 
 function displayGame() {
-    document.getElementById('game').classList.remove('no-display');
+    document.getElementById('board').classList.remove('no-display');
     document.getElementById('score-text').classList.remove('no-display');
 };
 
@@ -75,8 +75,3 @@ function startHardGame() {
     removeIntro();
     displayGame();
 };
-
-
-
-
-
