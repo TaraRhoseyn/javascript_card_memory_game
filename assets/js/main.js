@@ -56,6 +56,43 @@ function createBoard() {
         board.appendChild(card)
     }
 }
+createBoard()
+
+// Check for a match
+function checkMatch() {
+    // Variable grabs all img elements (the created cards)
+    var cards = document.querySelectorAll('img')
+    // Variable grabs 1st [0] and 2nd value in array
+    const cardOneId = cardsSelectedId[0] 
+    const cardTwoId = cardsSelectedId[1]
+    // if the cards selected have true equality (are a match)... 
+    if (cardsSelected[0] === cardsSelected[1]) {
+        cardsRight.push(cardsSelected)
+    } else {
+        // Resets card back to card back is match is not found
+        cards[cardOneId].setAttribute('src', './assets/images/fruit-card-back.png')
+        cards[cardTwoId].setAttribute('src', './assets/images/fruit-card-back.png')
+    }
+    // Resets the array
+    cardsSelected = []
+    cardsSelectedId = []
+    // Updates score
+    resultDisplay.textContent = cardsRight.length
+    // 
+    if (cardsRight.length === fruitCardsModerate.length/2) {
+        resultDisplay.textContent = 'Congrats. You found them all!'
+    }
+
+}
+
+
+
+
+
+
+
+
+
 
 
 // Functions that trigger the game depending on difficulty
