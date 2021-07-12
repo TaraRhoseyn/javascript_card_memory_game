@@ -8,6 +8,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
 // Global variables
 const gameGrid = document.querySelector('#board');
+const resultDisplay = document.querySelector('#result');
+var cardsSelected = []
+var cardsSelectedId = []
+var cardsRight = []
 
 // Event listeners
 document.getElementById('easy-button').addEventListener("click", startEasyGame);
