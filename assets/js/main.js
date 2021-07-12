@@ -85,7 +85,15 @@ function checkMatch() {
 
 }
 
-
+function flipCard() {
+    var cardId = this.getAttribute('data-id') // getting attribute from function above
+    cardsSelected.push(fruitCardsModerate[cardId].name)
+    cardsSelectedId.push(cardId)
+    this.setAttribute('src', fruitCardsModerate[cardId].img)
+    if (cardsSelected.length === 2) {
+        setTimeout(checkMatch, 500) // this calls function checkMatch after 500 milliseconds
+    }
+}
 
 
 
