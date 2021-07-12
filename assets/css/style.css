@@ -28,22 +28,5 @@ h3 {
     visibility: hidden;
 }
 
-#game {
-    max-width: 960px;
-    margin: 0 auto;
-    display: flex;
-    flex-wrap: wrap;
- }
 
-.fruitCard {
-    margin: 5px;
-  background-size: contain;
-  background-repeat: no-repeat;
-  background-position: center center;
-  height: 150px;
-  width: 150px;
-}
 
-.selected {
-    border: 4px solid blue;
-}
