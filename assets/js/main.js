@@ -18,16 +18,14 @@ document.getElementById('easy-button').addEventListener("click", startEasyGame);
 document.getElementById('moderate-button').addEventListener("click", startModerateGame);
 document.getElementById('hard-button').addEventListener("click", startHardGame);
 
-// Functions to be used as nested functions repeatedly
-function removeIntro() {
-    document.getElementById("introduction-section").remove();
-    document.getElementById("start-game-prompt").remove();
-};
-
+// Inserts back content hidden upon DOM loaded
+// Add removes introductory information
 function displayGame() {
     document.getElementById('board').classList.remove('no-display');
     document.getElementById('score-text').classList.remove('no-display');
-};
+    document.getElementById("introduction-section").remove();
+    document.getElementById("start-game-prompt").remove();
+}
 
 // Array of card objects to be added to DOM
 const fruitCardsModerate = [
