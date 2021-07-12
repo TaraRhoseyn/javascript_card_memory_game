@@ -14,9 +14,9 @@ var cardsSelectedId = []
 var cardsRight = []
 
 // Event listeners
-document.getElementById('easy-button').addEventListener("click", startEasyGame);
-document.getElementById('moderate-button').addEventListener("click", startModerateGame);
-document.getElementById('hard-button').addEventListener("click", startHardGame);
+// document.getElementById('easy-button').addEventListener("click", startEasyGame);
+document.getElementById('moderate-button').addEventListener("click", displayGame);
+// document.getElementById('hard-button').addEventListener("click", startHardGame);
 
 // Inserts back content hidden upon DOM loaded
 // Add removes introductory information
@@ -43,12 +43,9 @@ const fruitCardsModerate = [
     { name: "lime", img: "./assets/images/fruit-six-lime.png", },
 ];
 
-// Credit: Shuffle based on Fisher-Yates shuffle 
-function shuffleCards() {  
-    for (var i = gameGrid.children.length; i >= 0; i--) {
-        gameGrid.appendChild(gameGrid.children[Math.random() * i | 0]);
-    }
-};
+// Shuffles through above array
+fruitCardsModerate.sort(() => 0.5 - Math.random())
+
 
 // Iterates through the cards array to create
 // DOM element with given data values
@@ -62,18 +59,18 @@ fruitCardsModerate.forEach(c => {
 });
 
 // Functions that trigger the game depending on difficulty
-function startEasyGame() {
-    removeIntro();
-    displayGame();
-};
+// function startEasyGame() {
+//     removeIntro();
+//     displayGame();
+// };
 
-function startModerateGame() {
-    removeIntro();
-    displayGame();
-    shuffleCards();
-};
+// function startModerateGame() {
+//     removeIntro();
+//     displayGame();
+//     shuffleCards();
+// };
 
-function startHardGame() {
-    removeIntro();
-    displayGame();
-};
+// function startHardGame() {
+//     removeIntro();
+//     displayGame();
+// };
