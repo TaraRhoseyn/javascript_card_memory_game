@@ -31,8 +31,9 @@
                 <button id="hard-button">Hard</button>
             </section>
             <!-- Generate the game -->
-            <section id="game"></section>
-            <div class="score"></div>
+            <section id="game">
+            </section>
+            <p class="text-center mt-5" id="score-text">Score:<span id="score"></span></p>
         </main>
         <!-- Bug fix: 'async' attribute in script tag was causing DOMContentLoaded event listener to fail to execute. 'async' removed -->
         <script src="assets/js/main.js"></script>

@@ -3,6 +3,7 @@
 // Hides game until game difficulty level is selected
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById('game').classList.add('no-display');
+    document.getElementById('score-text').classList.add('no-display');
 });
 
 // Global variables
@@ -21,6 +22,7 @@ function removeIntro() {
 
 function displayGame() {
     document.getElementById('game').classList.remove('no-display');
+    document.getElementById('score-text').classList.remove('no-display');
 };
 
 // Array of card objects to be added to DOM
@@ -53,32 +55,9 @@ fruitCardsModerate.forEach(c => {
     const fruitCard = document.createElement('span');
     fruitCard.classList.add('fruitCard');
     fruitCard.dataset.name = c.name;
-    fruitCard.style.backgroundImage = `url(${c.img})`
+    fruitCard.style.backgroundImage = `url(${c.img})`;
     gameGrid.appendChild(fruitCard); 
 });
-
-
-// Grabs selected cards
-var fruitCards = document.getElementsByTagName('span');
-for (var i = 0; i < fruitCards.length; i++) {
-    fruitCards[i].addEventListener("click", function (event) {
-        let count = 0;
-        if (count < 2) {
-            count++
-            this.classList.add('selected');
-        } else {
-            return;
-        }
-    });
-};
-let clickedCards = document.getElementsByClassName('selected');
-
-
-
-// let clickedCards = document.getElementsByClassName('selected');
-        // if (clickedCards.length === 2) {
-        //     return;
-        // };
 
 // Functions that trigger the game depending on difficulty
 function startEasyGame() {
