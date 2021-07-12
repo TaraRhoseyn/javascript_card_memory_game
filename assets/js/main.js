@@ -46,17 +46,17 @@ const fruitCardsModerate = [
 // Shuffles through above array
 fruitCardsModerate.sort(() => 0.5 - Math.random())
 
+// Credit for function: Ania Kubow
+function createBoard() {
+    for (let i = 0; i < fruitCardsModerate.length; i++) {
+        var card = document.createElement('img')
+        card.setAttribute('src', './assets/images/fruit-card-back.png')
+        card.setAttribute('data-id', i) 
+        card.addEventListener('click', flipCard)
+        board.appendChild(card)
+    }
+}
 
-// Iterates through the cards array to create
-// DOM element with given data values
-// Credit: Based on function by Tania Rascia
-fruitCardsModerate.forEach(c => {
-    const fruitCard = document.createElement('span');
-    fruitCard.classList.add('fruitCard');
-    fruitCard.dataset.name = c.name;
-    fruitCard.style.backgroundImage = `url(${c.img})`;
-    gameGrid.appendChild(fruitCard); 
-});
 
 // Functions that trigger the game depending on difficulty
 // function startEasyGame() {
