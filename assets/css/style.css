@@ -28,5 +28,11 @@ h3 {
     visibility: hidden;
 }
 
-
-
+button {
+    background-color: #6FCF97;
+    font-size: 20px;
+    margin: 6px;
+    margin-top: 30px;
+    border-style: none;
+    border-radius: 4px;
+}
