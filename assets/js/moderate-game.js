@@ -13,10 +13,7 @@ var modCardsSelected = []
 var modCardsSelectedId = []
 var modCardsRight = []
 
-// Event listeners
-// document.getElementById('easy-button').addEventListener("click", startEasyGame);
 document.getElementById('moderate-button').addEventListener("click", startModerateGame);
-// document.getElementById('hard-button').addEventListener("click", startHardGame);
 
 function startModerateGame() {
     displayGame();
@@ -91,31 +88,8 @@ function checkMatch() {
     modCardsSelected = []
     modCardsSelectedId = []
     // Updates score
-    resultDisplay.textContent = modCardsRight.length
-    // 
+    resultDisplay.textContent = modCardsRight.length 
     if (modCardsRight.length === fruitCardsModerate.length/2) {
         resultDisplay.textContent = 'Congrats. You found them all!'
     }
-
 }
-
-
-
-
-
-
-
-
-
-// Functions that trigger the game depending on difficulty
-// function startEasyGame() {
-//     removeIntro();
-//     displayGame();
-// };
-
-
-
-// function startHardGame() {
-//     removeIntro();
-//     displayGame();
-// };
