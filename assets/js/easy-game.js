@@ -43,9 +43,9 @@ function createEasyBoard() {
 
 function flipEasyCard() {
     var easyCardId = this.getAttribute('data-id') // getting attribute from function above
-    easyCardsSelected.push(fruitCardsModerate[easyCardId].name)
+    easyCardsSelected.push(fruitCardsEasy[easyCardId].name)
     easyCardsSelectedId.push(easyCardId)
-    this.setAttribute('src', fruitCardsModerate[easyCardId].img)
+    this.setAttribute('src', fruitCardsEasy[easyCardId].img)
     if (easyCardsSelected.length === 2) {
         setTimeout(checkEasyMatch, 500) // this calls function checkMatch after 500 milliseconds
     }
@@ -63,7 +63,8 @@ function checkEasyMatch() {
     }
     easyCardsSelected = []
     easyCardsSelectedId = []
-    if (easyCardsRight.length === fruitCardsModerate.length/2) {
+    resultEasyDisplay.textContent = easyCardsRight.length
+    if (easyCardsRight.length === fruitCardsEasy.length/2) {
         resultEasyDisplay.textContent = 'Congrats, you found them all!'
     }
 }
