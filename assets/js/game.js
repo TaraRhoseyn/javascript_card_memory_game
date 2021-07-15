@@ -58,6 +58,17 @@ function createBoard() {
 }
 createBoard()
 
+function flipCard() {
+    var cardId = this.getAttribute('data-id') // getting attribute from function above
+    cardsSelected.push(fruitCardsModerate[cardId].name)
+    cardsSelectedId.push(cardId)
+    this.setAttribute('src', fruitCardsModerate[cardId].img)
+    if (cardsSelected.length === 2) {
+        setTimeout(checkMatch, 500) // this calls function checkMatch after 500 milliseconds
+    }
+}
+
+
 // Check for a match
 function checkMatch() {
     // Variable grabs all img elements (the created cards)
@@ -83,16 +94,6 @@ function checkMatch() {
         resultDisplay.textContent = 'Congrats. You found them all!'
     }
 
-}
-
-function flipCard() {
-    var cardId = this.getAttribute('data-id') // getting attribute from function above
-    cardsSelected.push(fruitCardsModerate[cardId].name)
-    cardsSelectedId.push(cardId)
-    this.setAttribute('src', fruitCardsModerate[cardId].img)
-    if (cardsSelected.length === 2) {
-        setTimeout(checkMatch, 500) // this calls function checkMatch after 500 milliseconds
-    }
 }
 
 
