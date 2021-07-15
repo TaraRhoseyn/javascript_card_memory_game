@@ -17,7 +17,7 @@ document.getElementById('moderate-button').addEventListener("click", startModera
 
 function startModerateGame() {
     displayGame();
-    createBoard();
+    createModBoard();
 };
 
 // Inserts back content hidden upon DOM loaded
@@ -49,13 +49,13 @@ const fruitCardsModerate = [
 fruitCardsModerate.sort(() => 0.5 - Math.random())
 
 // Credit for function: Ania Kubow
-function createBoard() {
+function createModBoard() {
     for (let i = 0; i < fruitCardsModerate.length; i++) {
         var modCard = document.createElement('img')
         modCard.setAttribute('src', './assets/images/fruit-card-back.png')
         modCard.setAttribute('data-id', i) 
         modCard.addEventListener('click', flipCard)
-        board.appendChild(modCard)
+        gameGrid.appendChild(modCard)
     }
 }
 
