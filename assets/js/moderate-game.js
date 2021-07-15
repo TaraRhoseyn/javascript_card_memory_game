@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
 });
 
 // Global variables
-const gameGrid = document.querySelector('#board');
+const modGameGrid = document.querySelector('#board');
 const resultDisplay = document.querySelector('#result');
 var modCardsSelected = []
 var modCardsSelectedId = []
@@ -54,12 +54,12 @@ function createModBoard() {
         var modCard = document.createElement('img')
         modCard.setAttribute('src', './assets/images/fruit-card-back.png')
         modCard.setAttribute('data-id', i) 
-        modCard.addEventListener('click', flipCard)
-        gameGrid.appendChild(modCard)
+        modCard.addEventListener('click', flipModCard)
+        modGameGrid.appendChild(modCard)
     }
 }
 
-function flipCard() {
+function flipModCard() {
     var modCardId = this.getAttribute('data-id') // getting attribute from function above
     modCardsSelected.push(fruitCardsModerate[modCardId].name)
     modCardsSelectedId.push(modCardId)
