@@ -9,9 +9,9 @@ document.addEventListener("DOMContentLoaded", () => {
 // Global variables
 const gameGrid = document.querySelector('#board');
 const resultDisplay = document.querySelector('#result');
-var cardsSelected = []
-var cardsSelectedId = []
-var cardsRight = []
+var modCardsSelected = []
+var modCardsSelectedId = []
+var modCardsRight = []
 
 // Event listeners
 // document.getElementById('easy-button').addEventListener("click", startEasyGame);
@@ -54,21 +54,20 @@ fruitCardsModerate.sort(() => 0.5 - Math.random())
 // Credit for function: Ania Kubow
 function createBoard() {
     for (let i = 0; i < fruitCardsModerate.length; i++) {
-        var card = document.createElement('img')
-        card.setAttribute('src', './assets/images/fruit-card-back.png')
-        card.setAttribute('data-id', i) 
-        card.addEventListener('click', flipCard)
-        board.appendChild(card)
+        var modCard = document.createElement('img')
+        modCard.setAttribute('src', './assets/images/fruit-card-back.png')
+        modCard.setAttribute('data-id', i) 
+        modCard.addEventListener('click', flipCard)
+        board.appendChild(modCard)
     }
 }
 
-
 function flipCard() {
-    var cardId = this.getAttribute('data-id') // getting attribute from function above
-    cardsSelected.push(fruitCardsModerate[cardId].name)
-    cardsSelectedId.push(cardId)
-    this.setAttribute('src', fruitCardsModerate[cardId].img)
-    if (cardsSelected.length === 2) {
+    var modCardId = this.getAttribute('data-id') // getting attribute from function above
+    modCardsSelected.push(fruitCardsModerate[modCardId].name)
+    modCardsSelectedId.push(modCardId)
+    this.setAttribute('src', fruitCardsModerate[modCardId].img)
+    if (modCardsSelected.length === 2) {
         setTimeout(checkMatch, 500) // this calls function checkMatch after 500 milliseconds
     }
 }
@@ -76,25 +75,25 @@ function flipCard() {
 // Check for a match
 function checkMatch() {
     // Variable grabs all img elements (the created cards)
-    var cards = document.querySelectorAll('img')
+    var modCards = document.querySelectorAll('img')
     // Variable grabs 1st [0] and 2nd value in array
-    const cardOneId = cardsSelectedId[0] 
-    const cardTwoId = cardsSelectedId[1]
+    const modCardOneId = modCardsSelectedId[0] 
+    const modCardTwoId = modCardsSelectedId[1]
     // if the cards selected have true equality (are a match)... 
-    if (cardsSelected[0] === cardsSelected[1]) {
-        cardsRight.push(cardsSelected)
+    if (modCardsSelected[0] === modCardsSelected[1]) {
+        modCardsRight.push(modCardsSelected)
     } else {
         // Resets card back to card back is match is not found
-        cards[cardOneId].setAttribute('src', './assets/images/fruit-card-back.png')
-        cards[cardTwoId].setAttribute('src', './assets/images/fruit-card-back.png')
+        modCards[modCardOneId].setAttribute('src', './assets/images/fruit-card-back.png')
+        modCards[modCardTwoId].setAttribute('src', './assets/images/fruit-card-back.png')
     }
     // Resets the array
-    cardsSelected = []
-    cardsSelectedId = []
+    modCardsSelected = []
+    modCardsSelectedId = []
     // Updates score
-    resultDisplay.textContent = cardsRight.length
+    resultDisplay.textContent = modCardsRight.length
     // 
-    if (cardsRight.length === fruitCardsModerate.length/2) {
+    if (modCardsRight.length === fruitCardsModerate.length/2) {
         resultDisplay.textContent = 'Congrats. You found them all!'
     }
 
