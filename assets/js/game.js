@@ -15,8 +15,13 @@ var cardsRight = []
 
 // Event listeners
 // document.getElementById('easy-button').addEventListener("click", startEasyGame);
-document.getElementById('moderate-button').addEventListener("click", displayGame);
+document.getElementById('moderate-button').addEventListener("click", startModerateGame);
 // document.getElementById('hard-button').addEventListener("click", startHardGame);
+
+function startModerateGame() {
+    displayGame();
+    createBoard();
+};
 
 // Inserts back content hidden upon DOM loaded
 // Add removes introductory information
@@ -56,7 +61,7 @@ function createBoard() {
         board.appendChild(card)
     }
 }
-createBoard()
+
 
 function flipCard() {
     var cardId = this.getAttribute('data-id') // getting attribute from function above
@@ -67,7 +72,6 @@ function flipCard() {
         setTimeout(checkMatch, 500) // this calls function checkMatch after 500 milliseconds
     }
 }
-
 
 // Check for a match
 function checkMatch() {
@@ -110,11 +114,7 @@ function checkMatch() {
 //     displayGame();
 // };
 
-// function startModerateGame() {
-//     removeIntro();
-//     displayGame();
-//     shuffleCards();
-// };
+
 
 // function startHardGame() {
 //     removeIntro();
