@@ -74,6 +74,8 @@ function checkHardMatch() {
     } else {
         hardCards[hardCardOneId].setAttribute('src', './assets/images/fruit-card-back.png')
         hardCards[hardCardTwoId].setAttribute('src', './assets/images/fruit-card-back.png')
+        hardCards[hardCardOneId].setAttribute('alt', 'Card back, select to flip over')
+        hardCards[hardCardTwoId].setAttribute('alt', 'Card back, select to flip over')
     }
     hardCardsSelected = []
     hardCardsSelectedId =[]
