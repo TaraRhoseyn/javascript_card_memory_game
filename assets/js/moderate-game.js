@@ -42,6 +42,7 @@ function createModBoard() {
         var modCard = document.createElement('img')
         modCard.setAttribute('src', './assets/images/fruit-card-back.png')
         modCard.setAttribute('data-id', i) 
+        modCard.classList.add('col-4', 'col-lg-2', 'fruitModCard')
         modCard.addEventListener('click', flipModCard)
         modGameGrid.appendChild(modCard)
     }
