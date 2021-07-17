@@ -42,7 +42,8 @@ function createModBoard() {
     for (let i = 0; i < fruitCardsModerate.length; i++) {
         var modCard = document.createElement('img')
         modCard.setAttribute('src', './assets/images/fruit-card-back.png')
-        modCard.setAttribute('data-id', i) 
+        modCard.setAttribute('data-id', i)
+        modCard.setAttribute('alt', 'Card back, select to flip over') 
         modCard.classList.add('col-4', 'col-lg-2', 'fruitModCard')
         modCard.addEventListener('click', flipModCard)
         modGameGrid.appendChild(modCard)
@@ -53,6 +54,7 @@ function flipModCard() {
     var modCardId = this.getAttribute('data-id') // getting attribute from function above
     modCardsSelected.push(fruitCardsModerate[modCardId].name)
     modCardsSelectedId.push(modCardId)
+    this.setAttribute('alt', fruitCardsModerate[modCardId].name)
     this.setAttribute('src', fruitCardsModerate[modCardId].img)
     if (modCardsSelected.length === 2) {
         setTimeout(checkMatch, 500) // this calls function checkMatch after 500 milliseconds
