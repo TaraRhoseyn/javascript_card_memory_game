@@ -20,14 +20,7 @@ function startEasyGame() {
     createEasyBoard();
 };
 
-const fruitCardsEasy = [
-    { name: "banana", img: "./assets/images/fruit-one-banana.png", },
-    { name: "banana", img: "./assets/images/fruit-one-banana.png", },
-    { name: "orange", img: "./assets/images/fruit-two-orange.png", },
-    { name: "orange", img: "./assets/images/fruit-two-orange.png", },
-    { name: "watermelon", img: "./assets/images/fruit-three-watermelon.png", },
-    { name: "watermelon", img: "./assets/images/fruit-three-watermelon.png", },
-];
+const fruitCardsEasy = fruitCardsModerate.slice(0, 6);
 
 fruitCardsEasy.sort(() => 0.5 - Math.random())
 
