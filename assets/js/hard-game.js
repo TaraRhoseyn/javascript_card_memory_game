@@ -43,6 +43,7 @@ const fruitCardsHard = [
 
 function createHardBoard() {
     fruitCardsHard.sort(() => 0.5 - Math.random())
+    hardGameGrid.style.width = '70%';
     for (let i = 0; i < fruitCardsHard.length; i++) {
         var hardCard = document.createElement('img')
         hardCard.setAttribute('src', './assets/images/fruit-card-back.png')

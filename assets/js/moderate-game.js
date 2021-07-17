@@ -38,6 +38,7 @@ function createModBoard() {
     // be called within a seperate function to allow
     // .slice method in fruitCardsEasy to work
     fruitCardsModerate.sort(() => 0.5 - Math.random())
+    modGameGrid.style.width = '80%';
     for (let i = 0; i < fruitCardsModerate.length; i++) {
         var modCard = document.createElement('img')
         modCard.setAttribute('src', './assets/images/fruit-card-back.png')
