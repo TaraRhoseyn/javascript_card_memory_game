@@ -40,6 +40,7 @@ button {
 #board {
     max-width: 960px;
     margin: 0 auto;
+    margin-bottom: 40px;
 }
  
 @media screen and (min-width: 900px) {
@@ -50,4 +51,8 @@ button {
 
 .fruitModCard {
     padding: 10px;
+}
+
+.fruitHardCard {
+    padding-top: 10px;
 }
