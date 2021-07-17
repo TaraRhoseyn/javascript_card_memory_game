@@ -45,11 +45,12 @@ const fruitCardsModerate = [
     { name: "lime", img: "./assets/images/fruit-six-lime.png", },
 ];
 
-// Shuffles through above array
-fruitCardsModerate.sort(() => 0.5 - Math.random())
-
-// Credit for function: Ania Kubow
+// Credit for basis of function: Ania Kubow
 function createModBoard() {
+    // Bug fix: .sort function (shuffles array) has to 
+    // be called within a seperate function to allow
+    // .slice method in fruitCardsEasy to work
+    fruitCardsModerate.sort(() => 0.5 - Math.random())
     for (let i = 0; i < fruitCardsModerate.length; i++) {
         var modCard = document.createElement('img')
         modCard.setAttribute('src', './assets/images/fruit-card-back.png')
