@@ -15,7 +15,7 @@ var hardCardsRight = []
 
 document.getElementById('hard-button').addEventListener("click", startHardGame);
 
-function startEasyGame() {
+function startHardGame() {
     displayGame();
     createHardBoard();
 };
