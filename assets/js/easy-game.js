@@ -29,6 +29,7 @@ function createEasyBoard() {
         var easyCard = document.createElement('img')
         easyCard.setAttribute('src', './assets/images/fruit-card-back.png')
         easyCard.setAttribute('data-id', i)
+        easyCard.setAttribute('alt', 'Card back, select to flip over') 
         easyCard.classList.add('col-6', 'col-lg-4', 'fruitCard') 
         easyCard.addEventListener('click', flipEasyCard)
         easyGameGrid.appendChild(easyCard)
@@ -56,6 +57,8 @@ function checkEasyMatch() {
         // Resets card back to card back is match is not found
         easyCards[easyCardOneId].setAttribute('src', './assets/images/fruit-card-back.png')
         easyCards[easyCardTwoId].setAttribute('src', './assets/images/fruit-card-back.png')
+        easyCards[easyCardOneId].setAttribute('alt', 'Card back, select to flip over')
+        easyCards[easyCardTwoId].setAttribute('alt', 'Card back, select to flip over')
     }
     // Resets the array
     easyCardsSelected = []
