@@ -48,6 +48,7 @@ function createHardBoard() {
         var hardCard = document.createElement('img')
         hardCard.setAttribute('src', './assets/images/fruit-card-back.png')
         hardCard.setAttribute('data-id', i)
+        hardCard.setAttribute('alt', 'Card back, select to flip over')
         hardCard.classList.add('col-4', 'col-lg-2', 'fruitHardCard')
         hardCard.addEventListener('click', flipHardCard)
         hardGameGrid.appendChild(hardCard)
