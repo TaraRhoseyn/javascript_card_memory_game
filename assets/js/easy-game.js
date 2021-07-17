@@ -22,9 +22,8 @@ function startEasyGame() {
 
 const fruitCardsEasy = fruitCardsModerate.slice(0, 6);
 
-fruitCardsEasy.sort(() => 0.5 - Math.random())
-
 function createEasyBoard() {
+    fruitCardsEasy.sort(() => 0.5 - Math.random())
     for (let i = 0; i < fruitCardsEasy.length; i++) {
         var easyCard = document.createElement('img')
         easyCard.setAttribute('src', './assets/images/fruit-card-back.png')
