@@ -53,18 +53,22 @@ function flipEasyCard() {
 
 function checkEasyMatch() {
     var easyCards = document.querySelectorAll('img')
-    const easyCardOneId = easyCardsSelectedId[0]
+    const easyCardOneId = easyCardsSelectedId[0] 
     const easyCardTwoId = easyCardsSelectedId[1]
-    if (easyCardsSelectedId[0] === easyCardsSelectedId[1]) {
+    // Bug fix: test easyCardsSelected for true equality, not easyCardsSelectedId
+    if (easyCardsSelected[0] === easyCardsSelected[1]) {
         easyCardsRight.push(easyCardsSelected)
     } else {
+        // Resets card back to card back is match is not found
         easyCards[easyCardOneId].setAttribute('src', './assets/images/fruit-card-back.png')
         easyCards[easyCardTwoId].setAttribute('src', './assets/images/fruit-card-back.png')
     }
+    // Resets the array
     easyCardsSelected = []
     easyCardsSelectedId = []
-    resultEasyDisplay.textContent = easyCardsRight.length
+    // Updates score
+    resultEasyDisplay.textContent = easyCardsRight.length 
     if (easyCardsRight.length === fruitCardsEasy.length/2) {
-        resultEasyDisplay.textContent = 'Congrats, you found them all!'
+        resultEasyDisplay.textContent = 'Congrats. You found them all!'
     }
 }
