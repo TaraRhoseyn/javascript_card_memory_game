@@ -27,7 +27,8 @@ function createEasyBoard() {
     for (let i = 0; i < fruitCardsEasy.length; i++) {
         var easyCard = document.createElement('img')
         easyCard.setAttribute('src', './assets/images/fruit-card-back.png')
-        easyCard.setAttribute('data-id', i) 
+        easyCard.setAttribute('data-id', i)
+        easyCard.classList.add('col-6', 'col-lg-4', 'fruitCard') 
         easyCard.addEventListener('click', flipEasyCard)
         easyGameGrid.appendChild(easyCard)
     }
