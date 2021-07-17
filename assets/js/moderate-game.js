@@ -30,20 +30,7 @@ function displayGame() {
 }
 
 // Array of card objects to be added to DOM
-const fruitCardsModerate = [
-    { name: "banana", img: "./assets/images/fruit-one-banana.png", },
-    { name: "banana", img: "./assets/images/fruit-one-banana.png", },
-    { name: "orange", img: "./assets/images/fruit-two-orange.png", },
-    { name: "orange", img: "./assets/images/fruit-two-orange.png", },
-    { name: "watermelon", img: "./assets/images/fruit-three-watermelon.png", },
-    { name: "watermelon", img: "./assets/images/fruit-three-watermelon.png", },
-    { name: "avocado", img: "./assets/images/fruit-four-avocado.png", },
-    { name: "avocado", img: "./assets/images/fruit-four-avocado.png", },
-    { name: "bluberry", img: "./assets/images/fruit-five-blueberry.png", },
-    { name: "bluberry", img: "./assets/images/fruit-five-blueberry.png", },
-    { name: "lime", img: "./assets/images/fruit-six-lime.png", },
-    { name: "lime", img: "./assets/images/fruit-six-lime.png", },
-];
+const fruitCardsModerate = fruitCardsHard.slice(0,12)
 
 // Credit for basis of function: Ania Kubow
 function createModBoard() {
