@@ -75,6 +75,10 @@ function checkMatch() {
         // Resets card back to card back is match is not found
         modCards[modCardOneId].setAttribute('src', './assets/images/fruit-card-back.png')
         modCards[modCardTwoId].setAttribute('src', './assets/images/fruit-card-back.png')
+        // Reverts alt for card images back to blank if not a match
+        // This prevents cheating the game by looking at the alt tags
+        modCards[modCardOneId].setAttribute('alt', 'Card back, select to flip over')
+        modCards[modCardTwoId].setAttribute('alt', 'Card back, select to flip over')
     }
     // Resets the array
     modCardsSelected = []
