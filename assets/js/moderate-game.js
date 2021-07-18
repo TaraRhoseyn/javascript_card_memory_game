@@ -59,7 +59,7 @@ function flipModCard() {
     this.setAttribute('alt', fruitCardsModerate[modCardId].name)
     this.setAttribute('src', fruitCardsModerate[modCardId].img)
     if (modCardsSelected.length === 2) {
-        setTimeout(checkMatch, 500) // this calls function checkMatch after 500 milliseconds
+        setTimeout(checkMatch, 300) // this calls function checkMatch after 500 milliseconds
     }
 }
 

@@ -62,7 +62,7 @@ function flipHardCard() {
     this.setAttribute('alt', fruitCardsHard[hardCardId].name)
     this.setAttribute('src', fruitCardsHard[hardCardId].img)
     if (hardCardsSelected.length === 2) {
-        setTimeout(checkHardMatch, 500)
+        setTimeout(checkHardMatch, 300)
     }
 }
 
