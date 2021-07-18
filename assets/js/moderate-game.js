@@ -25,8 +25,10 @@ function startModerateGame() {
 function displayGame() {
     document.getElementById('board').classList.remove('no-display');
     document.getElementById('score-text').classList.remove('no-display');
+    document.getElementById("timer").classList.remove('no-display');
     document.getElementById("introduction-section").remove();
     document.getElementById("start-game-prompt").remove();
+    setTimer();
 }
 
 // Array of card objects to be added to DOM
