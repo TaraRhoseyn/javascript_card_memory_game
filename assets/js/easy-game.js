@@ -41,6 +41,7 @@ function flipEasyCard() {
     easyCardsSelected.push(fruitCardsEasy[easyCardId].name)
     easyCardsSelectedId.push(easyCardId)
     this.setAttribute('src', fruitCardsEasy[easyCardId].img)
+    this.setAttribute('alt', fruitCardsEasy[easyCardId].name)
     if (easyCardsSelected.length === 2) {
         setTimeout(checkEasyMatch, 500) // this calls function checkMatch after 500 milliseconds
     }
