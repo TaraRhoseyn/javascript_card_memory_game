@@ -7,14 +7,24 @@ document.addEventListener("DOMContentLoaded", () => {
     document.getElementById("timer").classList.add('no-display');
 });
 
-// Credit for timer: User Bakudan on Stackoverflow (https://stackoverflow.com/questions/5517597/plain-count-up-timer-in-javascript)
-function setTimer() {
-    var sec = 0;
-    function pad (val) { return val > 9 ? val : "0" + val; }
-    setInterval( function(){
-        document.getElementById("seconds").innerHTML=pad(++sec%60);
-        document.getElementById("minutes").innerHTML=pad(parseInt(sec/60,10));
-    }, 1000);
+// Credit for timer & reset timer functions: user efuzz on Stack Overflow. https://stackoverflow.com/questions/65091796/reset-a-count-up-timer-in-javascript
+setInterval(setTimer, 1000);
+var totalSeconds = 0;
+
+function setTimer(){
+    ++totalSeconds;
+    var seconds = document.getElementById("seconds")
+    seconds.innerHTML = pad(totalSeconds%60);
+    var minutes = document.getElementById("minutes")
+    minutes.innerHTML = pad(parseInt(totalSeconds/60));
+}
+
+function pad(val){
+    var valString = val + "";
+    if(valString.length < 2) {
+        return "0" + valString;
+    } else { return valString;
+    }
 }
 
 // Global variables
@@ -26,9 +36,11 @@ var easyCardsRight = [];
 
 document.getElementById('easy-button').addEventListener("click", startEasyGame);
 
+
 function startEasyGame() {
     displayGame();
     createEasyBoard();
+    document.getElementById('reset').addEventListener("click", resetEasyGame);
 };
 
 const fruitCardsEasy = fruitCardsModerate.slice(0, 6);
@@ -81,3 +93,22 @@ function checkEasyMatch() {
         resultEasyDisplay.textContent = 'Congrats. You found them all!'
     }
 };
+
+function resetEasyGame() {
+    easyCardsSelected = [];
+    easyCardsSelectedId = [];
+    easyCardsRight = [];
+    easyCards = document.querySelectorAll('img')
+    fruitCardsEasy.sort(() => 0.5 - Math.random())
+    easyCards.forEach((c) => {
+        c.setAttribute('src', './assets/images/fruit-card-back.png');
+    });
+    resultEasyDisplay.textContent = `0`;
+    resetTimer();
+};
+
+function resetTimer() {
+    document.getElementById("seconds").innerHTML = `00`
+    document.getElementById("minutes").innerHTML = `00`
+    totalSeconds = `0`;
+}
