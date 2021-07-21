@@ -44,7 +44,7 @@
  * The API that is used is described here: https://www.emailjs.com/
  * @param contactForm [The contact form object]
  */
- function sendMail(contactForm) {
+ function sendEmail(contactForm) {
     emailjs.init("user_cQ4AB0KpJse0GG5cv2LdL");
     emailjs.send("gmail", "template_wod5ktu", {
         "from_name": contactForm.fullname.value,
