@@ -38,12 +38,9 @@
 //     console.log("Email sent")
 // }
 
-/**
- * [sendEmail to send email using EmailJS
- * Credit: Code Institute material "Sending Emails Using EmailJS"]
- * The API that is used is described here: https://www.emailjs.com/
- * @param contactForm [The contact form object]
- */
+
+ @param contactForm 
+ 
  function sendEmail(contactForm) {
     emailjs.init("user_cQ4AB0KpJse0GG5cv2LdL");
     emailjs.send("service_ih1qkca", "template_wod5ktu", {
