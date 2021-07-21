@@ -38,23 +38,47 @@
 //     console.log("Email sent")
 // }
 
+/**
+ * [sendEmail to send email using EmailJS
+ * Credit: Code Institute material "Sending Emails Using EmailJS"]
+ * The API that is used is described here: https://www.emailjs.com/
+//  */
 
- @param contactForm 
- 
- function sendEmail(contactForm) {
-    emailjs.init("user_cQ4AB0KpJse0GG5cv2LdL");
-    emailjs.send("service_ih1qkca", "template_wod5ktu", {
-        "from_name": contactForm.fromname.value,
-        "from_email": contactForm.email.value,
-        "message": contactForm.message.value
-    }).then(
-        function (response) {
-            // Success sending email
-        },
-        function (error) {
-            console.log("FAILED", error);
-        }
-    );
-    return false;  // To block from loading a new page
+//  function sendEmail(contactForm) {
+//     emailjs.init("user_cQ4AB0KpJse0GG5cv2LdL");
+//     emailjs.send("service_ih1qkca", "template_wod5ktu", {
+//         "from_name": contactForm.fromname.value,
+//         "from_email": contactForm.email.value,
+//         "message": contactForm.message.value
+//     }).then(
+//         function (response) {
+//             // Success sending email
+//         },
+//         function (error) {
+//             console.log("FAILED", error);
+//         }
+//     );
+//     return false;  // To block from loading a new page
+// }
+
+function sendEmail(contactForm) {
+   emailjs.init("user_cQ4AB0KpJse0GG5cv2LdL");
+   let name = document.getElementById(fromname);
+   let email = document.getElementById(email)
+   let msg = document.getElementById(message)
+   emailjs.send("service_ih1qkca", "template_wod5ktu", {
+       "from_name": name.value,
+       "from_email": email.value,
+       "message": msg.value
+   }).then(
+       function (response) {
+           // Success sending email
+       },
+       function (error) {
+           console.log("FAILED", error);
+       }
+   );
+   return false;  // To block from loading a new page
 }
+
 
