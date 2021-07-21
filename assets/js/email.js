@@ -61,7 +61,7 @@
 //     return false;  // To block from loading a new page
 // }
 
-function sendEmail(contactForm) {
+function sendEmail(name, email, message) {
    emailjs.init("user_cQ4AB0KpJse0GG5cv2LdL");
    let name = document.getElementById(fromname);
    let email = document.getElementById(email)
