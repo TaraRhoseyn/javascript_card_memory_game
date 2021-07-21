@@ -47,7 +47,7 @@
  function sendEmail(contactForm) {
     emailjs.init("user_cQ4AB0KpJse0GG5cv2LdL");
     emailjs.send("gmail", "template_wod5ktu", {
-        "from_name": contactForm.fullname.value,
+        "from_name": contactForm.fromname.value,
         "from_email": contactForm.email.value,
         "message": contactForm.message.value
     }).then(
