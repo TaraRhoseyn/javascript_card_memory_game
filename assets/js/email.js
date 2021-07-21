@@ -61,15 +61,15 @@
 //     return false;  // To block from loading a new page
 // }
 
-function sendEmail(name, email, message) {
+function sendEmail(fullname, email, message) {
    emailjs.init("user_cQ4AB0KpJse0GG5cv2LdL");
-   let name = document.getElementById(fromname);
+   let fullname = document.getElementById(fromname);
    let email = document.getElementById(email)
-   let msg = document.getElementById(message)
+   let message = document.getElementById(message)
    emailjs.send("service_ih1qkca", "template_wod5ktu", {
-       "from_name": name.value,
+       "from_name": fullname.value,
        "from_email": email.value,
-       "message": msg.value
+       "message": message.value
    }).then(
        function (response) {
            // Success sending email
