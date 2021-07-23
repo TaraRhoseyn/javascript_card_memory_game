@@ -12,7 +12,7 @@
         <link rel="stylesheet" href="assets/css/style.css">
     </head>
     <body>
-        <header id="introduction-header">
+        <header id="introduction-header"> 
             <div class="container text-center">
                 <h1 class="mt-5">MATCH THE FRUITS</h1>
                 <h2 class="mt-3 mb-5">CARD MEMORY GAME</h2>
@@ -20,7 +20,7 @@
         </header>
         <main>
             <section id="timer-and-home">
-                <a href="index.html" id="return-home" class="text-center home-button" role="button">Return Home</a>
+                <a href="index.html" id="return-home" class="hvr-grow text-center home-button" role="button">Return Home</a>
                 <div id="timer"><i class="far fa-clock"></i> <span id="minutes"></span>:<span id="seconds"></span> </div>
             </section>
             <section id="introduction-section">
@@ -42,10 +42,13 @@
             <div id="board" class="row"></div>
             <div id="board-content" class="text-center container">
                 <h3 id="score-text">Score: <span id="result"></span></h3>
-                <button id="reset" class="mx-2 mb-5">Reset Game</button>
-                <a href="contact.html" id="feedback" class="text-center button mx-2 mb-5" role="button">Give Feedback</a>
+                <button id="reset" class="mx-2 mb-5 hvr-grow">Reset Game</button>
+                <a href="contact.html" id="feedback" class="hvr-grow text-center button mx-2 mb-5" role="button">Give Feedback</a>
             </div>
         </main>
+        <footer class="text-center">
+            
+        </footer>
         <!-- Bug fix: 'async' attribute in script tag was causing DOMContentLoaded event listener to fail to execute. 'async' removed -->
         <!-- Bug fix: Change order of js scripts loaded to ensure all arrays using the .slice method work correctly -->
         <script src="assets/js/hard-game.js"></script>
