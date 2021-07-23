@@ -36,13 +36,6 @@ button {
     border-radius: 4px;
 }
 
-.button {
-    background-color: #6FCF97;
-    font-size: 20px;
-    border-style: none;
-    border-radius: 4px;
-}
-
 a {
     color: #000;
     text-decoration: none;
@@ -52,9 +45,28 @@ a:hover {
     color: #000;
 }
 
+.button {
+    background-color: #868686;
+    font-size: 20px;
+    border-style: none;
+    border-radius: 4px;
+}
+
+#return-home {
+    border: #6FCF97!important;
+    background-color: rgb(253, 47, 47);
+    padding: 2px;
+    color: #fff;
+    border-radius: 4px;
+    margin-left: 20%;
+    margin-top: 0;
+    float: left;
+}
+
 #board {
     margin: 0 auto;
     margin-bottom: 40px;
+    clear: both;
 }
  
 @media screen and (min-width: 900px) {

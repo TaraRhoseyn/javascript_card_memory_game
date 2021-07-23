@@ -3,7 +3,7 @@
 // Hides game until game difficulty level is selected
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById('board').classList.add('no-display');
-    document.getElementById("timer").classList.add('no-display');
+    document.getElementById("timer-and-home").classList.add('no-display');
     document.getElementById("board-content").classList.add('no-display');
 });
 
@@ -11,7 +11,7 @@ document.addEventListener("DOMContentLoaded", () => {
 // Add removes introductory information
 function displayGame() {
     document.getElementById('board').classList.remove('no-display');
-    document.getElementById("timer").classList.remove('no-display');
+    document.getElementById("timer-and-home").classList.remove('no-display');
     document.getElementById("introduction-section").remove();
     document.getElementById("start-game-prompt").remove();
     document.getElementById("board-content").classList.remove('no-display');
@@ -46,7 +46,6 @@ var easyCardsSelectedId = [];
 var easyCardsRight = [];
 
 document.getElementById('easy-button').addEventListener("click", startEasyGame);
-
 
 function startEasyGame() {
     displayGame();
