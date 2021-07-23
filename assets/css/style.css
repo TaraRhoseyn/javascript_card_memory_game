@@ -36,6 +36,13 @@ button {
     border-radius: 4px;
 }
 
+.button {
+    background-color: #6FCF97;
+    font-size: 20px;
+    border-style: none;
+    border-radius: 4px;
+}
+
 #board {
     margin: 0 auto;
     margin-bottom: 40px;
