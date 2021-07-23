@@ -18,6 +18,7 @@ document.getElementById('hard-button').addEventListener("click", startHardGame);
 function startHardGame() {
     displayGame();
     createHardBoard();
+    document.getElementById('reset').addEventListener("click", resetHardGame);
 };
 
 const fruitCardsHard = [
@@ -84,4 +85,22 @@ function checkHardMatch() {
     if (hardCardsRight.length === fruitCardsHard.length/2) {
         resultHardDisplay.textContent = 'Congrats. You found them all!'
     }
+}
+function resetHardGame() {
+    hardCardsSelected = [];
+    hardCardsSelectedId = [];
+    hardCardsRight = [];
+    hardCards = document.querySelectorAll('img')
+    fruitCardsHard.sort(() => 0.5 - Math.random())
+    hardCards.forEach((c) => {
+        c.setAttribute('src', './assets/images/fruit-card-back.png');
+    });
+    resultHardDisplay.textContent = `0`;
+    resetTimer();
+};
+
+function resetTimer() {
+    document.getElementById("seconds").innerHTML = `00`
+    document.getElementById("minutes").innerHTML = `00`
+    totalSeconds = `0`;
 }
