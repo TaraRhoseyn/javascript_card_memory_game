@@ -14,12 +14,14 @@
     <body>
         <h1 class="text-center my-5">Get in touch</h1>
         <p class="text-center">We'd love to hear your feedback about the game. Let us know what you enjoyed or didn't enjoy and we'll factor your feedback into our next round of game development for future releases.</p>
-        <form id="contact-form" onsubmit="return sendEmail(this);">
-            <input type="text" id="fromname" placeholder="from name">
-            <input type="email" id="email" placeholder="from email">
-            <textarea type="text" id="message" placeholder="Your message"></textarea>
-            <button type="submit"id='message-button'>Send message</button>
-        </form>
+        <div class="container">
+            <form id="contact-form" onsubmit="return sendEmail(this);">
+                <input type="text" id="fromname" class="my-5 form-elem" placeholder="Your name">
+                <input type="email" id="email" class="my-5 form-elem" placeholder="Your email address">
+                <textarea type="text" id="message" class="my-5 form-elem" placeholder="Your message"></textarea>
+                <button type="submit" class="my-5 form-elem" id='message-button'>Send message</button>
+            </form>
+        </div>
         <script src="assets/js/email.js"></script>
     </body>
 </html>

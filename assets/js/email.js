@@ -1,6 +1,7 @@
 document.getElementById('message-button').addEventListener("click", sendEmail);
 
 // Credit: Code Institue and Email JS
+// Bug fix: Use contactForm method to prevent form closing
 function sendEmail(contactForm) {
     emailjs.init("user_cQ4AB0KpJse0GG5cv2LdL");
     emailjs.send("service_ih1qkca", "template_wod5ktu", {

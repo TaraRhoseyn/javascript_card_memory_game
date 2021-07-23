@@ -78,22 +78,8 @@ button {
     margin-left: 70%;
 }
 
-/* .board-content {
-    width: 100%;
-    position: absolute;
+.form-elem {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
 }
-
-.board-content h3 {
-    border: none;
-    float: left;
-    margin: 0px;
-    padding: 0px;
-    position: relative;
-}
-
-.board-content > .reset {
-    float: right;
-    width: 1008px;
-    height: 30px;
-    position: relative;
-} */
