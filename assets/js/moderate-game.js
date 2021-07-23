@@ -18,6 +18,7 @@ document.getElementById('moderate-button').addEventListener("click", startModera
 function startModerateGame() {
     displayGame();
     createModBoard();
+    document.getElementById('reset').addEventListener("click", resetModGame);
 };
 
 // Inserts back content hidden upon DOM loaded
@@ -91,3 +92,16 @@ function checkMatch() {
         resultDisplay.textContent = 'Congrats. You found them all!'
     }
 }
+
+function resetModGame() {
+    modCardsSelected = [];
+    modCardsSelectedId = [];
+    modCardsRight = [];
+    modCards = document.querySelectorAll('img')
+    fruitCardsModerate.sort(() => 0.5 - Math.random())
+    modCards.forEach((c) => {
+        c.setAttribute('src', './assets/images/fruit-card-back.png');
+    });
+    resultEasyDisplay.textContent = `0`;
+    resetTimer();
+};
