@@ -3,9 +3,20 @@
 // Hides game until game difficulty level is selected
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById('board').classList.add('no-display');
-    document.getElementById('score-text').classList.add('no-display');
     document.getElementById("timer").classList.add('no-display');
+    document.getElementById("board-content").classList.add('no-display');
 });
+
+// Inserts back content hidden upon DOM loaded
+// Add removes introductory information
+function displayGame() {
+    document.getElementById('board').classList.remove('no-display');
+    document.getElementById("timer").classList.remove('no-display');
+    document.getElementById("introduction-section").remove();
+    document.getElementById("start-game-prompt").remove();
+    document.getElementById("board-content").classList.remove('no-display');
+    setTimer();
+}
 
 // Credit for timer & reset timer functions: user efuzz on Stack Overflow. https://stackoverflow.com/questions/65091796/reset-a-count-up-timer-in-javascript
 setInterval(setTimer, 1000);

@@ -3,7 +3,6 @@
 // Hides game until game difficulty level is selected
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById('board').classList.add('no-display');
-    document.getElementById('score-text').classList.add('no-display');
 });
 
 // Global variables

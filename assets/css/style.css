@@ -43,6 +43,15 @@ button {
     border-radius: 4px;
 }
 
+a {
+    color: #000;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #000;
+}
+
 #board {
     margin: 0 auto;
     margin-bottom: 40px;

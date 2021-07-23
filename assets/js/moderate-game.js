@@ -1,11 +1,3 @@
-// @ts-nocheck
-
-// Hides game until game difficulty level is selected
-document.addEventListener("DOMContentLoaded", () => {
-    document.getElementById('board').classList.add('no-display');
-    document.getElementById('score-text').classList.add('no-display');
-});
-
 // Global variables
 const modGameGrid = document.querySelector('#board');
 const resultDisplay = document.querySelector('#result');
@@ -20,17 +12,6 @@ function startModerateGame() {
     createModBoard();
     document.getElementById('reset').addEventListener("click", resetModGame);
 };
-
-// Inserts back content hidden upon DOM loaded
-// Add removes introductory information
-function displayGame() {
-    document.getElementById('board').classList.remove('no-display');
-    document.getElementById('score-text').classList.remove('no-display');
-    document.getElementById("timer").classList.remove('no-display');
-    document.getElementById("introduction-section").remove();
-    document.getElementById("start-game-prompt").remove();
-    setTimer();
-}
 
 // Array of card objects to be added to DOM
 const fruitCardsModerate = fruitCardsHard.slice(0,12)

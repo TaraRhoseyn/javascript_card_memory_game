@@ -39,10 +39,10 @@
             </section>
             <!-- Generate the game -->
             <div id="board" class="row"></div>
-            <div id="board-content text-center">
+            <div id="board-content" class="text-center container">
                 <h3 id="score-text">Score: <span id="result"></span></h3>
                 <button id="reset">Reset Game</button>
-                <button class="text-center" type="button" data-bs-toggle="modal" data-bs-target="#signUpModal">Give Feedback</button>
+                <a href="contact.html" id="feedback" class="text-center button" role="button">Give Feedback</a>
             </div>
         </main>
         <!-- Bug fix: 'async' attribute in script tag was causing DOMContentLoaded event listener to fail to execute. 'async' removed -->
