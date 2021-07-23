@@ -12,13 +12,13 @@ body {
 h1 {
     font-family: 'Rokkitt', sans-serif;
     font-size: 50px;
-    letter-spacing: 16px;
+    letter-spacing: 10px;
 }
 
 h2 {
     font-family: 'Rokkitt', sans-serif;
     font-size: 25px;
-    letter-spacing: 5px;
+    letter-spacing: 3px;
 }
 
 h3 {
