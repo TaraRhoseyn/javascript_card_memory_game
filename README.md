@@ -30,6 +30,13 @@
     2. [Media](#media)
     3. [Acknowledgements](#acknowledgements)
 
+### Wireframes
+
+Wireframes:
+
+- [Easy mode of the game](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/wireframes/wireframe-easy-game.pdf)
+- [Moderate mode of the game](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/wireframes/wireframe-moderate-game.pdf)
+- [Hard mode of the game](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/wireframes/wireframe-hard-game.pdf)
 
 ## Testing
 
