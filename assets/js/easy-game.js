@@ -52,6 +52,7 @@ function startEasyGame() {
     displayGame();
     createEasyBoard();
     document.getElementById('reset').addEventListener("click", resetEasyGame);
+    counter.innerHTML = `0`;
 };
 
 const fruitCardsEasy = fruitCardsModerate.slice(0, 6);
@@ -85,28 +86,30 @@ function checkEasyMatch() {
     var easyCards = document.querySelectorAll('img')
     const easyCardOneId = easyCardsSelectedId[0];
     const easyCardTwoId = easyCardsSelectedId[1];
-    const countedCards = [];
-    countedCards.push(easyCardsSelected)
     // Bug fix: test easyCardsSelected for true equality, not easyCardsSelectedId
     if (easyCardsSelected[0] === easyCardsSelected[1]) {
         easyCardsRight.push(easyCardsSelected);
+        moveCounter();
     } else {
         // Resets card back to card back is match is not found
         easyCards[easyCardOneId].setAttribute('src', './assets/images/fruit-card-back.png');
         easyCards[easyCardTwoId].setAttribute('src', './assets/images/fruit-card-back.png');
         easyCards[easyCardOneId].setAttribute('alt', 'Card back, select to flip over');
         easyCards[easyCardTwoId].setAttribute('alt', 'Card back, select to flip over');
+        moveCounter();
     }
     // Resets the array
     easyCardsSelected = [];
     easyCardsSelectedId = [];
-    // Updates counter
-    counter.textContent = countedCards.length;
     // Updates score
     resultEasyDisplay.textContent = easyCardsRight.length; 
     if (easyCardsRight.length === fruitCardsEasy.length/2) {
         resultEasyDisplay.textContent = 'Congrats. You found them all!'
     }
+};
+
+function moveCounter() {
+    counter.innerHTML ++;
 };
 
 function resetEasyGame() {
@@ -119,6 +122,7 @@ function resetEasyGame() {
         c.setAttribute('src', './assets/images/fruit-card-back.png');
     });
     resultEasyDisplay.textContent = `0`;
+    counter.innerHTML = `0`;
     resetTimer();
 };
 
