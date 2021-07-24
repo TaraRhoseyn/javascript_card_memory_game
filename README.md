@@ -29,3 +29,12 @@
     1. [Code](#code)
     2. [Media](#media)
     3. [Acknowledgements](#acknowledgements)
+
+
+## Testing
+
+### HTML Validation
+
+The [W3C Markup Validation Service](https://validator.w3.org/) was used to validate the HTML of the website. All pages passed with 0 errors. 
+
+Click on the page name to see the result: [Home](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/validation/html-validation/HTML-validation-homepage.PNG) [Contact](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/validation/html-validation/HTML-validation-contactpage.PNG) [404 page](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/validation/html-validation/HTML-validation-404page.PNG)
