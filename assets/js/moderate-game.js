@@ -11,6 +11,7 @@ function startModerateGame() {
     displayGame();
     createModBoard();
     document.getElementById('reset').addEventListener("click", resetModGame);
+    counter.innerHTML = `0`;
 };
 
 // Array of card objects to be added to DOM
@@ -55,6 +56,7 @@ function checkMatch() {
     // if the cards selected have true equality (are a match)... 
     if (modCardsSelected[0] === modCardsSelected[1]) {
         modCardsRight.push(modCardsSelected)
+        moveCounter();
     } else {
         // Resets card back to card back is match is not found
         modCards[modCardOneId].setAttribute('src', './assets/images/fruit-card-back.png')
@@ -63,6 +65,7 @@ function checkMatch() {
         // This prevents cheating the game by looking at the alt tags
         modCards[modCardOneId].setAttribute('alt', 'Card back, select to flip over')
         modCards[modCardTwoId].setAttribute('alt', 'Card back, select to flip over')
+        moveCounter();
     }
     // Resets the array
     modCardsSelected = []
@@ -84,5 +87,6 @@ function resetModGame() {
         c.setAttribute('src', './assets/images/fruit-card-back.png');
     });
     resultEasyDisplay.textContent = `0`;
+    counter.innerHTML = `0`;
     resetTimer();
 };
