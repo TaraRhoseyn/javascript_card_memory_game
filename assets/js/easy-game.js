@@ -17,7 +17,6 @@ function displayGame() {
 };
 
 // Credit for timer & reset timer functions: user efuzz on Stack Overflow. https://stackoverflow.com/questions/65091796/reset-a-count-up-timer-in-javascript
-setInterval(setTimer, 1000);
 var totalSeconds = 0;
 
 function setTimer(){
@@ -51,6 +50,9 @@ function startEasyGame() {
     createEasyBoard();
     document.getElementById('reset').addEventListener("click", resetEasyGame);
     counter.innerHTML = `0`;
+    /* Bug fix: By placing setInterval within a function that's called upon game loading
+    the timer doesn't automatically start when the page is loaded, affecting game play */
+    setInterval(setTimer, 1000);
 };
 
 const fruitCardsEasy = fruitCardsModerate.slice(0, 6);

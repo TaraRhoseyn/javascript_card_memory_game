@@ -10,6 +10,7 @@ function startModerateGame() {
     createModBoard();
     document.getElementById('reset').addEventListener("click", resetModGame);
     counter.innerHTML = `0`;
+    setInterval(setTimer, 1000);
 };
 
 const fruitCardsModerate = fruitCardsHard.slice(0,12);

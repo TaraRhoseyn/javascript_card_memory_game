@@ -12,6 +12,7 @@ function startHardGame() {
     createHardBoard();
     document.getElementById('reset').addEventListener("click", resetHardGame);
     counter.innerHTML = `0`;
+    setInterval(setTimer, 1000);
 };
 
 // Array of objects to be injected into the DOM. 
