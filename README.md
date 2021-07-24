@@ -1,5 +1,7 @@
 # Match the Cards (MS2)
 
+![Responsive mockup of the website](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/mockup/responsive-mockup.PNG)
+
 [View the deployed website.](https://tararhoseyn.github.io/CI_MS2_CardMemoryGame/)
 
 ## Table of Content
