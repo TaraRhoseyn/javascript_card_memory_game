@@ -151,3 +151,7 @@ footer {
 #play-rules {
     clear: both;
 }
+
+#counter, #score-text {
+    font-size: 25px;
+}
