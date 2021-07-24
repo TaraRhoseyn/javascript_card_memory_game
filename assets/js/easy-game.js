@@ -14,7 +14,7 @@ function displayGame() {
     document.getElementById("start-game-prompt").remove();
     document.getElementById("board-content").classList.remove('no-display');
     setTimer();
-}
+};
 
 // Credit for timer & reset timer functions: user efuzz on Stack Overflow. https://stackoverflow.com/questions/65091796/reset-a-count-up-timer-in-javascript
 setInterval(setTimer, 1000);
@@ -26,7 +26,7 @@ function setTimer(){
     seconds.innerHTML = pad(totalSeconds%60);
     var minutes = document.getElementById("minutes")
     minutes.innerHTML = pad(parseInt(totalSeconds/60));
-}
+};
 
 function pad(val){
     var valString = val + "";
@@ -34,7 +34,7 @@ function pad(val){
         return "0" + valString;
     } else { return valString;
     }
-}
+};
 
 // Variables for easy game
 const easyGameGrid = document.querySelector('#board');

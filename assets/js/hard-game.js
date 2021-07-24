@@ -101,10 +101,3 @@ function resetHardGame() {
     counter.innerHTML = `0`;
     resetTimer();
 };
-
-// Resets timer
-function resetTimer() {
-    document.getElementById("seconds").innerHTML = `00`
-    document.getElementById("minutes").innerHTML = `00`
-    totalSeconds = `0`;
-};
