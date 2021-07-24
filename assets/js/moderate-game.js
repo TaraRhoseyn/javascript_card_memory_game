@@ -17,7 +17,6 @@ const fruitCardsModerate = fruitCardsHard.slice(0,12);
 // Creates game board. Credit: Ania Kubow.
 function createModBoard() {
     fruitCardsModerate.sort(() => 0.5 - Math.random())
-    modGameGrid.style.width = '80%';
     for (let i = 0; i < fruitCardsModerate.length; i++) {
         var modCard = document.createElement('img')
         modCard.setAttribute('src', './assets/images/fruit-card-back.png')

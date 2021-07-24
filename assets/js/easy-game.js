@@ -61,7 +61,6 @@ function createEasyBoard() {
     be called within a seperate function to allow
     .slice method in fruitCardsEasy to work */
     fruitCardsEasy.sort(() => 0.5 - Math.random())
-    easyGameGrid.style.width = '50%';
     for (let i = 0; i < fruitCardsEasy.length; i++) {
         var easyCard = document.createElement('img');
         easyCard.setAttribute('src', './assets/images/fruit-card-back.png');

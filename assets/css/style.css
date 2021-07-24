@@ -108,6 +108,24 @@ footer {
     .fruitCard {
         padding: 40px;
    }
+
+   #board {
+       width: 50%;
+   }
+}
+
+@media screen and (max-width: 899px) {
+    .fruitCard {
+        margin-bottom: 10px;
+    }
+
+    #board {
+        margin-top: 10px;
+    }
+
+    #return-home {
+        margin-left: 5px;
+    }
 }
 
 .fruitModCard {
