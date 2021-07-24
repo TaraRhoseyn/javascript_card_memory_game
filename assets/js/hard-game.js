@@ -1,9 +1,9 @@
-// Global variables
+// Variables for hard mode of game
 const hardGameGrid = document.querySelector('#board');
 const resultHardDisplay = document.querySelector('#result');
-var hardCardsSelected = []
-var hardCardsSelectedId = []
-var hardCardsRight = []
+var hardCardsSelected = [];
+var hardCardsSelectedId = [];
+var hardCardsRight = [];
 
 document.getElementById('hard-button').addEventListener("click", startHardGame);
 
@@ -14,6 +14,8 @@ function startHardGame() {
     counter.innerHTML = `0`;
 };
 
+// Array of objects to be injected into the DOM. 
+// This array is what the cards for the moderate & easy modes are based on
 const fruitCardsHard = [
     { name: "banana", img: "./assets/images/fruit-one-banana.png", },
     { name: "banana", img: "./assets/images/fruit-one-banana.png", },
@@ -35,6 +37,7 @@ const fruitCardsHard = [
     { name: "apple", img: "./assets/images/fruit-nine-apple.png", },
 ];
 
+// Creates game board. Credit: Ania Kubow.
 function createHardBoard() {
     fruitCardsHard.sort(() => 0.5 - Math.random())
     hardGameGrid.style.width = '70%';
@@ -47,8 +50,9 @@ function createHardBoard() {
         hardCard.addEventListener('click', flipHardCard)
         hardGameGrid.appendChild(hardCard)
     }
-}
+};
 
+// Reveals front card faces and calls function to check for a match
 function flipHardCard() {
     var hardCardId = this.getAttribute('data-id')
     hardCardsSelected.push(fruitCardsHard[hardCardId].name)
@@ -58,8 +62,9 @@ function flipHardCard() {
     if (hardCardsSelected.length === 2) {
         setTimeout(checkHardMatch, 300)
     }
-}
+};
 
+// Check for a match
 function checkHardMatch() {
     var hardCards = document.querySelectorAll('img')
     const hardCardOneId = hardCardsSelectedId[0]
@@ -80,7 +85,9 @@ function checkHardMatch() {
     if (hardCardsRight.length === fruitCardsHard.length/2) {
         resultHardDisplay.textContent = 'Congrats. You found them all!'
     }
-}
+};
+
+// Resets game
 function resetHardGame() {
     hardCardsSelected = [];
     hardCardsSelectedId = [];
@@ -95,8 +102,9 @@ function resetHardGame() {
     resetTimer();
 };
 
+// Resets timer
 function resetTimer() {
     document.getElementById("seconds").innerHTML = `00`
     document.getElementById("minutes").innerHTML = `00`
     totalSeconds = `0`;
-}
+};

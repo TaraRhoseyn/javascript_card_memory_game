@@ -1,11 +1,9 @@
-// Global variables
+// Variables for moderate game
 const modGameGrid = document.querySelector('#board');
 const resultDisplay = document.querySelector('#result');
-var modCardsSelected = []
-var modCardsSelectedId = []
-var modCardsRight = []
-
-document.getElementById('moderate-button').addEventListener("click", startModerateGame);
+var modCardsSelected = [];
+var modCardsSelectedId = [];
+var modCardsRight = [];document.getElementById('moderate-button').addEventListener("click", startModerateGame);
 
 function startModerateGame() {
     displayGame();
@@ -14,14 +12,10 @@ function startModerateGame() {
     counter.innerHTML = `0`;
 };
 
-// Array of card objects to be added to DOM
-const fruitCardsModerate = fruitCardsHard.slice(0,12)
+const fruitCardsModerate = fruitCardsHard.slice(0,12);
 
-// Credit for basis of function: Ania Kubow
+// Creates game board. Credit: Ania Kubow.
 function createModBoard() {
-    // Bug fix: .sort function (shuffles array) has to 
-    // be called within a seperate function to allow
-    // .slice method in fruitCardsEasy to work
     fruitCardsModerate.sort(() => 0.5 - Math.random())
     modGameGrid.style.width = '80%';
     for (let i = 0; i < fruitCardsModerate.length; i++) {
@@ -33,27 +27,25 @@ function createModBoard() {
         modCard.addEventListener('click', flipModCard)
         modGameGrid.appendChild(modCard)
     }
-}
+};
 
+// Reveals front card faces and calls function to check for a match
 function flipModCard() {
-    var modCardId = this.getAttribute('data-id') // getting attribute from function above
+    var modCardId = this.getAttribute('data-id') 
     modCardsSelected.push(fruitCardsModerate[modCardId].name)
     modCardsSelectedId.push(modCardId)
     this.setAttribute('alt', fruitCardsModerate[modCardId].name)
     this.setAttribute('src', fruitCardsModerate[modCardId].img)
     if (modCardsSelected.length === 2) {
-        setTimeout(checkMatch, 300) // this calls function checkMatch after 500 milliseconds
+        setTimeout(checkMatch, 300) 
     }
-}
+};
 
 // Check for a match
 function checkMatch() {
-    // Variable grabs all img elements (the created cards)
     var modCards = document.querySelectorAll('img')
-    // Variable grabs 1st [0] and 2nd value in array
     const modCardOneId = modCardsSelectedId[0] 
     const modCardTwoId = modCardsSelectedId[1]
-    // if the cards selected have true equality (are a match)... 
     if (modCardsSelected[0] === modCardsSelected[1]) {
         modCardsRight.push(modCardsSelected)
         moveCounter();
@@ -67,16 +59,16 @@ function checkMatch() {
         modCards[modCardTwoId].setAttribute('alt', 'Card back, select to flip over')
         moveCounter();
     }
-    // Resets the array
+    // Resets arrays and HTML element
     modCardsSelected = []
     modCardsSelectedId = []
-    // Updates score
     resultDisplay.textContent = modCardsRight.length 
     if (modCardsRight.length === fruitCardsModerate.length/2) {
         resultDisplay.textContent = 'Congrats. You found them all!'
     }
 }
 
+// Resets moderate game
 function resetModGame() {
     modCardsSelected = [];
     modCardsSelectedId = [];

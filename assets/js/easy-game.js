@@ -1,5 +1,3 @@
-// @ts-nocheck
-
 // Hides game until game difficulty level is selected
 document.addEventListener("DOMContentLoaded", () => {
     document.getElementById('board').classList.add('no-display');
@@ -38,7 +36,7 @@ function pad(val){
     }
 }
 
-// Global variables
+// Variables for easy game
 const easyGameGrid = document.querySelector('#board');
 const resultEasyDisplay = document.querySelector('#result');
 const counter = document.querySelector('#count');
@@ -57,7 +55,11 @@ function startEasyGame() {
 
 const fruitCardsEasy = fruitCardsModerate.slice(0, 6);
 
+// Credit for basis of function: Ania Kubow
 function createEasyBoard() {
+    /* Bug fix: .sort function (shuffles array) has to 
+    be called within a seperate function to allow
+    .slice method in fruitCardsEasy to work */
     fruitCardsEasy.sort(() => 0.5 - Math.random())
     easyGameGrid.style.width = '50%';
     for (let i = 0; i < fruitCardsEasy.length; i++) {
@@ -71,6 +73,7 @@ function createEasyBoard() {
     }
 };
 
+// Reveals front card faces and calls function to check for a match
 function flipEasyCard() {
     var easyCardId = this.getAttribute('data-id') // getting attribute from function above
     easyCardsSelected.push(fruitCardsEasy[easyCardId].name);
@@ -82,6 +85,7 @@ function flipEasyCard() {
     };
 };
 
+// Check for a match
 function checkEasyMatch() {
     var easyCards = document.querySelectorAll('img')
     const easyCardOneId = easyCardsSelectedId[0];
@@ -89,13 +93,17 @@ function checkEasyMatch() {
     // Bug fix: test easyCardsSelected for true equality, not easyCardsSelectedId
     if (easyCardsSelected[0] === easyCardsSelected[1]) {
         easyCardsRight.push(easyCardsSelected);
+        // Moves the counter
         moveCounter();
     } else {
         // Resets card back to card back is match is not found
         easyCards[easyCardOneId].setAttribute('src', './assets/images/fruit-card-back.png');
         easyCards[easyCardTwoId].setAttribute('src', './assets/images/fruit-card-back.png');
+        /* Reverts alt for card images back to blank if not a match
+        This prevents cheating the game by looking at the alt tags */
         easyCards[easyCardOneId].setAttribute('alt', 'Card back, select to flip over');
         easyCards[easyCardTwoId].setAttribute('alt', 'Card back, select to flip over');
+        // Moves the counter
         moveCounter();
     }
     // Resets the array
@@ -108,10 +116,13 @@ function checkEasyMatch() {
     }
 };
 
+// Moves the counter
+// Credit for counting moves method: Michelle Toscano. https://github.com/Michelle3334/freaky_memory/blob/master/assets/js/script.js
 function moveCounter() {
     counter.innerHTML ++;
 };
 
+// Resets the game by clearing arrays and elements, and shuffling cards
 function resetEasyGame() {
     easyCardsSelected = [];
     easyCardsSelectedId = [];
@@ -126,6 +137,7 @@ function resetEasyGame() {
     resetTimer();
 };
 
+// Resets the timer by clearing the HTML
 function resetTimer() {
     document.getElementById("seconds").innerHTML = `00`
     document.getElementById("minutes").innerHTML = `00`
