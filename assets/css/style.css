@@ -114,7 +114,7 @@ footer {
    }
 }
 
-@media screen and (max-width: 899px) {
+@media screen and (min-width: 300px) {
     .fruitCard {
         margin-bottom: 10px;
     }
@@ -122,9 +122,21 @@ footer {
     #board {
         margin-top: 10px;
     }
+}
 
+@media screen and (max-width: 900px) {
     #return-home {
         margin-left: 5px;
+    }
+}
+
+@media screen and (min-width: 300px) {
+    .fruitCard {
+        margin-bottom: 10px;
+    }
+
+    #board {
+        width: 80%;
     }
 }
 
