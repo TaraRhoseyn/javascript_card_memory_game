@@ -63,3 +63,19 @@ The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMem
 [Google Lighthouse](https://developers.google.com/web/tools/lighthouse/) was used to measure the performance and speed of the website. Each page passed with at least 99% score on performance, 100% on accessibility, 93% and 89% on SEO.
 
 [View a screenshot of the passes](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/validation/lighthouse-performance/lighthouse-performance.PNG)
+
+### Performing tests on various devices 
+
+#### Devices tested: 
+
+- Huawei PRA-LX1
+- iPhone SE 
+- LENOVO IdeaCentre 3 Desktop PC with a 34" monitor
+- DELL Inspiron 15 5593
+
+### Browser compatibility
+
+- **Microsoft Edge**: Website and user stories work as expected. 
+- **Google Chrome**: Website and user stories work as expected. 
+- **Safari**: Website and user stories work as expected. 
+- **Firefox**: Website and user stories work as expected. 
