@@ -83,7 +83,8 @@ function checkHardMatch() {
     hardCardsSelectedId =[]
     resultHardDisplay.textContent = hardCardsRight.length
     if (hardCardsRight.length === fruitCardsHard.length/2) {
-        resultHardDisplay.textContent = 'Congrats. You found them all!'
+        alert('Yay, you found them all! Play again to beat your time or return home to try another difficulty.');
+        resetHardGame();
     }
 };
 

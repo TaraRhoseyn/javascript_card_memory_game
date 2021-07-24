@@ -64,7 +64,8 @@ function checkMatch() {
     modCardsSelectedId = []
     resultDisplay.textContent = modCardsRight.length 
     if (modCardsRight.length === fruitCardsModerate.length/2) {
-        resultDisplay.textContent = 'Congrats. You found them all!'
+        alert('Yay, you found them all! Play again to beat your time or return home to try another difficulty.');
+        resetModGame();
     }
 }
 

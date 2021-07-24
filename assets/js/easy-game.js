@@ -113,7 +113,8 @@ function checkEasyMatch() {
     // Updates score
     resultEasyDisplay.textContent = easyCardsRight.length; 
     if (easyCardsRight.length === fruitCardsEasy.length/2) {
-        resultEasyDisplay.textContent = 'Congrats. You found them all!'
+        alert('Yay, you found them all! Play again to beat your time or return home to try another difficulty.');
+        resetEasyGame();
     }
 };
 
