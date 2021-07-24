@@ -50,3 +50,9 @@ The CSS passed with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryG
 The [WAVE WebAIM web accessibility evaluation tool](https://wave.webaim.org/report#/https://tararhoseyn.github.io/CardiffSwimCentreMS1/) was used to ensure the website met high accessibility standards. 
 
 The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/validation/accessibility/wave-accessibility-pass.PNG).
+
+### Performance
+
+[Google Lighthouse](https://developers.google.com/web/tools/lighthouse/) was used to measure the performance and speed of the website. Each page passed with at least 99% score on performance, 100% on accessibility, 93% and 89% on SEO.
+
+[View a screenshot of the passes](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/validation/lighthouse-performance/lighthouse-performance.PNG)
