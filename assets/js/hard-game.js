@@ -11,6 +11,7 @@ function startHardGame() {
     displayGame();
     createHardBoard();
     document.getElementById('reset').addEventListener("click", resetHardGame);
+    counter.innerHTML = `0`;
 };
 
 const fruitCardsHard = [
@@ -64,12 +65,14 @@ function checkHardMatch() {
     const hardCardOneId = hardCardsSelectedId[0]
     const hardCardTwoId = hardCardsSelectedId[1]
     if (hardCardsSelected[0] === hardCardsSelected[1]) {
-        hardCardsRight.push(hardCardsSelected)
+        hardCardsRight.push(hardCardsSelected);
+        moveCounter();
     } else {
         hardCards[hardCardOneId].setAttribute('src', './assets/images/fruit-card-back.png')
         hardCards[hardCardTwoId].setAttribute('src', './assets/images/fruit-card-back.png')
         hardCards[hardCardOneId].setAttribute('alt', 'Card back, select to flip over')
         hardCards[hardCardTwoId].setAttribute('alt', 'Card back, select to flip over')
+        moveCounter();
     }
     hardCardsSelected = []
     hardCardsSelectedId =[]
@@ -88,6 +91,7 @@ function resetHardGame() {
         c.setAttribute('src', './assets/images/fruit-card-back.png');
     });
     resultHardDisplay.textContent = `0`;
+    counter.innerHTML = `0`;
     resetTimer();
 };
 
