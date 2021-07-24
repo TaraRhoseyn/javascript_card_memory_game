@@ -41,6 +41,7 @@ function pad(val){
 // Global variables
 const easyGameGrid = document.querySelector('#board');
 const resultEasyDisplay = document.querySelector('#result');
+const counter = document.querySelector('#count');
 var easyCardsSelected = [];
 var easyCardsSelectedId = [];
 var easyCardsRight = [];
@@ -84,6 +85,8 @@ function checkEasyMatch() {
     var easyCards = document.querySelectorAll('img')
     const easyCardOneId = easyCardsSelectedId[0];
     const easyCardTwoId = easyCardsSelectedId[1];
+    const countedCards = [];
+    countedCards.push(easyCardsSelected)
     // Bug fix: test easyCardsSelected for true equality, not easyCardsSelectedId
     if (easyCardsSelected[0] === easyCardsSelected[1]) {
         easyCardsRight.push(easyCardsSelected);
@@ -97,6 +100,8 @@ function checkEasyMatch() {
     // Resets the array
     easyCardsSelected = [];
     easyCardsSelectedId = [];
+    // Updates counter
+    counter.textContent = countedCards.length;
     // Updates score
     resultEasyDisplay.textContent = easyCardsRight.length; 
     if (easyCardsRight.length === fruitCardsEasy.length/2) {
