@@ -44,3 +44,9 @@ Click on the page name to see the result: [Home](https://github.com/TaraRhoseyn/
 The [W3C CSS Validation Service](http://jigsaw.w3.org/css-validator/validator) was used to validate the CSS of the website. 
 
 The CSS passed with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/validation/css-validation/css-validation.PNG). 
+
+### Accessibility 
+
+The [WAVE WebAIM web accessibility evaluation tool](https://wave.webaim.org/report#/https://tararhoseyn.github.io/CardiffSwimCentreMS1/) was used to ensure the website met high accessibility standards. 
+
+The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/validation/accessibility/wave-accessibility-pass.PNG).
