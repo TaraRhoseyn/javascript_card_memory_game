@@ -16,7 +16,7 @@ function displayGame() {
     setTimer();
 };
 
-// Credit for timer & reset timer functions: user efuzz on Stack Overflow. https://stackoverflow.com/questions/65091796/reset-a-count-up-timer-in-javascript
+// Credit for timer & reset timer functions: user efuzz on Stack Overflow.
 var totalSeconds = 0;
 
 function setTimer(){

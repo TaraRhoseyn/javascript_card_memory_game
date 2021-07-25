@@ -81,3 +81,24 @@ The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMem
 - **Google Chrome**: Website and user stories work as expected. 
 - **Safari**: Website and user stories work as expected. 
 - **Firefox**: Website and user stories work as expected. 
+
+## Credits
+
+### Code
+
+- **Code institute** - for lesson on Email JS allowing me to use the API in email.js.
+- **Michelle Toscano** - for method of [counting moves](https://github.com/Michelle3334/freaky_memory/blob/master/assets/js/script.js) in a card memory game.
+- **Ania Kubow** - for the foundation of building [card game boards within javascript](https://www.youtube.com/watch?v=tjyDOHzKN0w).
+- **Stack overflow** - for setting up a [timer feature](https://stackoverflow.com/questions/65091796/reset-a-count-up-timer-in-javascript)
+- **Mário Gusman** from Code Institute Slack group - for code about accessibility measures in the footer.
+- **Hover.css** - for [Grow effect CSS code](https://ianlunn.github.io/Hover/)
+
+### Media
+
+All of the cards were created using [Canva Premium](https://www.canva.com/). 
+
+### Acknowledgements: 
+
+- To my fiancee Yasmine Haggar for her testing support and feedback on this project. 
+- To my mentor Mo Shami for his feedback, advice and support.
+- To the Code Institute slack community of students and alumni for their helpful advice, resources, guidance and support. 
