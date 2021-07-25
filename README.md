@@ -69,9 +69,14 @@ I have divided my user stories into two categories: first-time users and regular
 
 #### Regular visitor
 
-1. As a regular visitor, I want to be able to give feedback to improve the game over time. 
-2. As a regular visitor, I want to see my score and move counter so that I can challenge myself the next time I play to beat it. 
-3. As a regular visitor, I want to see how long it takes me to complete the game so I can challenge myself the next time I play to beat it. 
+7. As a regular visitor, I want to be able to give feedback to improve the game over time. 
+8. As a regular visitor, I want to see my score and move counter so that I can challenge myself the next time I play to beat it. 
+9. As a regular visitor, I want to see how long it takes me to complete the game so I can challenge myself the next time I play to beat it. 
+
+#### Site owner
+
+10. As a site owner, I want to be able to collect feedback from users in a simple and easy way. 
+11. As a site owner, I want users to be able to navigate the website easily so that I can  
 
 ### Wireframes
 
@@ -113,6 +118,8 @@ Wireframes:
 - Email JS was used to send emails from the website without the need for a server.
 11. [Canva](https://www.canva.com/)
 - Canva was used to create all of the card assets on the website. 
+12. [Faivcon Generator](https://www.favicon-generator.org/)
+- Favicon Generator was used to create a favicon for the website.
 
 ## Testing
 
