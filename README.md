@@ -32,6 +32,15 @@
     2. [Media](#media)
     3. [Acknowledgements](#acknowledgements)
 
+
+## Project Goals
+
+### Website owner business goals
+
+- I want users to be able to play an enjoyable and intuitive game. 
+- I want users to return to the website to continue playing the game. 
+- I want users to be able to give feedback on the game easily so that future versions are optimised for the best user experience based on user needs.
+
 ### Wireframes
 
 Wireframes:
