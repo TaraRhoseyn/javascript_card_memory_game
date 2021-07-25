@@ -50,6 +50,29 @@ Wireframes:
 
 ### Frameswork, libraries and other tools
 
+1. [Git](https://git-scm.com/)
+- Git was used for version control within VSCode to push the code to GitHub.
+2. [GitHub](https://github.com/)
+- GitHub was used as a remote repository to store project code.
+3. [Figma](https://www.figma.com/)
+-  Figma was used for wireframing all pages.
+4. [Font Awesome](https://fontawesome.com/)
+- Icons from Font Awesome were used throughout the site.
+5. [Google Fonts](https://fonts.google.com/)
+- Rokkitt and Mina from Google Fonts were used as the main heading font throughout the site.
+6. [Bootstrap v5.0](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
+- Bootstrap was used for layout, styling and responsiveness purposes. 
+7. [Hover.css](https://ianlunn.github.io/Hover/)
+- The 2D 'grow' effect from the Hover.css library was used on all buttons throughout the website.
+8. [Am I Responsive](http://ami.responsivedesign.is/)
+- Am I Responsive was used to create the multi-device mock-up you see at the start of this README.md file.
+9. [Visual Studio Code (VSCode)](https://code.visualstudio.com/)
+- VSCode was the IDE used to write the code for this project.
+10. [Email JS](https://www.emailjs.com/)
+- Email JS was used to send emails from the website without the need for a server.
+11. [Canva](https://www.canva.com/)
+- Canva was used to create all of the card assets on the website. 
+
 ## Testing
 
 ### HTML Validation
