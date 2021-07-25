@@ -8,11 +8,10 @@
 
 1. [Project Goals](#project-goals)
 2. [User Experience](#user-experience)
-    1. [Target Audience](#target-audience)
-    2. [User stories](#user-stories)
-    3. [Scope](#scope)
-    4. [Design](#design)
-    5. [Wireframes](#wireframes)
+    1. [User stories](#user-stories)
+    2. [Scope](#scope)
+    3. [Design](#design)
+    4. [Wireframes](#wireframes)
 3. [Features](#features)
 4. [Technologies Used](#technologies-used)
     1. [Languages](#languages)
@@ -49,7 +48,30 @@
 - Play a game that gives me clear feedback on my performance. 
 - Play a game that has clear objectives to winning. 
 
+## User experience
 
+I have designed the game with mobile in mind by building the responsive layout mobile-first using Bootstrap.
+
+The user experience is structured around three main goals: (a) to allow users to learn the game, (b) select the difficulty at which they'd like to play and (c) encourage users to return and play through again. The main call to actions on the website are related to replayability and encouraging users to make choices that impact their own experience of the game, for example, the game will not start until a user has decided on the difficulty level. 
+
+### User stories
+
+I have divided my user stories into two categories: first-time users and regular visitors, with the understanding that one of the key goals of the website is to encourage replayability of the game.
+
+#### First-time users
+
+1. As a first-time user, I want to understand the objective and rules of the game upfront and clearly. 
+2. As a first-time user, I want to use the game to challenge my memory. 
+3. As a first-time user, I want to be able to navigate the website quickly and with clear direction and prompts. 
+4. As a first-time user, I want to be able to play the game across all personal devices. 
+5. As a first-time user, I want to keep track of my score to monitor my performance in the game. 
+6. As a first-time user, I want to see how long it takes me to complete the game. 
+
+#### Regular visitor
+
+1. As a regular visitor, I want to be able to give feedback to improve the game over time. 
+2. As a regular visitor, I want to see my score and move counter so that I can challenge myself the next time I play to beat it. 
+3. As a regular visitor, I want to see how long it takes me to complete the game so I can challenge myself the next time I play to beat it. 
 
 ### Wireframes
 
