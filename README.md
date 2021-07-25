@@ -82,6 +82,39 @@ The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMem
 - **Safari**: Website and user stories work as expected. 
 - **Firefox**: Website and user stories work as expected. 
 
+## Deployment
+
+### GitHub Pages
+
+This website has been deployed using GitHub pages. To do the same...
+
+1. Log into your GitHub account and find the [repository](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame). 
+2. Click on 'Settings' in the repository. 
+3. Click 'Pages' in the left-hand menu once you're in Settings. 
+4. Click 'Source'.
+5. Click the dropdown menu which says 'None', then select 'Master Branch'.
+6. Wait for page to refresh automatically. 
+7. Under GitHub pages you can now find a link to the published live website. 
+
+### Forking the GitHub Repository 
+
+By forking this GitHub repository you are making a copy of the original to view or make changes without affecting the original. You can do this by following these steps...
+
+1. Log into your GitHub account and find the [repository](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame).
+2. Click 'Fork' (last button on the top right of the repository page).
+3. You will then have a copy of the repository in your own GitHub account. 
+
+### Making a Local Clone
+
+1. Log into your GitHub account and find the [repository](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame).
+2. Click on the 'Code' button (next to 'Add file'). 
+3. To clone the repository using HTTPS, under clone with HTTPS, copy the link.
+4. Then open Git Bash.
+5. Change the current working directory to where you want the cloned directory to be made.
+6. In your IDE's terminal type 'git clone' followed by the URL you copied.
+7. Press Enter. 
+8. Your local clone will now be made.
+
 ## Credits
 
 ### Code
