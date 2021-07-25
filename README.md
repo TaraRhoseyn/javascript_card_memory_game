@@ -41,7 +41,7 @@
 - I want users to return to the website to continue playing the game. 
 - I want users to be able to give feedback on the game easily so that future versions are optimised for the best user experience based on user needs.
 
-### user goals
+### User goals
 
 - Learn the rules of a game before I play. 
 - Play a game that is enjoyable and challenging. 
