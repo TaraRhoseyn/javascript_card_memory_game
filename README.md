@@ -207,6 +207,20 @@ The cards were created using Canva Premium. When clicking a card, the front is r
 2. As a first-time user, I want to use the game to challenge my memory.
 4. As a first-time user, I want to be able to play the game across all personal devices.
 
+#### Feature 5: Return Home button
+
+On all difficulty levels of the game a red button, 'Return Home', is prominent in the top left-hand corner. This is to enable users to re-select a game difficulty is they do not like the one they picked. It also enables users to revisit instructions should they need to. 
+
+![Return home button](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/features/feature-five.PNG)
+
+
+**User stories covered by this feature:** 
+
+1. As a first-time user, I want to understand the objective and rules of the game upfront and clearly.
+3. As a first-time user, I want to be able to navigate the website quickly and with clear direction and prompts.
+4. As a first-time user, I want to be able to play the game across all personal devices.
+11. As a site owner, I want users to be able to navigate the website easily so that users are more likely to have an enjoyable experience and return to the game.
+
 ### Wireframes
 
 Wireframes:
