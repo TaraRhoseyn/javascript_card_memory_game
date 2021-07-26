@@ -78,6 +78,33 @@ I have divided my user stories into two categories: first-time users and regular
 10. As a site owner, I want to be able to collect feedback from users in a simple and easy way. 
 11. As a site owner, I want users to be able to navigate the website easily so that I can  
 
+### Scope
+
+The scope of the project in it’s first release is defined by the following features:
+
+- Instructions that clearly explain the objective and mechanics of the game. 
+- A home page to select which game difficulty to play at before the game is generated. 
+- A generate game board with varying numbers of cards depending on game difficulty selected. 
+- Navigation button, such as 'Return home' once the game is generated to re-select game difficulty or revisit instructions. 
+- A reset button to reset the game. 
+- A score tracker that goes up with each correct match. 
+- A moves counter that goes up with each pair guessed. 
+- A timer to keep track of how long it takes a player to complete the game. 
+- An error page (404.html) that directs site users back to the home page (index.html) in the event of a broken URL.
+- Favicon icon to help users identify the site.
+- A contact page for the site owner to collect feedback about the game to feed back into future versions. 
+
+Features to be built into future releases: 
+
+- A scoreboard with players scores to allow users to compete with their own high score and that of others online. 
+- The ability to toggle between different 'skins' or 'themes' depending on how high a score you gain in your play through of the 'fruits' theme. 
+- Card flipping animation when a card is selected. 
+- Audio and visual animation when a matching pair is found. 
+- Audio and visual animation within the browswer when the game is completed. 
+
+Find more information on features in the [Features](#features) section.
+
+
 ### Wireframes
 
 Wireframes:
