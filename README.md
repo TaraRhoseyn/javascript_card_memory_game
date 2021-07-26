@@ -181,6 +181,32 @@ The cards were created using Canva Premium. When clicking a card, the front is r
 2. As a first-time user, I want to use the game to challenge my memory.
 4. As a first-time user, I want to be able to play the game across all personal devices.
 
+#### Feature 3: Moderate mode of the game
+
+Upon pressing 'Moderate' in the homepage, the moderate mode of the game with 12 card tiles is generated for the user. 
+
+![Moderate](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/features/feature-three.PNG)
+
+The cards were created using Canva Premium. When clicking a card, the front is revealed the users must find matching pairs. 
+
+**User stories covered by this feature:** 
+
+2. As a first-time user, I want to use the game to challenge my memory.
+4. As a first-time user, I want to be able to play the game across all personal devices.
+
+#### Feature 4: Hard mode of the game
+
+Upon pressing 'Hard' in the homepage, the moderate mode of the game with 18 card tiles is generated for the user. 
+
+![Moderate](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/features/feature-four.PNG)
+
+The cards were created using Canva Premium. When clicking a card, the front is revealed the users must find matching pairs. 
+
+**User stories covered by this feature:** 
+
+2. As a first-time user, I want to use the game to challenge my memory.
+4. As a first-time user, I want to be able to play the game across all personal devices.
+
 ### Wireframes
 
 Wireframes:
