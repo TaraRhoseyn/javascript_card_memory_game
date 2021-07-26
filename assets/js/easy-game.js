@@ -1,18 +1,18 @@
 // Hides game until game difficulty level is selected
-document.addEventListener("DOMContentLoaded", () => {
+document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('board').classList.add('no-display');
-    document.getElementById("timer-and-home").classList.add('no-display');
-    document.getElementById("board-content").classList.add('no-display');
+    document.getElementById('timer-and-home').classList.add('no-display');
+    document.getElementById('board-content').classList.add('no-display');
 });
 
 // Inserts back content hidden upon DOM loaded
 // Add removes introductory information
 function displayGame() {
     document.getElementById('board').classList.remove('no-display');
-    document.getElementById("timer-and-home").classList.remove('no-display');
-    document.getElementById("introduction-section").remove();
-    document.getElementById("start-game-prompt").remove();
-    document.getElementById("board-content").classList.remove('no-display');
+    document.getElementById('timer-and-home').classList.remove('no-display');
+    document.getElementById('introduction-section').remove();
+    document.getElementById('start-game-prompt').remove();
+    document.getElementById('board-content').classList.remove('no-display');
     setTimer();
 };
 
@@ -21,16 +21,16 @@ var totalSeconds = 0;
 
 function setTimer(){
     ++totalSeconds;
-    var seconds = document.getElementById("seconds")
+    var seconds = document.getElementById('seconds');
     seconds.innerHTML = pad(totalSeconds%60);
-    var minutes = document.getElementById("minutes")
+    var minutes = document.getElementById('minutes');
     minutes.innerHTML = pad(parseInt(totalSeconds/60));
 };
 
 function pad(val){
-    var valString = val + "";
+    var valString = val + '';
     if(valString.length < 2) {
-        return "0" + valString;
+        return '0' + valString;
     } else { return valString;
     }
 };
@@ -43,12 +43,12 @@ var easyCardsSelected = [];
 var easyCardsSelectedId = [];
 var easyCardsRight = [];
 
-document.getElementById('easy-button').addEventListener("click", startEasyGame);
+document.getElementById('easy-button').addEventListener('click', startEasyGame);
 
 function startEasyGame() {
     displayGame();
     createEasyBoard();
-    document.getElementById('reset').addEventListener("click", resetEasyGame);
+    document.getElementById('reset').addEventListener('click', resetEasyGame);
     counter.innerHTML = `0`;
     /* Bug fix: By placing setInterval within a function that's called upon game loading
     the timer doesn't automatically start when the page is loaded, affecting game play */
@@ -62,7 +62,7 @@ function createEasyBoard() {
     /* Bug fix: .sort function (shuffles array) has to 
     be called within a seperate function to allow
     .slice method in fruitCardsEasy to work */
-    fruitCardsEasy.sort(() => 0.5 - Math.random())
+    fruitCardsEasy.sort(() => 0.5 - Math.random());
     for (let i = 0; i < fruitCardsEasy.length; i++) {
         var easyCard = document.createElement('img');
         easyCard.setAttribute('src', './assets/images/fruit-card-back.png');
@@ -76,7 +76,7 @@ function createEasyBoard() {
 
 // Reveals front card faces and calls function to check for a match
 function flipEasyCard() {
-    var easyCardId = this.getAttribute('data-id') // getting attribute from function above
+    var easyCardId = this.getAttribute('data-id') // getting attribute from element clicked
     easyCardsSelected.push(fruitCardsEasy[easyCardId].name);
     easyCardsSelectedId.push(easyCardId);
     this.setAttribute('src', fruitCardsEasy[easyCardId].img);
@@ -141,7 +141,7 @@ function resetEasyGame() {
 
 // Resets the timer by clearing the HTML
 function resetTimer() {
-    document.getElementById("seconds").innerHTML = `00`
-    document.getElementById("minutes").innerHTML = `00`
+    document.getElementById('seconds').innerHTML = `00`;
+    document.getElementById('minutes').innerHTML = `00`;
     totalSeconds = `0`;
 }
