@@ -104,6 +104,26 @@ Features to be built into future releases:
 
 Find more information on features in the [Features](#features) section.
 
+### Design 
+
+My overall approach to the design came from a desire to create a gane that was fun, engaging and simple to understand. From a UX perspective, I also wanted a game where the objective and control over the experience of the game did not cause cognitive overload.
+
+#### Colour Scheme
+
+I chose to use pink and greens as the primary scheme to bring to the user's mind connotations of nature and positivity. I chose a complementary colour scheme (pink/green) to be able to draw particular attention to key call to actions.
+
+#### Typography
+
+My heading font is Rokkit from Google Fonts. I chose this font because I wanted a font that would stand out for it's robust and sharp form against the softness and vibrance of the fruit motifs. 
+
+My body font is Mina from Google Fonts. I chose this font because it had an aesthetically pleasing similarity to Rokkit, but with enough difference (particularly in font weight) to differentiate between heading and body text.
+
+#### Imagery
+
+I chose not to use photography on the website and adopted a cartoonish style instead. I did this to keep a consistent style across the website and promote a tone that was fun and engaging, particularly for children. 
+
+I created all of the cards and images of fruits in Canva Premium. 
+
 
 ### Wireframes
 
