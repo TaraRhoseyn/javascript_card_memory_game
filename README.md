@@ -204,7 +204,7 @@ The cards were created using Canva Premium. When clicking a card, the front is r
 
 #### Feature 4: Hard mode of the game
 
-Upon pressing 'Hard' in the homepage, the moderate mode of the game with 18 card tiles is generated for the user. 
+Upon pressing 'Hard' in the homepage, the moderate mode of the game with 18 card tiles is generated for the user. The first version of the hard mode was 24 cards so that each level of difficulty doubled (easy = 6, moderate = 12, hard = 24). Upon testing this it quickly became clear 24 was too challenging, particularly on small device screens. To keep the game simple and playable on mobile, hard was changed to 18, 6 more than moderate. 
 
 ![Moderate](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/features/feature-four.PNG)
 
