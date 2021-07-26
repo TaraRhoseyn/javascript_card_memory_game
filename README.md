@@ -231,6 +231,18 @@ On all difficulty levels of the game a red button, 'Return Home', is prominent i
 4. As a first-time user, I want to be able to play the game across all personal devices.
 12. As a site owner, I want users to be able to navigate the website easily so that users are more likely to have an enjoyable experience and return to the game.
 
+#### Feature 6: The timer
+
+On all difficulty levels of the game a regular timer is visible in the top right-hand corner of the game. This allows returning users to challenge themselves by trying to beat their previous scores. This gives them an incentive to return to the game after the first play-through. It also encourages users to try the different levels to see how long they take them to complete. 
+
+![Timer](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/features/feature-six.PNG)
+
+**User stories covered by this feature:** 
+
+6. As a first-time user, I want to see how long it takes me to complete the game.
+10. As a regular visitor, I want to see how long it takes me to complete the game so I can challenge myself the next time I play to beat it.
+
+
 ### Wireframes
 
 Wireframes:
