@@ -76,7 +76,7 @@ I have divided my user stories into two categories: first-time users and regular
 #### Site owner
 
 10. As a site owner, I want to be able to collect feedback from users in a simple and easy way. 
-11. As a site owner, I want users to be able to navigate the website easily so that I can  
+11. As a site owner, I want users to be able to navigate the website easily so that users are more likely to have an enjoyable experience and return to the game.
 
 ### Scope
 
@@ -123,6 +123,50 @@ My body font is Mina from Google Fonts. I chose this font because it had an aest
 I chose not to use photography on the website and adopted a cartoonish style instead. I did this to keep a consistent style across the website and promote a tone that was fun and engaging, particularly for children. 
 
 I created all of the cards and images of fruits in Canva Premium. 
+
+## Features
+
+### Current Features
+
+#### Feature 1: Home page
+
+The home page contains four main sections: 
+
+1. A header displaying the name of the game and what type of game it is.
+2. Instructions on how to play the game and it's objective.
+3. Three difficulty levels (easy, moderate, and hard) to select to trigger the game being loaded.
+4. A footer with social media links (placeholder links for now).
+
+The page is fully responsive on mobile and tablet. The copy found in Section 2, like all copy on the website, was written by myself.
+
+**Section 1: Header**
+
+This header is the same used throughout the website and communicates to users the name of the game and what type of game it is. Unlike typical headers used in websites such as e-commerce sites, portfolio sites and lead generation sites, no inbound links are found in this header. I did not include links in the header as I wanted the user to be able to navigate the website based on what place they were in the game. While the header is the same colour as the website background, a bottom border is visible to differentiate it from the rest of the page.
+
+![Header](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/features/feature-one-s1.PNG)
+
+**Section 2: The instructions**
+
+These instructions tell the user clearly the objectives of the game and the rules of play. These are visible before the game is loaded so that users have the chance to familiarise themselves with the rules before jumping into gameplay. 
+
+![Rules](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/features/feature-one-s2.PNG)
+
+**Section 3: Difficulty selection**
+
+I had originally planned for the home page to automatically load in Easy mode, then the player would have a choice via a drop down menu what level they wish to play at. There would also have been a button which would have loaded a modal with instructions on. However, I decided against this route and made the user decide which level before the game loaded because of the following reasons: 
+
+- I felt it more sensible to let users familiarise themselves with the rules of play **before** the game loaded. 
+- It was easier to code decision-branching and logic statements when the elements used by event listeners were more seperated. 
+- During development, it was easier to isolate one single mode of play and build the game from there. I first build the moderate version of the game. Once that version was working well and bug-free, I then built the easy and hard versions. 
+
+!(Difficulty)(https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/features/feature-one-s3.PNG)
+
+**User stories covered by this feature:** 
+
+1. As a first-time user, I want to understand the objective and rules of the game upfront and clearly.
+3. As a first-time user, I want to be able to navigate the website quickly and with clear direction and prompts.
+4. As a first-time user, I want to be able to play the game across all personal devices.
+11. As a site owner, I want users to be able to navigate the website easily so that users are more likely to have an enjoyable experience and return to the game.
 
 
 ### Wireframes
