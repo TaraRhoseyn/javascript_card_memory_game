@@ -168,6 +168,18 @@ I had originally planned for the home page to automatically load in Easy mode, t
 4. As a first-time user, I want to be able to play the game across all personal devices.
 11. As a site owner, I want users to be able to navigate the website easily so that users are more likely to have an enjoyable experience and return to the game.
 
+#### Feature 2: Easy mode of the game
+
+Upon pressing 'Easy' in the homepage, the easy mode of the game with 6 card tiles is generated for the user. 
+
+![Easy](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/features/feature-two.PNG)
+
+The cards were created using Canva Premium. When clicking a card, the front is revealed the users must find matching pairs. 
+
+**User stories covered by this feature:** 
+
+2. As a first-time user, I want to use the game to challenge my memory.
+4. As a first-time user, I want to be able to play the game across all personal devices.
 
 ### Wireframes
 
