@@ -242,6 +242,23 @@ On all difficulty levels of the game a regular timer is visible in the top right
 6. As a first-time user, I want to see how long it takes me to complete the game.
 10. As a regular visitor, I want to see how long it takes me to complete the game so I can challenge myself the next time I play to beat it.
 
+#### Feature 7: The score tracker
+
+On all difficulty levels of the game a score counter is visible just beneath the game board that keeps track of how many correct pairs have been matched in the game. Once the maximum score is reached (all pairs found) an alert will display in the browser to the user congratulating them on their win and encouraging further play. 
+
+The score counter:
+
+![Score](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/features/feature-seven-1.PNG)
+
+The congratulations message: 
+
+![Congrats](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/features/feature-seven-2.PNG)
+
+**User stories covered by this feature:** 
+
+5. As a first-time user, I want to keep track of my score to monitor my performance in the game.
+9. As a regular visitor, I want to see my score and move counter so that I can challenge myself the next time I play to beat it.
+
 
 ### Wireframes
 
