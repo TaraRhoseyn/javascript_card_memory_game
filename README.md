@@ -278,6 +278,8 @@ On all difficulty levels of the game a score counter is visible beneath the game
  
 #### Feature 12: The footer
 
+#### Features for future releases
+
 ### Wireframes
 
 Wireframes:
