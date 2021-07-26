@@ -66,17 +66,19 @@ I have divided my user stories into two categories: first-time users and regular
 4. As a first-time user, I want to be able to play the game across all personal devices. 
 5. As a first-time user, I want to keep track of my score to monitor my performance in the game. 
 6. As a first-time user, I want to see how long it takes me to complete the game. 
+7. As a first-time user, I want the ability to select what level difficulty I want to play at.
 
 #### Regular visitor
 
-7. As a regular visitor, I want to be able to give feedback to improve the game over time. 
-8. As a regular visitor, I want to see my score and move counter so that I can challenge myself the next time I play to beat it. 
-9. As a regular visitor, I want to see how long it takes me to complete the game so I can challenge myself the next time I play to beat it. 
+8. As a regular visitor, I want to be able to give feedback to improve the game over time. 
+9. As a regular visitor, I want to see my score and move counter so that I can challenge myself the next time I play to beat it. 
+10. As a regular visitor, I want to see how long it takes me to complete the game so I can challenge myself the next time I play to beat it. 
+11. As a regular visitor, I want to be able to play a variety of difficulty levels so that the game remains fresh and interesting.
 
 #### Site owner
 
-10. As a site owner, I want to be able to collect feedback from users in a simple and easy way. 
-11. As a site owner, I want users to be able to navigate the website easily so that users are more likely to have an enjoyable experience and return to the game.
+12. As a site owner, I want to be able to collect feedback from users in a simple and easy way. 
+13. As a site owner, I want users to be able to navigate the website easily so that users are more likely to have an enjoyable experience and return to the game.
 
 ### Scope
 
@@ -166,7 +168,9 @@ I had originally planned for the home page to automatically load in Easy mode, t
 1. As a first-time user, I want to understand the objective and rules of the game upfront and clearly.
 3. As a first-time user, I want to be able to navigate the website quickly and with clear direction and prompts.
 4. As a first-time user, I want to be able to play the game across all personal devices.
-11. As a site owner, I want users to be able to navigate the website easily so that users are more likely to have an enjoyable experience and return to the game.
+7. As a first-time user, I want the ability to select what level difficulty I want to play at.
+11. As a regular visitor, I want to be able to play a variety of difficulty levels so that the game remains fresh and interesting.
+12. As a site owner, I want users to be able to navigate the website easily so that users are more likely to have an enjoyable experience and return to the game.
 
 #### Feature 2: Easy mode of the game
 
@@ -180,6 +184,8 @@ The cards were created using Canva Premium. When clicking a card, the front is r
 
 2. As a first-time user, I want to use the game to challenge my memory.
 4. As a first-time user, I want to be able to play the game across all personal devices.
+7. As a first-time user, I want the ability to select what level difficulty I want to play at.
+11. As a regular visitor, I want to be able to play a variety of difficulty levels so that the game remains fresh and interesting.
 
 #### Feature 3: Moderate mode of the game
 
@@ -193,6 +199,8 @@ The cards were created using Canva Premium. When clicking a card, the front is r
 
 2. As a first-time user, I want to use the game to challenge my memory.
 4. As a first-time user, I want to be able to play the game across all personal devices.
+7. As a first-time user, I want the ability to select what level difficulty I want to play at.
+11. As a regular visitor, I want to be able to play a variety of difficulty levels so that the game remains fresh and interesting.
 
 #### Feature 4: Hard mode of the game
 
@@ -206,6 +214,8 @@ The cards were created using Canva Premium. When clicking a card, the front is r
 
 2. As a first-time user, I want to use the game to challenge my memory.
 4. As a first-time user, I want to be able to play the game across all personal devices.
+7. As a first-time user, I want the ability to select what level difficulty I want to play at.
+11. As a regular visitor, I want to be able to play a variety of difficulty levels so that the game remains fresh and interesting.
 
 #### Feature 5: Return Home button
 
@@ -219,7 +229,7 @@ On all difficulty levels of the game a red button, 'Return Home', is prominent i
 1. As a first-time user, I want to understand the objective and rules of the game upfront and clearly.
 3. As a first-time user, I want to be able to navigate the website quickly and with clear direction and prompts.
 4. As a first-time user, I want to be able to play the game across all personal devices.
-11. As a site owner, I want users to be able to navigate the website easily so that users are more likely to have an enjoyable experience and return to the game.
+12. As a site owner, I want users to be able to navigate the website easily so that users are more likely to have an enjoyable experience and return to the game.
 
 ### Wireframes
 
