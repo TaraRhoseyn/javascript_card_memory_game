@@ -161,7 +161,7 @@ I had originally planned for the home page to automatically load in Easy mode, t
 - It was easier to code decision-branching and logic statements when the elements used by event listeners were more seperated. 
 - During development, it was easier to isolate one single mode of play and build the game from there. I first build the moderate version of the game. Once that version was working well and bug-free, I then built the easy and hard versions. 
 
-!(Difficulty)(https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/features/feature-one-s3.PNG)
+![Difficulty](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/features/feature-one-s3.PNG)
 
 **User stories covered by this feature:** 
 
