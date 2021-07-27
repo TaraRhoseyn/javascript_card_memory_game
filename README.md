@@ -163,6 +163,12 @@ I had originally planned for the home page to automatically load in Easy mode, t
 
 ![Difficulty](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/features/feature-one-s3.PNG)
 
+**Section 4: The footer**
+
+This footer is the same throughout the website and guides users to social media links (placeholders for now). I had originally planned to insert links to other pages on the website, but decided against this as I could have greater control of the user journey by creating a linear navigational system for the game. 
+
+![The footer](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/features/feature-one-s4.PNG)
+
 **User stories covered by this feature:** 
 
 1. As a first-time user, I want to understand the objective and rules of the game upfront and clearly.
@@ -295,8 +301,6 @@ Next to the 'Reset Game' button is the 'Give Feedback' button. Upon clicking thi
 13. As a site owner, I want users to be able to navigate the website easily so that users are more likely to have an enjoyable experience and return to the game.
 
 #### Feature 11: The 404 page
- 
-#### Feature 12: The footer
 
 #### Features for future releases
 
