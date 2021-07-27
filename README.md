@@ -272,6 +272,15 @@ On all difficulty levels of the game a score counter is visible beneath the game
 
 #### Feature 9: The Reset Button
 
+On all difficulty levels of the game a reset button is visible underneath the score tracker to let users reset the game. This includes resetting: the game board, the timer, the score counter and the moves counter. This allows users to reset the game if they're trying to complete a 'speedrun' (completing the game as fast as possible). 
+
+![Reset game button](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/features/feature-nine.PNG)
+
+**User stories covered by this feature:** 
+
+6. As a first-time user, I want to see how long it takes me to complete the game.
+10. As a regular visitor, I want to see how long it takes me to complete the game so I can challenge myself the next time I play to beat it.
+
 #### Feature 10: The Contact page
 
 #### Feature 11: The 404 page
