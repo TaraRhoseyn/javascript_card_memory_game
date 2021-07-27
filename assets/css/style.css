@@ -185,3 +185,8 @@ footer {
 #counter, #score-text {
     font-size: 25px;
 }
+
+#404-button {
+    margin: 0 auto;
+    margin-bottom: 5px;
+}
