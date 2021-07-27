@@ -283,6 +283,17 @@ On all difficulty levels of the game a reset button is visible underneath the sc
 
 #### Feature 10: The Contact page
 
+Next to the 'Reset Game' button is the 'Give Feedback' button. Upon clicking this, the user is redirected to a Contact page with a form for gathering feedback. The form is fully functional and uses Email JS to send a message to the site owner (myself). The next version of this game will have featured based on the feedback given by users of this current release of the game, allowing gamers to have a voice in the development of future iterations.
+
+![contact form](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/features/feature-ten.PNG)
+
+**User stories covered by this feature:** 
+
+3. As a first-time user, I want to be able to navigate the website quickly and with clear direction and prompts.
+8. As a regular visitor, I want to be able to give feedback to improve the game over time.
+12. As a site owner, I want to be able to collect feedback from users in a simple and easy way.
+13. As a site owner, I want users to be able to navigate the website easily so that users are more likely to have an enjoyable experience and return to the game.
+
 #### Feature 11: The 404 page
  
 #### Feature 12: The footer
