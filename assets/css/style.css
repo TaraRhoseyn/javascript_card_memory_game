@@ -56,11 +56,12 @@ li a {
     padding-right: 10px;
 }
 
-/* This .no-display style is used to toggle HTML elements off and on upon whether game board is generated or not */
-
-.no-display {
-    visibility: hidden;
+footer {
+    padding-top: 10px;
+    border-top: 4px solid rgb(255, 189, 200);
 }
+
+/* Buttons */ 
 
 button {
     background-color: #6FCF97;
@@ -69,17 +70,13 @@ button {
     border-radius: 4px;
 }
 
-footer {
-    padding-top: 10px;
-    border-top: 4px solid rgb(255, 189, 200);
-}
-
 .button {
     background-color: #6FCF97;
     font-size: 20px;
     border-style: none;
     border-radius: 4px;
 }
+
 
 #return-home { 
     border: #6FCF97!important; /* !important needed to override Bootstrap styling */ 
@@ -102,10 +99,47 @@ footer {
     text-align: center;
 }
 
+/* Grow effect. Credit: Hover.css library */
+
+.hvr-grow {
+    display: inline-block;
+    vertical-align: middle;
+    -webkit-transform: perspective(1px) translateZ(0);
+    transform: perspective(1px) translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+  }
+
+.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+}
+
+/* Game board creation */ 
+
+/* This .no-display style is used to toggle HTML elements off and on upon whether game board is generated or not */
+
 #board {
     margin: 0 auto;
     margin-bottom: 10px;
     clear: both;
+}
+
+.no-display {
+    visibility: hidden;
+}
+
+/* Card styling */ 
+
+.fruitModCard {
+    padding: 10px;
+}
+
+.fruitHardCard {
+    padding-top: 10px;
 }
 
 /* Media queries to ensure the content is correctly layed out on mobile and tablet view */ 
@@ -146,33 +180,6 @@ footer {
     }
 }
 
-.fruitModCard {
-    padding: 10px;
-}
-
-.fruitHardCard {
-    padding-top: 10px;
-}
-
-/* Grow effect. Credit: Hover.css library */
-
-.hvr-grow {
-    display: inline-block;
-    vertical-align: middle;
-    -webkit-transform: perspective(1px) translateZ(0);
-    transform: perspective(1px) translateZ(0);
-    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
-    -webkit-transition-duration: 0.3s;
-    transition-duration: 0.3s;
-    -webkit-transition-property: transform;
-    transition-property: transform;
-  }
-
-.hvr-grow:hover, .hvr-grow:focus, .hvr-grow:active {
-    -webkit-transform: scale(1.1);
-    transform: scale(1.1);
-}
-
 #timer {
     font-size: 20px;
     margin-left: 70%;
@@ -192,7 +199,3 @@ footer {
     font-size: 25px;
 }
 
-#404-button {
-    margin: 0 auto;
-    margin-bottom: 5px;
-}
