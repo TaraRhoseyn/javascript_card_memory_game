@@ -31,9 +31,12 @@
             <h1 class="text-center my-5">Get in touch</h1>
             <p class="text-center">We'd love to hear your feedback about the game. Let us know what you enjoyed or didn't enjoy and we'll factor your feedback into our next round of game development for future releases.</p>
             <div class="container">
-                <form id="contact-form" onsubmit="return sendEmail(this);">
-                    <input type="text" id="fromname" class="my-5 form-elem" placeholder="Your name">
+                <form id="contact-form" onsubmit="return validateForm()" name="contactForm" novalidate>
+                    <div id="name-error" class="text-center"></div>
+                    <input type="text" id="fromName" class="my-5 form-elem" placeholder="Your name">
+                    <div id="email-error" class="text-center"></div>
                     <input type="email" id="email" class="my-5 form-elem" placeholder="Your email address">
+                    <div id="msg-error" class="text-center"></div>
                     <textarea id="message" class="my-5 form-elem" placeholder="Your message"></textarea>
                     <button type="submit" class="my-5 form-elem" id='message-button'>Send message</button>
                 </form>

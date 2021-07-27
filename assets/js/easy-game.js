@@ -6,7 +6,7 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 // Inserts back content hidden upon DOM loaded
-// Add removes introductory information
+// Removes introductory information
 function displayGame() {
     document.getElementById('board').classList.remove('no-display');
     document.getElementById('timer-and-home').classList.remove('no-display');
