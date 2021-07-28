@@ -303,9 +303,25 @@ Next to the 'Reset Game' button is the 'Give Feedback' button. Upon clicking thi
 
 #### Feature 11: The 404 page
 
+This page displays when a user enters a URL that does not exist. The main purpose of this page is to let users know that an error has occurred and to redirect them back to the website. The design of this page is simple as I want users to return the main pages of the site as soon as possible upon seeing this page. It consists of a heading, subheading and button.
 
+![404 page](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/features/feature-eleven.PNG)
+
+**User stories covered by this feature:** 
+
+3. As a first-time user, I want to be able to navigate the website quickly and with clear direction and prompts.
+12. As a site owner, I want users to be able to navigate the website easily so that users are more likely to have an enjoyable experience and return to the game.
 
 #### Features for future releases
+
+The following features would be built into the next release of the game, but the site owner's goal would be to include more features for future release based upon user feedback. 
+
+1. A mode of the game with a countdown timer to challenge the user to complete the game within a certain time frame. 
+2. Card animations when clicked. 
+3. Animations and an audio prompt when a match is found. 
+4. Animation and congratulations message (beyond a browser alert) when the game is completed. 
+5. The ability to chose between different 'skins' or 'themes' based upon user score. For example, if you get a high enough score you could change the theme of the game to musical bands instead of fruits. 
+6. A scoreboard of user scores to encourage competition. 
 
 ### Wireframes
 
