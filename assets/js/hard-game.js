@@ -60,6 +60,7 @@ function flipHardCard() {
     var hardCardId = this.getAttribute('data-id');
     hardCardsSelected.push(fruitCardsHard[hardCardId].name);
     hardCardsSelectedId.push(hardCardId);
+    // Add alt text to make sure screen reader users can also play the game
     this.setAttribute('alt', fruitCardsHard[hardCardId].name);
     this.setAttribute('src', fruitCardsHard[hardCardId].img);
     if (hardCardsSelected.length === 2) {

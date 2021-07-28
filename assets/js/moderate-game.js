@@ -25,6 +25,7 @@ function createModBoard() {
         var modCard = document.createElement('img');
         modCard.setAttribute('src', './assets/images/fruit-card-back.png');
         modCard.setAttribute('data-id', i);
+        // Add alt text to make sure screen reader users can also play the game
         modCard.setAttribute('alt', 'Card back, select to flip over');
         modCard.classList.add('col-4', 'col-lg-2', 'fruitModCard');
         modCard.addEventListener('click', flipModCard);
