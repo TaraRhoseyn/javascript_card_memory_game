@@ -90,7 +90,6 @@ button {
     border-radius: 4px;
 }
 
-
 #return-home { 
     border: #6FCF97!important; /* !important needed to override Bootstrap styling */ 
     background-color: rgb(160, 9, 9);
