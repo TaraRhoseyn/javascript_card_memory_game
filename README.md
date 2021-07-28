@@ -160,6 +160,7 @@ I had originally planned for the home page to automatically load in Easy mode, t
 - I felt it more sensible to let users familiarise themselves with the rules of play **before** the game loaded. 
 - It was easier to code decision-branching and logic statements when the elements used by event listeners were more seperated. 
 - During development, it was easier to isolate one single mode of play and build the game from there. I first build the moderate version of the game. Once that version was working well and bug-free, I then built the easy and hard versions. 
+- Once the game is loaded, users can re-select the difficulty level by returning home or clicking the 'Select difficulty' button once the game has loaded.
 
 ![Difficulty](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/features/feature-one-s3.PNG)
 
