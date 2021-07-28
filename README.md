@@ -363,6 +363,14 @@ The [W3C CSS Validation Service](http://jigsaw.w3.org/css-validator/validator) w
 
 The CSS passed with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/validation/css-validation/css-validation.PNG). 
 
+### JavaScript Validation
+
+Linter [JSHint](https://jshint.com/) was used to validate the JavaScript of the website. 
+
+All scripts passed with 0 errors and 0 warnings. Please note: some JSHint results show undefined variables, but they are variables stored in seperate scripts.
+
+Click on the individual scripts to see result: [easy-game.js](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/validation/jshint-validation/easy-game-js-validation.PNG) [moderate-game.js](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/validation/jshint-validation/moderate-game-js-validation.PNG) [hard-game.js](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/validation/jshint-validation/hard-game-js-validation.PNG) [main.js](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/validation/jshint-validation/main-js-validation.PNG) [email.js](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/validation/jshint-validation/email-js-validation.PNG)
+
 ### Accessibility 
 
 The [WAVE WebAIM web accessibility evaluation tool](https://wave.webaim.org/report#/https://tararhoseyn.github.io/CardiffSwimCentreMS1/) was used to ensure the website met high accessibility standards. 
