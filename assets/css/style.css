@@ -100,7 +100,6 @@ button {
     padding: 2px;
     color: #fff;
     border-radius: 4px;
-    margin-left: 20%;
     margin-top: 0;
     float: left;
 }
@@ -160,15 +159,7 @@ button {
 
 /* Media queries to ensure the content is correctly layed out on mobile and tablet view */ 
 
-@media screen and (min-width: 900px) {
-    .fruitCard {
-        padding: 40px;
-   }
 
-   #board {
-       width: 50%;
-   }
-}
 
 @media screen and (min-width: 300px) {
     .fruitCard {
@@ -178,13 +169,13 @@ button {
     #board, #easyboard {
         margin-top: 10px;
     }
+    
+    #return-home {
+        margin-left: 20px;
+    }
 }
 
 @media screen and (max-width: 900px) {
-    #return-home {
-        margin-left: 90px;
-    }
-
     footer ul li a {
         margin: 0;
         padding: 0;
@@ -197,6 +188,20 @@ button {
     }
 }
 
+@media screen and (min-width: 900px) {
+    .fruitCard {
+        padding: 40px;
+   }
+
+   #board {
+       width: 50%;
+   }
+
+   #return-home {
+    margin-left: 300px;
+}
+}
+
 @media screen and (min-width: 300px) {
     .fruitCard {
         margin-bottom: 10px;
@@ -204,8 +209,10 @@ button {
 
     #board {
         width: 70%;
-    }
-    
+    }   
+}
+
+@media screen and (min-width: 900px) {
     /* the easy mode of the game is seperated here due to the large card sizes when there are less of them, 
     pushing the buttons and counters out of view of the user while playing unless the width
     is set as smaller then the moderate and hard modes */ 
