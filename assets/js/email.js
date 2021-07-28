@@ -1,3 +1,6 @@
+/* Bug fix: solved jshint errors by including the following line */
+/* jshint esversion: 6 */
+
 /* Using Email JS and form validation, this script
 sends emails to the site owner with a message from
 the client. */ 
@@ -44,8 +47,8 @@ function sendEmail() {
     // Calls Email JS and sends email
     emailjs.init('user_cQ4AB0KpJse0GG5cv2LdL');
     emailjs.send('service_ih1qkca', 'template_wod5ktu', {
-       'from_name': fromName.value,
-       'from_email': email.value,
+       'from_name': formName.value,
+       'from_email': formEmail.value,
        'message': messsage.value
     }).then(
         function (response) {
