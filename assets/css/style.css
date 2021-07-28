@@ -205,7 +205,10 @@ button {
     #board {
         width: 70%;
     }
-
+    
+    /* the easy mode of the game is seperated here due to the large card sizes when there are less of them, 
+    pushing the buttons and counters out of view of the user while playing unless the width
+    is set as smaller then the moderate and hard modes */ 
     #easyboard {
         width: 50%;
     }
