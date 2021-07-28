@@ -17,8 +17,9 @@ header {
 
 h1 {
     font-family: 'Rokkitt', sans-serif;
-    font-size: 50px;
+    font-size: 45px;
     letter-spacing: 10px;
+    margin-top: 15px;
 }
 
 h2 {
@@ -49,7 +50,7 @@ li {
     vertical-align: middle;
 }
 
-li a {
+.footer a {
     font-size: 35px;
     color: #348857;
     padding-left: 10px;
@@ -59,6 +60,18 @@ li a {
 footer {
     padding-top: 10px;
     border-top: 4px solid rgb(255, 189, 200);
+}
+
+/* Nav bar styling */ 
+
+li a {
+    font-size: 20px;
+    margin: 20px;
+}
+
+.active {
+    border-bottom: 3px solid #348857;
+    color: #348857;
 }
 
 /* Buttons */ 
@@ -198,4 +211,3 @@ button {
 #counter, #score-text {
     font-size: 25px;
 }
-
