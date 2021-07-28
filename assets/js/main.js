@@ -1,3 +1,6 @@
+/* Bug fix: solved jshint errors by including the following line */
+/* jshint esversion: 6 */
+
 // Makes sure the 'active' indicator on navbar is there upon page loading 
 window.onload = setActive;
 
@@ -14,4 +17,4 @@ function setActive() {
             nav[i].className='active';
         }
     }
-};
+}
