@@ -436,6 +436,7 @@ By forking this GitHub repository you are making a copy of the original to view 
 - **Hover.css** - for [Grow effect CSS code](https://ianlunn.github.io/Hover/)
 - **CSS Deck** - for [active navbar styling junction](https://cssdeck.com/blog/intelligent-navigation/)
 - **W3 Schools** - for [validating form function structure](https://www.w3schools.com/js/js_validation_api.asp)
+- **Bootstrap v5** - for [layout and responsive design](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 
 ### Media
 
