@@ -1,3 +1,6 @@
+/* Bug fix: solved jshint errors by including the following line */
+/* jshint esversion: 6 */
+
 // Hides game until game difficulty level is selected
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('board').classList.add('no-display');
@@ -14,7 +17,7 @@ function displayGame() {
     document.getElementById('start-game-prompt').remove();
     document.getElementById('board-content').classList.remove('no-display');
     setTimer();
-};
+}
 
 // Credit for timer & reset timer functions: user efuzz on Stack Overflow.
 var totalSeconds = 0;
@@ -25,7 +28,7 @@ function setTimer(){
     seconds.innerHTML = pad(totalSeconds%60);
     var minutes = document.getElementById('minutes');
     minutes.innerHTML = pad(parseInt(totalSeconds/60));
-};
+}
 
 function pad(val){
     var valString = val + '';
@@ -33,7 +36,7 @@ function pad(val){
         return '0' + valString;
     } else { return valString;
     }
-};
+}
 
 // Variables for easy game
 const easyGameGrid = document.querySelector('#board');
@@ -53,7 +56,7 @@ function startEasyGame() {
     /* Bug fix: By placing setInterval within a function that's called upon game loading
     the timer doesn't automatically start when the page is loaded, affecting game play */
     setInterval(setTimer, 1200);
-};
+}
 
 const fruitCardsEasy = fruitCardsModerate.slice(0, 6);
 
@@ -72,23 +75,23 @@ function createEasyBoard() {
         easyCard.addEventListener('click', flipEasyCard);
         easyGameGrid.appendChild(easyCard);
     }
-};
+}
 
 // Reveals front card faces and calls function to check for a match
 function flipEasyCard() {
-    var easyCardId = this.getAttribute('data-id') // getting attribute from element clicked
+    var easyCardId = this.getAttribute('data-id'); // getting attribute from element clicked
     easyCardsSelected.push(fruitCardsEasy[easyCardId].name);
     easyCardsSelectedId.push(easyCardId);
     this.setAttribute('src', fruitCardsEasy[easyCardId].img);
     this.setAttribute('alt', fruitCardsEasy[easyCardId].name);
     if (easyCardsSelected.length === 2) {
-        setTimeout(checkEasyMatch, 300) // this calls function checkMatch after 500 milliseconds
-    };
-};
+        setTimeout(checkEasyMatch, 300); // this calls function checkMatch after 500 milliseconds
+    }
+}
 
 // Check for a match
 function checkEasyMatch() {
-    var easyCards = document.querySelectorAll('img')
+    var easyCards = document.querySelectorAll('img');
     const easyCardOneId = easyCardsSelectedId[0];
     const easyCardTwoId = easyCardsSelectedId[1];
     // Bug fix: test easyCardsSelected for true equality, not easyCardsSelectedId
@@ -116,28 +119,28 @@ function checkEasyMatch() {
         alert('Yay, you found them all! Play again to beat your time or return home to try another difficulty.');
         resetEasyGame();
     }
-};
+}
 
 // Moves the counter
 // Credit for counting moves method: Michelle Toscano. https://github.com/Michelle3334/freaky_memory/blob/master/assets/js/script.js
 function moveCounter() {
     counter.innerHTML ++;
-};
+}
 
 // Resets the game by clearing arrays and elements, and shuffling cards
 function resetEasyGame() {
     easyCardsSelected = [];
     easyCardsSelectedId = [];
     easyCardsRight = [];
-    easyCards = document.querySelectorAll('img')
-    fruitCardsEasy.sort(() => 0.5 - Math.random())
+    easyCards = document.querySelectorAll('img');
+    fruitCardsEasy.sort(() => 0.5 - Math.random());
     easyCards.forEach((c) => {
         c.setAttribute('src', './assets/images/fruit-card-back.png');
     });
     resultEasyDisplay.textContent = `0`;
     counter.innerHTML = `0`;
     resetTimer();
-};
+}
 
 // Resets the timer by clearing the HTML
 function resetTimer() {
