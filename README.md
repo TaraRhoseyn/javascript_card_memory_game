@@ -143,7 +143,7 @@ The page is fully responsive on mobile and tablet. The copy found in Section 2, 
 
 **Section 1: Header**
 
-This header is the same used throughout the website and communicates to users the name of the game and what type of game it is. Unlike typical headers used in websites such as e-commerce sites, portfolio sites and lead generation sites, no inbound links are found in this header. I did not include links in the header as I wanted the user to be able to navigate the website based on what place they were in the game. While the header is the same colour as the website background, a bottom border is visible to differentiate it from the rest of the page.
+This header is the same used throughout the website and communicates to users the name of the game and what type of game it is. Unlike typical headers used in websites such as e-commerce sites, portfolio sites and lead generation sites, no inbound links are found in this header. I did not include links in the header as I wanted the user to be able to navigate the website based on what place they were in the game. Also, there are navigational links on all pages on the website to ensure users can navigate it well. A user is no more than 3 clicks away from anywhere on the site. While the header is the same colour as the website background, a bottom border is visible to differentiate it from the rest of the page.
 
 ![Header](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/features/feature-one-s1.PNG)
 
