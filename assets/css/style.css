@@ -37,8 +37,8 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    color: #000;
+li a:hover {
+    color: rgb(187, 0, 109);
 }
 
 ul {
