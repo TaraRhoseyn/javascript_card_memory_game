@@ -58,7 +58,6 @@ li {
 }
 
 footer {
-    padding-top: 10px;
     border-top: 4px solid rgb(255, 189, 200);
 }
 
@@ -72,6 +71,11 @@ li a {
 .active {
     border-bottom: 3px solid #348857;
     color: #348857;
+}
+
+nav {
+    margin-top: 40px;
+    margin-bottom: 40px;
 }
 
 /* Buttons */ 
@@ -164,16 +168,6 @@ button {
    #board {
        width: 50%;
    }
-
-   nav {
-        margin-top: 40px;
-        margin-bottom: 40px;
-   }
-
-   footer ul {
-        margin-top: 40px;
-   }
-
 }
 
 @media screen and (min-width: 300px) {
@@ -189,6 +183,17 @@ button {
 @media screen and (max-width: 900px) {
     #return-home {
         margin-left: 50px;
+    }
+
+    footer ul li a {
+        margin: 0;
+        padding: 0;
+        font-size: 10px;
+    }
+
+    footer ul {
+        margin: 0;
+        padding: 0;
     }
 }
 
@@ -219,4 +224,8 @@ button {
 
 #counter, #score-text {
     font-size: 25px;
+}
+
+footer ul {
+    margin-top: 40px;
 }
