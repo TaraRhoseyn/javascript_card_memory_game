@@ -7,7 +7,7 @@ const nav = document.getElementById('nav').getElementsByTagName('a');
 /* Function takes navbar elements and checks if their href
 matches to the document.location, letting users know what
 page they're on.
-Credit for function: CSS Deck. https://cssdeck.com/blog/intelligent-navigation/ */
+Credit for function: CSS Deck. */
 function setActive() {
     for(i = 0; i < nav.length; i++) { 
         if(document.location.href.indexOf(nav[i].href)>=0) {

@@ -434,6 +434,7 @@ By forking this GitHub repository you are making a copy of the original to view 
 - **Stack overflow** - for setting up a [timer feature](https://stackoverflow.com/questions/65091796/reset-a-count-up-timer-in-javascript)
 - **Mário Gusman** from Code Institute Slack group - for code about accessibility measures in the footer.
 - **Hover.css** - for [Grow effect CSS code](https://ianlunn.github.io/Hover/)
+- **CSS Deck** - for [active navbar styling junction](https://cssdeck.com/blog/intelligent-navigation/)
 
 ### Media
 
