@@ -138,7 +138,7 @@ button {
 
 /* This .no-display style is used to toggle HTML elements off and on upon whether game board is generated or not */
 
-#board {
+#board, #easyboard {
     margin: 0 auto;
     margin-bottom: 10px;
     clear: both;
@@ -175,7 +175,7 @@ button {
         margin-bottom: 10px;
     }
 
-    #board {
+    #board, #easyboard {
         margin-top: 10px;
     }
 }
@@ -204,6 +204,10 @@ button {
 
     #board {
         width: 70%;
+    }
+
+    #easyboard {
+        width: 50%;
     }
 }
 

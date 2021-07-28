@@ -66,10 +66,14 @@ function createEasyBoard() {
     be called within a seperate function to allow
     .slice method in fruitCardsEasy to work */
     fruitCardsEasy.sort(() => 0.5 - Math.random());
+    /* Change id of game board specifically for Easy mode to allow all of the
+    peripherals (e.g. score and counter tracker) to fit within the user's view of the browser */
+    easyGameGrid.id = 'easyboard';
     for (let i = 0; i < fruitCardsEasy.length; i++) {
         var easyCard = document.createElement('img');
         easyCard.setAttribute('src', './assets/images/fruit-card-back.png');
         easyCard.setAttribute('data-id', i);
+        // Add alt text to make sure screen reader users can also play the game
         easyCard.setAttribute('alt', 'Card back, select to flip over');
         easyCard.classList.add('col-6', 'col-lg-4', 'fruitCard');
         easyCard.addEventListener('click', flipEasyCard);
