@@ -164,6 +164,16 @@ button {
    #board {
        width: 50%;
    }
+
+   nav {
+        margin-top: 40px;
+        margin-bottom: 40px;
+   }
+
+   footer ul {
+        margin-top: 40px;
+   }
+
 }
 
 @media screen and (min-width: 300px) {
