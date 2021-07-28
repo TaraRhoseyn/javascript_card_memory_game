@@ -1,5 +1,5 @@
 /* Bug fix: solved jshint errors by including the following line */
-/* jshint esversion: 6 */
+/* jshint esversion: 8 */
 
 /* Using Email JS and form validation, this script
 sends emails to the site owner with a message from
@@ -53,11 +53,11 @@ function sendEmail() {
     }).then(
         function (response) {
             // Success message
-           alert('Your message has been sent!')
+           alert('Your message has been sent!');
        },
         function (error) {
             // Error message
-           alert('Whoops, your message has not been sent. Are all the fields filled in correctly?')
+           alert('Whoops, your message has not been sent. Are all the fields filled in correctly?');
        },
     );
     return false;  
