@@ -223,11 +223,11 @@ The cards were created using Canva Premium. When clicking a card, the front is r
 7. As a first-time user, I want the ability to select what level difficulty I want to play at.
 11. As a regular visitor, I want to be able to play a variety of difficulty levels so that the game remains fresh and interesting.
 
-#### Feature 5: Return Home button
+#### Feature 5: Select difficulty button
 
-On all difficulty levels of the game a red button, 'Return Home', is prominent in the top left-hand corner. This is to enable users to re-select a game difficulty is they do not like the one they picked. It also enables users to revisit instructions should they need to. 
+On all difficulty levels of the game a red button, 'Select Difficulty', is prominent in the top left-hand corner. This is to enable users to re-select a game difficulty is they do not like the one they picked. It also enables users to revisit instructions should they need to. 
 
-![Return home button](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/features/feature-five.PNG)
+![Select difficulty button](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/features/feature-five.PNG)
 
 
 **User stories covered by this feature:** 
