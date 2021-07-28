@@ -413,7 +413,7 @@ This website has been deployed using GitHub pages. To do the same...
 6. Wait for page to refresh automatically. 
 7. Under GitHub pages you can now find a link to the published live website. 
 
-### Forking the GitHub Repository 
+#### Forking the GitHub Repository 
 
 By forking this GitHub repository you are making a copy of the original to view or make changes without affecting the original. You can do this by following these steps...
 
@@ -421,7 +421,7 @@ By forking this GitHub repository you are making a copy of the original to view 
 2. Click 'Fork' (last button on the top right of the repository page).
 3. You will then have a copy of the repository in your own GitHub account. 
 
-### Making a Local Clone
+#### Making a Local Clone
 
 1. Log into your GitHub account and find the [repository](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame).
 2. Click on the 'Code' button (next to 'Add file'). 
@@ -431,6 +431,15 @@ By forking this GitHub repository you are making a copy of the original to view 
 6. In your IDE's terminal type 'git clone' followed by the URL you copied.
 7. Press Enter. 
 8. Your local clone will now be made.
+
+### Email JS
+
+1. Create an account with Email JS on [their website](https://www.emailjs.com/).
+2. Make a note of your User ID in the 'Intergration' section, this will be needed when calling the API. 
+3. Go to 'Email service' section and create a new email service. Note your Service ID, this will be needed when calling the API. 
+4. Go to the 'Email template' section and create a new email template with the message outline you would like the site owner to be sent. Make a note of the Template ID, this will be needed when calling the API. 
+5. Include your user ID, email service ID and template ID in your sendMail method within an email.js script. 
+
 
 ## Credits
 
