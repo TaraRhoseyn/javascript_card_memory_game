@@ -1,3 +1,6 @@
+/* Bug fix: solved jshint errors by including the following line */
+/* jshint esversion: 6 */
+
 // Variables for moderate game
 const modGameGrid = document.querySelector('#board');
 const resultDisplay = document.querySelector('#result');
@@ -11,13 +14,13 @@ function startModerateGame() {
     document.getElementById('reset').addEventListener('click', resetModGame);
     counter.innerHTML = `0`;
     setInterval(setTimer, 1200);
-};
+}
 
 const fruitCardsModerate = fruitCardsHard.slice(0,12);
 
 // Creates game board. Credit: Ania Kubow.
 function createModBoard() {
-    fruitCardsModerate.sort(() => 0.5 - Math.random())
+    fruitCardsModerate.sort(() => 0.5 - Math.random());
     for (let i = 0; i < fruitCardsModerate.length; i++) {
         var modCard = document.createElement('img');
         modCard.setAttribute('src', './assets/images/fruit-card-back.png');
@@ -27,7 +30,7 @@ function createModBoard() {
         modCard.addEventListener('click', flipModCard);
         modGameGrid.appendChild(modCard);
     }
-};
+}
 
 // Reveals front card faces and calls function to check for a match
 function flipModCard() {
@@ -39,7 +42,7 @@ function flipModCard() {
     if (modCardsSelected.length === 2) {
         setTimeout(checkMatch, 300);
     }
-};
+}
 
 // Check for a match
 function checkMatch() {
@@ -82,4 +85,4 @@ function resetModGame() {
     resultEasyDisplay.textContent = `0`;
     counter.innerHTML = `0`;
     resetTimer();
-};
+}
