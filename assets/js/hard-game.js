@@ -1,3 +1,6 @@
+/* Bug fix: solved jshint errors by including the following line */
+/* jshint esversion: 6 */
+
 // Variables for hard mode of game
 const hardGameGrid = document.querySelector('#board');
 const resultHardDisplay = document.querySelector('#result');
@@ -13,7 +16,7 @@ function startHardGame() {
     document.getElementById('reset').addEventListener('click', resetHardGame);
     counter.innerHTML = `0`;
     setInterval(setTimer, 1200);
-};
+}
 
 // Array of objects to be injected into the DOM. 
 // This array is what the cards for the moderate & easy modes are based on
@@ -50,7 +53,7 @@ function createHardBoard() {
         hardCard.addEventListener('click', flipHardCard);
         hardGameGrid.appendChild(hardCard);
     }
-};
+}
 
 // Reveals front card faces and calls function to check for a match
 function flipHardCard() {
@@ -62,7 +65,7 @@ function flipHardCard() {
     if (hardCardsSelected.length === 2) {
         setTimeout(checkHardMatch, 300);
     }
-};
+}
 
 // Check for a match
 function checkHardMatch() {
@@ -86,7 +89,7 @@ function checkHardMatch() {
         alert('Yay, you found them all! Play again to beat your time or return home to try another difficulty.');
         resetHardGame();
     }
-};
+}
 
 // Resets game
 function resetHardGame() {
@@ -101,4 +104,4 @@ function resetHardGame() {
     resultHardDisplay.textContent = `0`;
     counter.innerHTML = `0`;
     resetTimer();
-};
+}
