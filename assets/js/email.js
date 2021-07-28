@@ -2,6 +2,7 @@
 sends emails to the site owner with a message from
 the client. */ 
 
+// Global variables that store DOM elements related to form
 let formName = document.getElementById('fromName');
 let formEmail = document.getElementById('email');
 let messsage = document.getElementById('message');
