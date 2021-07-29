@@ -3,7 +3,6 @@
 
 // Variables for moderate game
 const modGameGrid = document.querySelector('#board');
-const resultDisplay = document.querySelector('#result');
 var modCardsSelected = [];
 var modCardsSelectedId = [];
 var modCardsRight = [];document.getElementById('moderate-button').addEventListener('click', startModerateGame);
@@ -13,7 +12,7 @@ function startModerateGame() {
     createModBoard();
     document.getElementById('reset').addEventListener('click', resetModGame);
     counter.innerHTML = `0`;
-    resultEasyDisplay.innerHTML = `0`;
+    resultDisplay.innerHTML = `0`;
     /* Bug fix: By placing setInterval within a function that's called upon game loading
     the timer doesn't automatically start when the page is loaded, affecting game play */
     setInterval(setTimer, 1200);
@@ -58,8 +57,8 @@ function checkMatch() {
         // Moves 'move' counter forward
         moveCounter();
         // Gives feedback to user that they found a match
-        easyCards[easyCardOneId].classList.add('match');
-        easyCards[easyCardTwoId].classList.add('match');
+        modCards[modCardOneId].classList.add('match');
+        modCards[modCardTwoId].classList.add('match');
     } else {
         // Resets card back to card back is match is not found
         modCards[modCardOneId].setAttribute('src', './assets/images/fruit-card-back.png');
@@ -92,7 +91,7 @@ function resetModGame() {
         // Removes correct match feedback to users
         c.classList.remove('match');
     });
-    resultEasyDisplay.textContent = `0`;
+    resultDisplay.textContent = `0`;
     counter.innerHTML = `0`;
     resetTimer();
 }

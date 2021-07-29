@@ -1,6 +1,9 @@
 /* Bug fix: solved jshint errors by including the following line */
 /* jshint esversion: 6 */
 
+// Global variable across all versions of the game to display score counter
+const resultDisplay = document.querySelector('#result');
+
 // Hides game until game difficulty level is selected
 document.addEventListener('DOMContentLoaded', () => {
     document.getElementById('board').classList.add('no-display');
@@ -40,7 +43,6 @@ function pad(val){
 
 // Variables for easy game
 const easyGameGrid = document.querySelector('#board');
-const resultEasyDisplay = document.querySelector('#result');
 const counter = document.querySelector('#count');
 var easyCardsSelected = [];
 var easyCardsSelectedId = [];
@@ -53,7 +55,7 @@ function startEasyGame() {
     createEasyBoard();
     document.getElementById('reset').addEventListener('click', resetEasyGame);
     counter.innerHTML = `0`;
-    resultEasyDisplay.innerHTML = `0`;
+    resultDisplay.innerHTML = `0`;
 
     /* Bug fix: By placing setInterval within a function that's called upon game loading
     the timer doesn't automatically start when the page is loaded, affecting game play */
@@ -123,7 +125,7 @@ function checkEasyMatch() {
     easyCardsSelected = [];
     easyCardsSelectedId = [];
     // Updates score
-    resultEasyDisplay.textContent = easyCardsRight.length; 
+    resultDisplay.textContent = easyCardsRight.length; 
     if (easyCardsRight.length === fruitCardsEasy.length/2) {
         alert('Yay, you found them all! Play again to beat your time or return home to try another difficulty.');
         resetEasyGame();
@@ -148,7 +150,7 @@ function resetEasyGame() {
         // Removes correct match feedback to users
         c.classList.remove('match');
     });
-    resultEasyDisplay.textContent = `0`;
+    resultDisplay.textContent = `0`;
     counter.innerHTML = `0`;
     resetTimer();
 }

@@ -3,7 +3,6 @@
 
 // Variables for hard mode of game
 const hardGameGrid = document.querySelector('#board');
-const resultHardDisplay = document.querySelector('#result');
 var hardCardsSelected = [];
 var hardCardsSelectedId = [];
 var hardCardsRight = [];
@@ -15,6 +14,8 @@ function startHardGame() {
     createHardBoard();
     document.getElementById('reset').addEventListener('click', resetHardGame);
     counter.innerHTML = `0`;
+    /* Bug fix: By placing setInterval within a function that's called upon game loading
+    the timer doesn't automatically start when the page is loaded, affecting game play */
     setInterval(setTimer, 1200);
 }
 
@@ -85,7 +86,7 @@ function checkHardMatch() {
     }
     hardCardsSelected = [];
     hardCardsSelectedId =[];
-    resultHardDisplay.textContent = hardCardsRight.length;
+    resultDisplay.textContent = hardCardsRight.length;
     if (hardCardsRight.length === fruitCardsHard.length/2) {
         alert('Yay, you found them all! Play again to beat your time or return home to try another difficulty.');
         resetHardGame();
@@ -102,7 +103,7 @@ function resetHardGame() {
     hardCards.forEach((c) => {
         c.setAttribute('src', './assets/images/fruit-card-back.png');
     });
-    resultHardDisplay.textContent = `0`;
+    resultDisplay.textContent = `0`;
     counter.innerHTML = `0`;
     resetTimer();
 }
