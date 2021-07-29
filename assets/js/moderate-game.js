@@ -52,7 +52,11 @@ function checkMatch() {
     const modCardTwoId = modCardsSelectedId[1];
     if (modCardsSelected[0] === modCardsSelected[1]) {
         modCardsRight.push(modCardsSelected);
+        // Moves 'move' counter forward
         moveCounter();
+        // Gives feedback to user that they found a match
+        easyCards[easyCardOneId].classList.add('match');
+        easyCards[easyCardTwoId].classList.add('match');
     } else {
         // Resets card back to card back is match is not found
         modCards[modCardOneId].setAttribute('src', './assets/images/fruit-card-back.png');
@@ -82,6 +86,8 @@ function resetModGame() {
     fruitCardsModerate.sort(() => 0.5 - Math.random());
     modCards.forEach((c) => {
         c.setAttribute('src', './assets/images/fruit-card-back.png');
+        // Removes correct match feedback to users
+        c.classList.remove('match');
     });
     resultEasyDisplay.textContent = `0`;
     counter.innerHTML = `0`;
