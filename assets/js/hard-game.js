@@ -76,7 +76,10 @@ function checkHardMatch() {
     var hardCards = document.querySelectorAll('img');
     const hardCardOneId = hardCardsSelectedId[0];
     const hardCardTwoId = hardCardsSelectedId[1];
-    if (hardCardsSelected[0] === hardCardsSelected[1]) {
+    // Bug fix: test easyCardsSelected for true equality, not easyCardsSelectedId
+    /* Bug fix: test for both match between data names and make sure ids don't match 
+     to make sure users cannot pick the same card twice to count as a match */
+    if (hardCardsSelected[0] === hardCardsSelected[1] && hardCardOneId !== hardCardTwoId) {
         hardCardsRight.push(hardCardsSelected);
         // Moves the counter
         moveCounter();

@@ -54,7 +54,7 @@ function checkMatch() {
     var modCards = document.querySelectorAll('img');
     const modCardOneId = modCardsSelectedId[0];
     const modCardTwoId = modCardsSelectedId[1];
-    if (modCardsSelected[0] === modCardsSelected[1]) {
+    if (modCardsSelected[0] === modCardsSelected[1] && modCardOneId !== modCardTwoId) {
         modCardsRight.push(modCardsSelected);
         // Moves 'move' counter forward
         moveCounter();

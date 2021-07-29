@@ -447,6 +447,8 @@ The bug (this was almost the whole view of the browser):
 
 **Solution** - I changed the id of the game board specifically for easy mode to allow seperate styling (width).
 
+**Bug 3** - Perfecting the match if statement for the game was a large challenge.
+
 ## Deployment
 
 ### GitHub Pages
