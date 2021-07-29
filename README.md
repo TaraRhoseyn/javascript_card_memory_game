@@ -290,7 +290,7 @@ On all difficulty levels of the game a reset button is visible underneath the sc
 
 #### Feature 10: The Contact page
 
-Next to the 'Reset Game' button is the 'Give Feedback' button. Upon clicking this, the user is redirected to a Contact page with a form for gathering feedback. The form is fully functional and uses Email JS to send a message to the site owner (myself). The next version of this game will have featured based on the feedback given by users of this current release of the game, allowing gamers to have a voice in the development of future iterations.
+Next to the 'Reset Game' button is the 'Give Feedback' button. Upon clicking this, the user is redirected to a Contact page with a form for gathering feedback. The form is fully functional and uses Email JS to send a message to the site owner (myself). The form is also validated with JavaScript to prevent users being able to submit a message without fully filled in input fields. The next version of this game will have featured based on the feedback given by users of this current release of the game, allowing gamers to have a voice in the development of future iterations.
 
 ![contact form](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/features/feature-ten.PNG)
 
@@ -490,6 +490,14 @@ The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMem
 | Game difficulty buttons in index.html that trigger easy, moderate and hard versions of the game |   Select game difficulty | Fully functional games with 6, 12 and 24 cards for each difficulty level | Works as expected |
 
 [Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-7.png)
+
+*8. As a regular visitor, I want to be able to give feedback to improve the game over time.*
+
+| Feature                            |                 Action                 |                           Expected result |     Actual result |
+ ---------------------------------- | :------------------------------------ | ---------------------------------------- | ---------------- |
+| Contact form that sends feedback to the site owner about the game | Send message with fully inputted field inputs | A success alert when message sent and error messages when inputs not filled out | Works as expected |
+
+[Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-8.png)
 
 ## Bugs found and resolved during development
 
