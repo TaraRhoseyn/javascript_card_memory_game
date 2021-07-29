@@ -464,13 +464,15 @@ The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMem
  ---------------------------------- | :------------------------------------ | ---------------------------------------- | ---------------- |
 | Scores tracker that goes up each correct pair |   Guess correct pairs by clicking on matching cards  | Score tracker to go up each time a correct pair is found until no more can be found | Works as expected |
 
-[Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-5.png)
+[Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-4.png)
 
 *5. As a first-time user, I want to keep track of my score to monitor my performance in the game.*
 
 | Feature                            |                 Action                 |                           Expected result |     Actual result |
  ---------------------------------- | :------------------------------------ | ---------------------------------------- | ---------------- |
 | All webpages fully responsive |   No action required  | All content to be present and arranged in a sensible layout | Works as expected |
+
+[Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-5.png)
 
 ## Bugs found and resolved during development
 
