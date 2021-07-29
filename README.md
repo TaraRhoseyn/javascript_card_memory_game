@@ -465,6 +465,9 @@ if (easyCardsSelected[0] === easyCardsSelected[1] && easyCardOneId !== easyCardT
 
 **Solution** - Used Math.min method to limit the length of the array to 2.
 
+**Bug 5** - Users were able to cheat by looking at the alt text once clicked on a card. 
+
+**Solution** - In the 'else' of the match 'if' statement the card's alt texts are reverted back to the alt text of the card back.
 
 ## Deployment
 
