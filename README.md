@@ -427,6 +427,27 @@ The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMem
 - **Safari**: Website and user stories work as expected. 
 - **Firefox**: Website and user stories work as expected. 
 
+### Testing user stories
+
+*1. As a first-time user, I want to understand the objective and rules of the game upfront and clearly.*
+
+| Feature                            |                 Action                 |                           Expected result |     Actual result |
+ ---------------------------------- | :------------------------------------ | ---------------------------------------- | ---------------- |
+| Read instructions and game objectives on home page      |      No action required, instructions are loaded above-the-fold on home page      | To find instructions that are clear, readable and easily understood | Works as expected |
+
+
+[Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-1-11.png)
+
+*2. As a first-time user, I want to use the game to challenge my memory.*
+
+| Feature                            |                 Action                 |                           Expected result |     Actual result |
+ ---------------------------------- | :------------------------------------ | ---------------------------------------- | ---------------- |
+| The ability to challenge your memory through a moderate and a difficult level   |   Select 'moderate' or 'hard' level in index.html   | A 12 and 24 card game board to be generated and functional | Works as expected |
+| A 'moves' tracker that lets me know how many moves it takes me to complete the game, so that I can challenge myself for next time |  Select game difficulty  | To view a 'scores' tracker that is clear and understandable | Works as expected |
+| A timer tracker that lets me know how long it takes me to complete the game, so that I can challenge myself for next time |  Select game difficulty  | To view a timer that is clearly readable and understandable | Works as expected |
+
+[Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-2.png)
+
 ## Bugs found and resolved during development
 
 **Bug 1** - When first implementing the timer function within the game, the timer began running immediately upon the DOM content loading. This meant that a user who had taken time to read instructions and then load the game would find that the timer had already began when they began to play. 
