@@ -481,7 +481,7 @@ The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMem
 | Timer on all game difficulty levels |   Select game difficulty | Timer that runs from the game being generated to the game being completed  | Works as expected |
 | A 'moves' tracker that lets me know how many moves it takes me to complete the game |  Select game difficulty  | To view a 'moves' tracker that is clear and understandable | Works as expected |
 
-[Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-6.png)
+[Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-6-10.png)
 
 *7. As a first-time user, I want the ability to select what level difficulty I want to play at.*
 
@@ -507,6 +507,14 @@ The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMem
 | Scores tracker that goes up each correct pair |   Guess correct pairs by clicking on matching cards  | Score tracker to go up each time a correct pair is found until no more can be found | Works as expected |
 [Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-5-9.png)
 
+*10. As a regular visitor, I want to see how long it takes me to complete the game so I can challenge myself the next time I play to beat it.*
+
+| Feature                            |                 Action                 |                           Expected result |     Actual result |
+ ---------------------------------- | :------------------------------------ | ---------------------------------------- | ---------------- |
+| Timer on all game difficulty levels |   Select game difficulty | Timer that runs from the game being generated to the game being completed  | Works as expected |
+| A 'moves' tracker that lets me know how many moves it takes me to complete the game |  Select game difficulty  | To view a 'moves' tracker that is clear and understandable | Works as expected |
+
+[Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-6-10.png)
 
 ## Bugs found and resolved during development
 
