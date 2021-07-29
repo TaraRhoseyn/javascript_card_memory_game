@@ -443,7 +443,7 @@ The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMem
 | Feature                            |                 Action                 |                           Expected result |     Actual result |
  ---------------------------------- | :------------------------------------ | ---------------------------------------- | ---------------- |
 | The ability to challenge your memory through a moderate and a difficult level   |   Select 'moderate' or 'hard' level in index.html or press 'Select difficulty' once game is generated to return to difficulty selection page  | A 12 and 24 card game board to be generated and functional | Works as expected |
-| A 'moves' tracker that lets me know how many moves it takes me to complete the game, so that I can challenge myself for next time |  Select game difficulty  | To view a 'scores' tracker that is clear and understandable | Works as expected |
+| A 'moves' tracker that lets me know how many moves it takes me to complete the game, so that I can challenge myself for next time |  Select game difficulty  | To view a 'moves' tracker that is clear and understandable | Works as expected |
 | A timer tracker that lets me know how long it takes me to complete the game, so that I can challenge myself for next time |  Select game difficulty  | To view a timer that is clearly readable and understandable | Works as expected |
 
 *3. As a first-time user, I want to be able to navigate the website quickly and with clear direction and prompts.*
@@ -459,11 +459,18 @@ The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMem
 
 
 *4. As a first-time user, I want to be able to play the game across all personal devices.*
+
+| Feature                            |                 Action                 |                           Expected result |     Actual result |
+ ---------------------------------- | :------------------------------------ | ---------------------------------------- | ---------------- |
+| Scores tracker that goes up each correct pair |   Guess correct pairs by clicking on matching cards  | Score tracker to go up each time a correct pair is found until no more can be found | Works as expected |
+
+[Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-5.png)
+
+*5. As a first-time user, I want to keep track of my score to monitor my performance in the game.*
+
 | Feature                            |                 Action                 |                           Expected result |     Actual result |
  ---------------------------------- | :------------------------------------ | ---------------------------------------- | ---------------- |
 | All webpages fully responsive |   No action required  | All content to be present and arranged in a sensible layout | Works as expected |
-
-[Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-4.png)
 
 ## Bugs found and resolved during development
 
