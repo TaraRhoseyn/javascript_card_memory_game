@@ -67,6 +67,8 @@ function flipHardCard() {
     if (hardCardsSelected.length === 2) {
         setTimeout(checkHardMatch, 300);
     }
+    // Bug fix: To prevent more than 2 cards being tested at the same time the array length is limited. Credit: Stack overflow, see credits in README.md for more details
+    hardCardsSelected.length = Math.min(hardCardsSelected.length, 2);
 }
 
 // Check for a match
