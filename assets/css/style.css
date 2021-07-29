@@ -95,20 +95,18 @@ button {
 }
 
 #return-home { 
-    border: #6FCF97!important; /* !important needed to override Bootstrap styling */ 
-    background-color: rgb(160, 9, 9);
+    background-color: #6FCF97;
     padding: 2px;
-    color: #fff;
+    color: #000;
     border-radius: 4px;
     margin-top: 0;
     float: left;
 }
 
 #return-home-contact {
-    border: #6FCF97!important; /* !important needed to override Bootstrap styling */ 
-    background-color: rgb(160, 9, 9);
+    background-color: #6FCF97;
     padding: 2px;
-    color: #fff;
+    color: #000;
     border-radius: 4px;
     margin: 0 auto;
     text-align: center;
