@@ -442,7 +442,7 @@ The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMem
 
 | Feature                            |                 Action                 |                           Expected result |     Actual result |
  ---------------------------------- | :------------------------------------ | ---------------------------------------- | ---------------- |
-| The ability to challenge your memory through a moderate and a difficult level   |   Select 'moderate' or 'hard' level in index.html   | A 12 and 24 card game board to be generated and functional | Works as expected |
+| The ability to challenge your memory through a moderate and a difficult level   |   Select 'moderate' or 'hard' level in index.html or press 'Select difficulty' once game is generated to return to difficulty selection page  | A 12 and 24 card game board to be generated and functional | Works as expected |
 | A 'moves' tracker that lets me know how many moves it takes me to complete the game, so that I can challenge myself for next time |  Select game difficulty  | To view a 'scores' tracker that is clear and understandable | Works as expected |
 | A timer tracker that lets me know how long it takes me to complete the game, so that I can challenge myself for next time |  Select game difficulty  | To view a timer that is clearly readable and understandable | Works as expected |
 
