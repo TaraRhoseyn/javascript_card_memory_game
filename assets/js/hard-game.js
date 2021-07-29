@@ -76,7 +76,11 @@ function checkHardMatch() {
     const hardCardTwoId = hardCardsSelectedId[1];
     if (hardCardsSelected[0] === hardCardsSelected[1]) {
         hardCardsRight.push(hardCardsSelected);
+        // Moves the counter
         moveCounter();
+        // Gives feedback to user that they found a match
+        hardCards[hardCardOneId].classList.add('match');
+        hardCards[hardCardTwoId].classList.add('match');
     } else {
         hardCards[hardCardOneId].setAttribute('src', './assets/images/fruit-card-back.png');
         hardCards[hardCardTwoId].setAttribute('src', './assets/images/fruit-card-back.png');
@@ -102,6 +106,8 @@ function resetHardGame() {
     fruitCardsHard.sort(() => 0.5 - Math.random());
     hardCards.forEach((c) => {
         c.setAttribute('src', './assets/images/fruit-card-back.png');
+        // Removes correct match feedback to users
+        c.classList.remove('match');
     });
     resultDisplay.textContent = `0`;
     counter.innerHTML = `0`;
