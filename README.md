@@ -480,6 +480,14 @@ if (easyCardsSelected[0] === easyCardsSelected[1] && easyCardOneId !== easyCardT
 
 **Solution** - Button background colour changed to pass test. 
 
+**Bug 9** - DOMContentLoader event listener was failing to executive
+
+**Solution** - Remove the 'async' tag I had placed in the script tags within index.html
+
+**Bug 10** - .slice() method working incorrectly in easy-game.js
+
+**Solution** - Change order of scripts in index.html so that hard-game.js, the script with the full array, is read first, so that the easy-game.js file recognises the array it is slicing.
+
 ## Deployment
 
 ### GitHub Pages
