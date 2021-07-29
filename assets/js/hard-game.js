@@ -15,6 +15,7 @@ function startHardGame() {
     createHardBoard();
     document.getElementById('reset').addEventListener('click', resetHardGame);
     counter.innerHTML = `0`;
+    resultDisplay.innerHTML = `0`;
     /* Bug fix: By placing setInterval within a function that's called upon game loading
     the timer doesn't automatically start when the page is loaded, affecting game play */
     setInterval(setTimer, 1200);
