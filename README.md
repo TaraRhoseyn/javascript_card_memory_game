@@ -312,6 +312,17 @@ This page displays when a user enters a URL that does not exist. The main purpos
 3. As a first-time user, I want to be able to navigate the website quickly and with clear direction and prompts.
 12. As a site owner, I want users to be able to navigate the website easily so that users are more likely to have an enjoyable experience and return to the game.
 
+#### Feature 12: Feedback to indicate a match 
+
+When a matched pair of cards is found by the user the game generates a green border around the matched cards. This lets users know they're on the right track in completing the game and helps them to avoid clicking the matched cards again during the course of the game. 
+
+![Match feedback](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/features/feature-twelve.PNG)
+
+**User stories covered by this feature:** 
+
+2. As a first-time user, I want to use the game to challenge my memory. 
+5. As a first-time user, I want to keep track of my score to monitor my performance in the game. 
+
 #### Features for future releases
 
 The following features would be built into the next release of the game, but the site owner's goal would be to include more features for future release based upon user feedback. 
