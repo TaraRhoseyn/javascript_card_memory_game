@@ -457,6 +457,14 @@ The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMem
 
 [Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-3.png)
 
+
+*4. As a first-time user, I want to be able to play the game across all personal devices.*
+| Feature                            |                 Action                 |                           Expected result |     Actual result |
+ ---------------------------------- | :------------------------------------ | ---------------------------------------- | ---------------- |
+| All webpages fully responsive |   No action required  | All content to be present and arranged in a sensible layout | Works as expected |
+
+[Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-4.png)
+
 ## Bugs found and resolved during development
 
 **Bug 1** - When first implementing the timer function within the game, the timer began running immediately upon the DOM content loading. This meant that a user who had taken time to read instructions and then load the game would find that the timer had already began when they began to play. 
