@@ -489,7 +489,7 @@ The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMem
  ---------------------------------- | :------------------------------------ | ---------------------------------------- | ---------------- |
 | Game difficulty buttons in index.html that trigger easy, moderate and hard versions of the game |   Select game difficulty | Fully functional games with 6, 12 and 24 cards for each difficulty level | Works as expected |
 
-[Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-7.png)
+[Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-7-11.png)
 
 *8. As a regular visitor, I want to be able to give feedback to improve the game over time.*
 
@@ -515,6 +515,14 @@ The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMem
 | A 'moves' tracker that lets me know how many moves it takes me to complete the game |  Select game difficulty  | To view a 'moves' tracker that is clear and understandable | Works as expected |
 
 [Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-6-10.png)
+
+*11. As a regular visitor, I want to be able to play a variety of difficulty levels so that the game remains fresh and interesting.*
+
+| Feature                            |                 Action                 |                           Expected result |     Actual result |
+ ---------------------------------- | :------------------------------------ | ---------------------------------------- | ---------------- |
+| Game difficulty buttons in index.html that trigger easy, moderate and hard versions of the game |   Select game difficulty | Fully functional games with 6, 12 and 24 cards for each difficulty level | Works as expected |
+
+[Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-7-11.png)
 
 ## Bugs found and resolved during development
 
