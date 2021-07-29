@@ -474,6 +474,15 @@ The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMem
 
 [Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-5.png)
 
+*6. As a first-time user, I want to see how long it takes me to complete the game.*
+
+| Feature                            |                 Action                 |                           Expected result |     Actual result |
+ ---------------------------------- | :------------------------------------ | ---------------------------------------- | ---------------- |
+| Timer on all game difficulty levels |   Select game difficulty | Timer that runs from the game being generated to the game being completed  | Works as expected |
+| A 'moves' tracker that lets me know how many moves it takes me to complete the game |  Select game difficulty  | To view a 'moves' tracker that is clear and understandable | Works as expected |
+
+[Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-6.png)
+
 ## Bugs found and resolved during development
 
 **Bug 1** - When first implementing the timer function within the game, the timer began running immediately upon the DOM content loading. This meant that a user who had taken time to read instructions and then load the game would find that the timer had already began when they began to play. 
