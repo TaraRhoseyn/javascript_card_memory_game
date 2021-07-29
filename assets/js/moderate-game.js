@@ -7,6 +7,7 @@ var modCardsSelected = [];
 var modCardsSelectedId = [];
 var modCardsRight = [];document.getElementById('moderate-button').addEventListener('click', startModerateGame);
 
+// Unique start up function for moderate mode of the game
 function startModerateGame() {
     displayGame();
     createModBoard();
@@ -49,7 +50,7 @@ function flipModCard() {
     modCardsSelected.length = Math.min(modCardsSelected.length, 2);
 }
 
-// Check for a match
+// Check for a match. Credit: Ania Kubrow
 function checkMatch() {
     var modCards = document.querySelectorAll('img');
     const modCardOneId = modCardsSelectedId[0];

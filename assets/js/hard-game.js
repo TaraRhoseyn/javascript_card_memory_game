@@ -9,6 +9,7 @@ var hardCardsRight = [];
 
 document.getElementById('hard-button').addEventListener('click', startHardGame);
 
+// Unique start up function for hard mode of the game
 function startHardGame() {
     displayGame();
     createHardBoard();
@@ -20,7 +21,7 @@ function startHardGame() {
 }
 
 // Array of objects to be injected into the DOM. 
-// This array is what the cards for the moderate & easy modes are based on
+// This array is what the cards for the moderate & easy modes are based on using the .slice method
 const fruitCardsHard = [
     { name: 'banana', img: './assets/images/fruit-one-banana.png', },
     { name: 'banana', img: './assets/images/fruit-one-banana.png', },
@@ -71,7 +72,7 @@ function flipHardCard() {
     hardCardsSelected.length = Math.min(hardCardsSelected.length, 2);
 }
 
-// Check for a match
+// Check for a match. Credit: Ania Kubrow
 function checkHardMatch() {
     var hardCards = document.querySelectorAll('img');
     const hardCardOneId = hardCardsSelectedId[0];
@@ -89,10 +90,13 @@ function checkHardMatch() {
     } else {
         hardCards[hardCardOneId].setAttribute('src', './assets/images/fruit-card-back.png');
         hardCards[hardCardTwoId].setAttribute('src', './assets/images/fruit-card-back.png');
+        /* Reverts alt for card images back to blank if not a match
+        This prevents cheating the game by looking at the alt tags */
         hardCards[hardCardOneId].setAttribute('alt', 'Card back, select to flip over');
         hardCards[hardCardTwoId].setAttribute('alt', 'Card back, select to flip over');
         moveCounter();
     }
+    // Resets array of cards
     hardCardsSelected = [];
     hardCardsSelectedId =[];
     resultDisplay.textContent = hardCardsRight.length;
@@ -102,7 +106,7 @@ function checkHardMatch() {
     }
 }
 
-// Resets game
+// Resets hard game
 function resetHardGame() {
     hardCardsSelected = [];
     hardCardsSelectedId = [];
