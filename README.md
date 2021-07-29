@@ -483,6 +483,14 @@ The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMem
 
 [Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-6.png)
 
+*7. As a first-time user, I want the ability to select what level difficulty I want to play at.*
+
+| Feature                            |                 Action                 |                           Expected result |     Actual result |
+ ---------------------------------- | :------------------------------------ | ---------------------------------------- | ---------------- |
+| Game difficulty buttons in index.html that trigger easy, moderate and hard versions of the game |   Select game difficulty | Fully functional games with 6, 12 and 24 cards for each difficulty level | Works as expected |
+
+[Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-7.png)
+
 ## Bugs found and resolved during development
 
 **Bug 1** - When first implementing the timer function within the game, the timer began running immediately upon the DOM content loading. This meant that a user who had taken time to read instructions and then load the game would find that the timer had already began when they began to play. 
