@@ -447,7 +447,19 @@ The bug (this was almost the whole view of the browser):
 
 **Solution** - I changed the id of the game board specifically for easy mode to allow seperate styling (width).
 
-**Bug 3** - Perfecting the match if statement for the game was a large challenge.
+**Bug 3** - Perfecting the match if statement for the game was a large challenge. Two major issues were present: the match would sometimes not execute, and a user could cheat by pressing the same card twice.
+
+**Solution** - To solve the first issue, I simply changed the operator from '==' to '===' to test *true* equality. To solve the second issue, I amended the code from to the following to make sure a match was checked only if the data-id of the two cards tested were different. 
+
+Original if statement:
+```
+if (easyCardsSelected[0] == easyCardsSelected[1])
+```
+
+New if statement that resolved bug:
+```
+if (easyCardsSelected[0] === easyCardsSelected[1] && easyCardOneId !== easyCardTwoId)
+```
 
 ## Deployment
 
