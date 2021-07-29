@@ -15,7 +15,7 @@ var errorMsgMsg = document.getElementById('msg-error');
 
 // Credit for function structure: W3 Schools 
 function validateForm() {
-    // Cariables to store the value of form inputs
+    // Variables to store the value of form inputs
     const name = document.querySelector('#fromName').value;
     const email = document.querySelector('#email').value;
     const msg = document.querySelector('#message').value;
@@ -38,7 +38,6 @@ function validateForm() {
 }
 
 // Credit: Code Institue and Email JS
-// Bug fix: Use contactForm method to prevent form closing
 function sendEmail() {
     // Removes error messages from successfully submitted form
     errorMsgName.remove();
