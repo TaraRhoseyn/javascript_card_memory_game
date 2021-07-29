@@ -241,3 +241,7 @@ button {
 footer ul {
     margin-top: 40px;
 }
+
+.match {
+    border: 4px solid #6FCF97; 
+}

@@ -103,6 +103,9 @@ function checkEasyMatch() {
         easyCardsRight.push(easyCardsSelected);
         // Moves the counter
         moveCounter();
+        // Gives feedback to user that they found a match
+        easyCards[easyCardOneId].classList.add('match');
+        easyCards[easyCardTwoId].classList.add('match');
     } else {
         // Resets card back to card back is match is not found
         easyCards[easyCardOneId].setAttribute('src', './assets/images/fruit-card-back.png');
