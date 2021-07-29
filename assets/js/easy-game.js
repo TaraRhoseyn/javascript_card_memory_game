@@ -99,7 +99,7 @@ function flipEasyCard() {
     easyCardsSelected.length = Math.min(easyCardsSelected.length, 2);
 }
 
-// Check for a match
+// Check for a match. Credit: Ania Kubrow
 function checkEasyMatch() {
     var easyCards = document.querySelectorAll('img');
     const easyCardOneId = easyCardsSelectedId[0];
@@ -147,6 +147,7 @@ function resetEasyGame() {
     easyCardsSelected = [];
     easyCardsSelectedId = [];
     easyCardsRight = [];
+    // Reshuffles cards
     easyCards = document.querySelectorAll('img');
     fruitCardsEasy.sort(() => 0.5 - Math.random());
     easyCards.forEach((c) => {

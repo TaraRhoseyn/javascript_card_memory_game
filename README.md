@@ -461,6 +461,11 @@ New if statement that resolved bug:
 if (easyCardsSelected[0] === easyCardsSelected[1] && easyCardOneId !== easyCardTwoId)
 ```
 
+**Bug 4** - If a user was fast enough with clicking 3 items could be added to the array that was tested for a match between 2 cards. 
+
+**Solution** - Used Math.min method to limit the length of the array to 2.
+
+
 ## Deployment
 
 ### GitHub Pages
