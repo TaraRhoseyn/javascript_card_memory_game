@@ -455,7 +455,7 @@ The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMem
 | 'Give feedback' button  |      Click on 'Give feedback' button once game is generated  | To be directed to contact.html with form | Works as expected |
 
 
-[Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-3.png)
+[Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-3-13.png)
 
 
 *4. As a first-time user, I want to be able to play the game across all personal devices.*
@@ -532,6 +532,15 @@ The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMem
 
 [Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-8-12.png)
 
+*13. As a site owner, I want users to be able to navigate the website easily so that users are more likely to have an enjoyable experience and return to the game.*
+
+| Feature                            |                 Action                 |                           Expected result |     Actual result |
+ ---------------------------------- | :------------------------------------ | ---------------------------------------- | ---------------- |
+| Header with links to all webpages     |      Click on 'Home' or 'Contact in the header to be directed to those pages   | To be directed to index.html and contact.html | Works as expected |
+| 'Select difficulty' button  |      Click on 'Select difficulty' button once game is generated  | To be directed to index.html with game difficulty selection buttons | Works as expected |
+| 'Give feedback' button  |      Click on 'Give feedback' button once game is generated  | To be directed to contact.html with form | Works as expected |
+
+[Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-3-13.png)
 
 ## Bugs found and resolved during development
 
