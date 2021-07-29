@@ -474,7 +474,7 @@ if (easyCardsSelected[0] === easyCardsSelected[1] && easyCardOneId !== easyCardT
 
 **Bug 7** - JavaScript scripts failing JSHint validation.
 
-**Solution** - Remove unnecessary semi-colons and add missing semi-colons. 
+**Solution** - Remove unnecessary semi-colons and add missing semi-colons. Add comment for jshint esversion 6/8 at the top of scripts.
 
 **Bug 8** - 'Select difficulty' button causing contrast error in WAVE accessibility tests. 
 
