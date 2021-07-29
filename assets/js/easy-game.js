@@ -143,6 +143,8 @@ function resetEasyGame() {
     fruitCardsEasy.sort(() => 0.5 - Math.random());
     easyCards.forEach((c) => {
         c.setAttribute('src', './assets/images/fruit-card-back.png');
+        // Removes correct match feedback to users
+        c.classList.remove('match');
     });
     resultEasyDisplay.textContent = `0`;
     counter.innerHTML = `0`;
