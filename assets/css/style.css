@@ -155,9 +155,34 @@ button {
     padding-top: 10px;
 }
 
+#timer {
+    font-size: 20px;
+    margin-left: 70%;
+}
+
+.form-elem {
+    display: block;
+    width: 60%;
+    margin: 0 auto;
+}
+
+#play-rules {
+    clear: both;
+}
+
+#counter, #score-text {
+    font-size: 25px;
+}
+
+footer ul {
+    margin-top: 40px;
+}
+
+.match {
+    border: 4px solid #6FCF97; 
+}
+
 /* Media queries to ensure the content is correctly layed out on mobile and tablet view */ 
-
-
 
 @media screen and (min-width: 300px) {
     .fruitCard {
@@ -170,6 +195,12 @@ button {
     
     #return-home {
         margin-left: 20px;
+    }
+}
+
+@media screen and (min-width: 600px) {
+    #return-home {
+        margin-left: 150px;
     }
 }
 
@@ -217,31 +248,4 @@ button {
     #easyboard {
         width: 50%;
     }
-}
-
-#timer {
-    font-size: 20px;
-    margin-left: 70%;
-}
-
-.form-elem {
-    display: block;
-    width: 60%;
-    margin: 0 auto;
-}
-
-#play-rules {
-    clear: both;
-}
-
-#counter, #score-text {
-    font-size: 25px;
-}
-
-footer ul {
-    margin-top: 40px;
-}
-
-.match {
-    border: 4px solid #6FCF97; 
 }
