@@ -68,6 +68,7 @@ function createEasyBoard() {
     /* Bug fix: .sort function (shuffles array) has to 
     be called within a seperate function to allow
     .slice method in fruitCardsEasy to work */
+    // Credit for .sort method of shuffling: Marina Ferreira
     fruitCardsEasy.sort(() => 0.5 - Math.random());
     /* Change id of game board specifically for Easy mode to allow all of the
     peripherals (e.g. score and counter tracker) to fit within the user's view of the browser */
