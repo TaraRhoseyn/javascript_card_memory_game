@@ -446,7 +446,16 @@ The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMem
 | A 'moves' tracker that lets me know how many moves it takes me to complete the game, so that I can challenge myself for next time |  Select game difficulty  | To view a 'scores' tracker that is clear and understandable | Works as expected |
 | A timer tracker that lets me know how long it takes me to complete the game, so that I can challenge myself for next time |  Select game difficulty  | To view a timer that is clearly readable and understandable | Works as expected |
 
-[Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-2.png)
+*3. As a first-time user, I want to be able to navigate the website quickly and with clear direction and prompts.*
+
+| Feature                            |                 Action                 |                           Expected result |     Actual result |
+ ---------------------------------- | :------------------------------------ | ---------------------------------------- | ---------------- |
+| Header with links to all webpages     |      Click on 'Home' or 'Contact in the header to be directed to those pages   | To be directed to index.html and contact.html | Works as expected |
+| 'Select difficulty' button  |      Click on 'Select difficulty' button once game is generated  | To be directed to index.html with game difficulty selection buttons | Works as expected |
+| 'Give feedback' button  |      Click on 'Give feedback' button once game is generated  | To be directed to contact.html with form | Works as expected |
+
+
+[Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-3.png)
 
 ## Bugs found and resolved during development
 
