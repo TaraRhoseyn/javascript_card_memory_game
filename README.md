@@ -476,7 +476,7 @@ By forking this GitHub repository you are making a copy of the original to view 
 - **Code institute** - for lesson on Email JS allowing me to use the API in email.js.
 - **Michelle Toscano** - for method of [counting moves](https://github.com/Michelle3334/freaky_memory/blob/master/assets/js/script.js) in a card memory game.
 - **Ania Kubow** - for the foundation of building [card game boards within javascript](https://www.youtube.com/watch?v=tjyDOHzKN0w).
-- **Stack overflow** - for setting up a [timer feature](https://stackoverflow.com/questions/65091796/reset-a-count-up-timer-in-javascript)
+- **Stack overflow** - for setting up a [timer feature](https://stackoverflow.com/questions/65091796/reset-a-count-up-timer-in-javascript), for [limiting the length of an array](https://stackoverflow.com/questions/14236515/can-i-limit-the-length-of-an-array-in-javascript)
 - **Mário Gusman** from Code Institute Slack group - for code about accessibility measures in the footer.
 - **Hover.css** - for [Grow effect CSS code](https://ianlunn.github.io/Hover/)
 - **CSS Deck** - for [active navbar styling junction](https://cssdeck.com/blog/intelligent-navigation/)
