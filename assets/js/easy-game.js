@@ -94,7 +94,6 @@ function flipEasyCard() {
     this.setAttribute('alt', fruitCardsEasy[easyCardId].name);
     if (easyCardsSelected.length === 2) {
         setTimeout(checkEasyMatch, 300); // this calls function checkMatch after 300 milliseconds
-        console.log(easyCardsSelected)
     }
     // Bug fix: To prevent more than 2 cards being tested at the same time the array length is limited. Credit: Stack overflow, see credits in README.md for more details
     easyCardsSelected.length = Math.min(easyCardsSelected.length, 2);
