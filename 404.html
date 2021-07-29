@@ -35,11 +35,13 @@
             </nav>
         </header>
         <main>
+            <!-- Main content on 404 page to redirect users back to main site -->
             <div class="text-center">
                 <h1 class="my-5">Whoops!</h1>
                 <h2 class="mb-5">We couldn't find what you were looking for</h2>
                 <!-- Button to guide users back to the game if lost -->
-                <a href="index.html" class="text-center button" id="fourbutton" role="button">Return to Game</a>
+                <!-- Using an <a> over <button> to pass accessibility tests -->
+                <a href="index.html" class="text-center button" role="button">Return to Game</a>
             </div>
         </main>
         <footer class="text-center mt-5 footer">
