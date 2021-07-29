@@ -93,8 +93,11 @@ function flipEasyCard() {
     this.setAttribute('src', fruitCardsEasy[easyCardId].img);
     this.setAttribute('alt', fruitCardsEasy[easyCardId].name);
     if (easyCardsSelected.length === 2) {
-        setTimeout(checkEasyMatch, 300); // this calls function checkMatch after 500 milliseconds
+        setTimeout(checkEasyMatch, 300); // this calls function checkMatch after 300 milliseconds
+        console.log(easyCardsSelected)
     }
+    // Bug fix: To prevent more than 2 cards being tested at the same time the array length is limited. Credit: Stack overflow, see credits in README.md for more details
+    easyCardsSelected.length = Math.min(easyCardsSelected.length, 2);
 }
 
 // Check for a match
@@ -103,7 +106,9 @@ function checkEasyMatch() {
     const easyCardOneId = easyCardsSelectedId[0];
     const easyCardTwoId = easyCardsSelectedId[1];
     // Bug fix: test easyCardsSelected for true equality, not easyCardsSelectedId
-    if (easyCardsSelected[0] === easyCardsSelected[1]) {
+    /* Bug fix: test for both match between data names and make sure ids don't match 
+     to make sure users cannot pick the same card twice to count as a match */
+    if (easyCardsSelected[0] === easyCardsSelected[1] && easyCardOneId !== easyCardTwoId) {
         easyCardsRight.push(easyCardsSelected);
         // Moves the counter
         moveCounter();
