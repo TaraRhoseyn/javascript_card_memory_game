@@ -13,6 +13,9 @@ function startModerateGame() {
     createModBoard();
     document.getElementById('reset').addEventListener('click', resetModGame);
     counter.innerHTML = `0`;
+    resultEasyDisplay.innerHTML = `0`;
+    /* Bug fix: By placing setInterval within a function that's called upon game loading
+    the timer doesn't automatically start when the page is loaded, affecting game play */
     setInterval(setTimer, 1200);
 }
 
