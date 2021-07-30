@@ -127,7 +127,7 @@ function resetHardGame() {
     fruitCardsHard.sort(() => 0.5 - Math.random());
     hardCards.forEach((c) => {
         c.setAttribute('src', './assets/images/fruit-card-back.png');
-        c.addEventListener('click', flipEasyCard);
+        c.addEventListener('click', flipHardCard);
         // Removes correct match feedback to users
         c.classList.remove('match');
     });
