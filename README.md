@@ -445,6 +445,9 @@ The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMem
 | The ability to challenge your memory through a moderate and a difficult level   |   Select 'moderate' or 'hard' level in index.html or press 'Select difficulty' once game is generated to return to difficulty selection page  | A 12 and 24 card game board to be generated and functional | Works as expected |
 | A 'moves' tracker that lets me know how many moves it takes me to complete the game, so that I can challenge myself for next time |  Select game difficulty  | To view a 'moves' tracker that is clear and understandable | Works as expected |
 | A timer tracker that lets me know how long it takes me to complete the game, so that I can challenge myself for next time |  Select game difficulty  | To view a timer that is clearly readable and understandable | Works as expected |
+| Feedback indicating a matched pair on game board |  Find a matching pair of cards by clicking on cards | To see a green border, indicating a match | Works as expected |
+
+[Screenshot to show user story](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/testing/user-story-2.png)
 
 *3. As a first-time user, I want to be able to navigate the website quickly and with clear direction and prompts.*
 
@@ -455,24 +458,25 @@ The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMem
 | 'Give feedback' button  |      Click on 'Give feedback' button once game is generated  | To be directed to contact.html with form | Works as expected |
 
 
-[Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-3-13.png)
+[Screenshot to show user story](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/testing/user-story-3-13.png)
 
 
 *4. As a first-time user, I want to be able to play the game across all personal devices.*
 
 | Feature                            |                 Action                 |                           Expected result |     Actual result |
  ---------------------------------- | :------------------------------------ | ---------------------------------------- | ---------------- |
-| Scores tracker that goes up each correct pair |   Guess correct pairs by clicking on matching cards  | Score tracker to go up each time a correct pair is found until no more can be found | Works as expected |
+| All webpages fully responsive |   No action required  | All content to be present and arranged in a sensible layout | Works as expected |
 
-[Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-4.png)
+[Screenshot to show user story](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/testing/user-story-4.png)
 
 *5. As a first-time user, I want to keep track of my score to monitor my performance in the game.*
 
 | Feature                            |                 Action                 |                           Expected result |     Actual result |
  ---------------------------------- | :------------------------------------ | ---------------------------------------- | ---------------- |
-| All webpages fully responsive |   No action required  | All content to be present and arranged in a sensible layout | Works as expected |
+| Scores tracker that goes up each correct pair |   Guess correct pairs by clicking on matching cards  | Score tracker to go up each time a correct pair is found until no more can be found | Works as expected |
+| Feedback indicating a matched pair on game board |  Find a matching pair of cards by clicking on cards | To see a green border, indicating a match | Works as expected |
 
-[Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-5-9.png)
+[Screenshot to show user story](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/testing/user-story-5-9.png)
 
 *6. As a first-time user, I want to see how long it takes me to complete the game.*
 
@@ -481,7 +485,7 @@ The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMem
 | Timer on all game difficulty levels |   Select game difficulty | Timer that runs from the game being generated to the game being completed  | Works as expected |
 | A 'moves' tracker that lets me know how many moves it takes me to complete the game |  Select game difficulty  | To view a 'moves' tracker that is clear and understandable | Works as expected |
 
-[Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-6-10.png)
+[Screenshot to show user story](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/testing/user-story-6-10.png)
 
 *7. As a first-time user, I want the ability to select what level difficulty I want to play at.*
 
@@ -489,7 +493,7 @@ The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMem
  ---------------------------------- | :------------------------------------ | ---------------------------------------- | ---------------- |
 | Game difficulty buttons in index.html that trigger easy, moderate and hard versions of the game |   Select game difficulty | Fully functional games with 6, 12 and 24 cards for each difficulty level | Works as expected |
 
-[Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-7-11.png)
+[Screenshot to show user story](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/testing/user-story-7-11.png)
 
 *8. As a regular visitor, I want to be able to give feedback to improve the game over time.*
 
@@ -497,7 +501,7 @@ The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMem
  ---------------------------------- | :------------------------------------ | ---------------------------------------- | ---------------- |
 | Contact form that sends feedback to the site owner about the game | Send message with fully inputted field inputs | A success alert when message sent and error messages when inputs not filled out | Works as expected |
 
-[Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-8-12.png)
+[Screenshot to show user story](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/testing/user-story-8-12.png)
 
 *9. As a regular visitor, I want to see my score and move counter so that I can challenge myself the next time I play to beat it.*
 
@@ -505,7 +509,8 @@ The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMem
  ---------------------------------- | :------------------------------------ | ---------------------------------------- | ---------------- |
 | A 'moves' tracker that lets me know how many moves it takes me to complete the game |  Select game difficulty  | To view a 'moves' tracker that is clear and understandable | Works as expected |
 | Scores tracker that goes up each correct pair |   Guess correct pairs by clicking on matching cards  | Score tracker to go up each time a correct pair is found until no more can be found | Works as expected |
-[Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-5-9.png)
+
+[Screenshot to show user story](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/testing/user-story-5-9.png)
 
 *10. As a regular visitor, I want to see how long it takes me to complete the game so I can challenge myself the next time I play to beat it.*
 
@@ -514,7 +519,7 @@ The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMem
 | Timer on all game difficulty levels |   Select game difficulty | Timer that runs from the game being generated to the game being completed  | Works as expected |
 | A 'moves' tracker that lets me know how many moves it takes me to complete the game |  Select game difficulty  | To view a 'moves' tracker that is clear and understandable | Works as expected |
 
-[Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-6-10.png)
+[Screenshot to show user story](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/testing/user-story-6-10.png)
 
 *11. As a regular visitor, I want to be able to play a variety of difficulty levels so that the game remains fresh and interesting.*
 
@@ -522,7 +527,7 @@ The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMem
  ---------------------------------- | :------------------------------------ | ---------------------------------------- | ---------------- |
 | Game difficulty buttons in index.html that trigger easy, moderate and hard versions of the game |   Select game difficulty | Fully functional games with 6, 12 and 24 cards for each difficulty level | Works as expected |
 
-[Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-7-11.png)
+[Screenshot to show user story](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/testing/user-story-7-11.png)
 
 *12. As a site owner, I want to be able to collect feedback from users in a simple and easy way.*
 
@@ -530,7 +535,7 @@ The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMem
  ---------------------------------- | :------------------------------------ | ---------------------------------------- | ---------------- |
 | Contact form that sends feedback to the site owner about the game | Send message with fully inputted field inputs | A success alert when message sent and error messages when inputs not filled out | Works as expected |
 
-[Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-8-12.png)
+[Screenshot to show user story](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/testing/user-story-8-12.png)
 
 *13. As a site owner, I want users to be able to navigate the website easily so that users are more likely to have an enjoyable experience and return to the game.*
 
@@ -540,7 +545,7 @@ The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMem
 | 'Select difficulty' button  |      Click on 'Select difficulty' button once game is generated  | To be directed to index.html with game difficulty selection buttons | Works as expected |
 | 'Give feedback' button  |      Click on 'Give feedback' button once game is generated  | To be directed to contact.html with form | Works as expected |
 
-[Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-3-13.png)
+[Screenshot to show user story](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/testing/user-story-3-13.png)
 
 ## Bugs found and resolved during development
 
@@ -619,7 +624,7 @@ The bug:
 
 I created a new function that switches incorrect cards back to the card back outside of the matching function. I then took away the setTimeout time on when the matching function was called, and instead placed that setTimeout on the new changeCardBack function instead. So when a card is clicked, the match function is executed immediately but the card stays for 400 miliseconds and is then turned back by a seperate function.
 
-Original code:`
+Original code:
 
 ```
 // in flipEasyCard()
@@ -691,9 +696,7 @@ else if (hardCardsSelected.length > 2) {
 The bug:
 ![Bug thirteen](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/bugs/bug-thirteen.PNG)
 
-**Solution** - Changed changeCardBack() function to a new function, correctMatch() that executed the resetEasyGame() function, allowing a rest period of 400 
-
-
+**Solution** - Changed changeCardBack() function to a new function, correctMatch() that executed the resetEasyGame() function, allowing a rest period of 400.
 
 ## Deployment
 
