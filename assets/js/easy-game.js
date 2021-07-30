@@ -100,6 +100,7 @@ function flipEasyCard() {
     // Bug fix: To prevent more than 2 cards being tested at the same time the array length is limited. Credit: Stack overflow, see credits in README.md for more details
     easyCardsSelected.length = Math.min(easyCardsSelected.length, 2);
 }
+
 // Check for a match. Credit: Ania Kubrow
 function checkEasyMatch() {
     var easyCards = document.querySelectorAll('img');
@@ -116,6 +117,7 @@ function checkEasyMatch() {
         easyCards[easyCardOneId].classList.add('match');
         easyCards[easyCardTwoId].classList.add('match');
     } else {
+        moveCounter();
         // Credit for setTimeout: Free Code Camp
         setTimeout(changeCardBack, 400);
         function changeCardBack() {
