@@ -107,9 +107,11 @@ function checkEasyMatch() {
         console.log(easyCardsRight);
         // Moves the counter
         moveCounter();
-        // Gives feedback to user that they found a match
+        // Bug fix: Remove event listener from selected cards to prevent users
+        // cheating by clicking the same pair more than once
         easyCards[easyCardOneId].removeEventListener("click", flipEasyCard);
         easyCards[easyCardTwoId].removeEventListener("click", flipEasyCard);
+        // Gives feedback to user that they found a match
         easyCards[easyCardOneId].classList.add('match');
         easyCards[easyCardTwoId].classList.add('match');
     } else {
@@ -126,15 +128,19 @@ function checkEasyMatch() {
             easyCards[easyCardTwoId].setAttribute('alt', 'Card back, select to flip over');
         };
     }
+    // Resets array of cards
     easyCardsSelected = [];
     easyCardsSelectedId = [];
     resultDisplay.textContent = easyCardsRight.length; 
     if (easyCardsRight.length === fruitCardsEasy.length/2) {
-        setTimeout(correctMatch, 200);        
+        /* Bug fix: call function that makes cards img
+        back to the original back after 200 miliseconds
+        so the user has time to view the final matched car */
+        setTimeout(correctEasyMatch, 200);        
     }
 }
 
-function correctMatch() {
+function correctEasyMatch() {
     alert('Yay, you found them all! Play again to beat your time or return home to try another difficulty.');
     resetEasyGame();
 }

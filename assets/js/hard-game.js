@@ -85,6 +85,10 @@ function checkHardMatch() {
         hardCardsRight.push(hardCardsSelected);
         // Moves the counter
         moveCounter();
+        // Bug fix: Remove event listener from selected cards to prevent users
+        // cheating by clicking the same pair more than once
+        hardCards[hardCardOneId].removeEventListener("click", flipEasyCard);
+        hardCards[hardCardTwoId].removeEventListener("click", flipEasyCard);
         // Gives feedback to user that they found a match
         hardCards[hardCardOneId].classList.add('match');
         hardCards[hardCardTwoId].classList.add('match');
@@ -102,9 +106,16 @@ function checkHardMatch() {
     hardCardsSelectedId =[];
     resultDisplay.textContent = hardCardsRight.length;
     if (hardCardsRight.length === fruitCardsHard.length/2) {
-        alert('Yay, you found them all! Play again to beat your time or return home to try another difficulty.');
-        resetHardGame();
+        /* Bug fix: call function that makes cards img
+        back to the original back after 200 miliseconds
+        so the user has time to view the final matched car */
+        setTimeout(correctHardMatch, 200); 
     }
+}
+
+function correctHardMatch() {
+    alert('Yay, you found them all! Play again to beat your time or return home to try another difficulty.');
+    resetHardGame();
 }
 
 // Resets hard game
@@ -116,6 +127,7 @@ function resetHardGame() {
     fruitCardsHard.sort(() => 0.5 - Math.random());
     hardCards.forEach((c) => {
         c.setAttribute('src', './assets/images/fruit-card-back.png');
+        c.addEventListener('click', flipEasyCard);
         // Removes correct match feedback to users
         c.classList.remove('match');
     });
