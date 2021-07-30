@@ -4,13 +4,6 @@
 // Global variable across all versions of the game to display score counter
 const resultDisplay = document.querySelector('#result');
 
-// Hides game until game difficulty level is selected
-document.addEventListener('DOMContentLoaded', () => {
-    document.getElementById('board').classList.add('no-display');
-    document.getElementById('timer-and-home').classList.add('no-display');
-    document.getElementById('board-content').classList.add('no-display');
-});
-
 // Inserts back content hidden upon DOM loaded
 // Removes introductory information
 function displayGame() {
@@ -111,9 +104,12 @@ function checkEasyMatch() {
      to make sure users cannot pick the same card twice to count as a match */
     if (easyCardsSelected[0] === easyCardsSelected[1] && easyCardOneId !== easyCardTwoId) {
         easyCardsRight.push(easyCardsSelected);
+        console.log(easyCardsRight);
         // Moves the counter
         moveCounter();
         // Gives feedback to user that they found a match
+        easyCards[easyCardOneId].removeEventListener("click", flipEasyCard);
+        easyCards[easyCardTwoId].removeEventListener("click", flipEasyCard);
         easyCards[easyCardOneId].classList.add('match');
         easyCards[easyCardTwoId].classList.add('match');
     } else {
@@ -159,6 +155,7 @@ function resetEasyGame() {
     fruitCardsEasy.sort(() => 0.5 - Math.random());
     easyCards.forEach((c) => {
         c.setAttribute('src', './assets/images/fruit-card-back.png');
+        c.addEventListener('click', flipEasyCard);
         // Removes correct match feedback to users
         c.classList.remove('match');
     });
