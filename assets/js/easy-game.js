@@ -119,6 +119,7 @@ function checkEasyMatch() {
     } else {
         moveCounter();
         // Credit for setTimeout: Free Code Camp
+        // Bug fix: Prevents users from breaking the game from selecting cards too fast. Allows match to be tested immediately but the cards to remain for 400 miliseconds
         setTimeout(changeCardBack, 400);
         function changeCardBack() {
             easyCards[easyCardOneId].setAttribute('src', './assets/images/fruit-card-back.png');
