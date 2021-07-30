@@ -624,7 +624,7 @@ The bug:
 **Bug 12** - If a user was fast enough while clicking the cards, 3 cards would appear at once on the game board. This disrupted the data stored in arrays that were tested when it comes to finding matching pairs, producing a broken game.
 
 The bug:
-![Bug twelve](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/bugs/bug-twelve.PNG)
+![Bug twelve](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/bugs/bug-twelve.png)
 
 **Solution** - This bug took a few fixes in various parts of the codebase. The first step was changing the times at which different functions were executed. Originally, the function to test for matches was executed 400 miliseconds after being called, so that the user had time to view the front face of the cards before they were turned over if they weren't a match. 
 
