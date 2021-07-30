@@ -562,7 +562,7 @@ The bug (this was almost the whole view of the browser):
 
 **Solution** - I changed the id of the game board specifically for easy mode to allow seperate styling (width).
 
-**Bug 4** - Perfecting the match if statement for the game was a large challenge. Two major issues were present: the match would sometimes not execute, and a user could cheat by pressing the same card twice.
+**Bug 4** - Perfecting the match 'if' statement for the game was a large challenge. Two major issues were present: the match would sometimes not execute, and a user could cheat by pressing the same card twice. If a user clicked the same card twice the game would register that second click as a 'match' because it would compare the first and second click as two elements to test in the match 'if' statement.
 
 The bug:
 ![Bug one](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/bugs/bug-four.PNG)
@@ -602,6 +602,14 @@ if (easyCardsSelected[0] === easyCardsSelected[1] && easyCardOneId !== easyCardT
 **Bug 10** - .slice() method working incorrectly in easy-game.js
 
 **Solution** - Change order of scripts in index.html so that hard-game.js, the script with the full array, is read first, so that the easy-game.js file recognises the array it is slicing.
+
+**Bug 11** - If a user pressed the same *pair* of cards again, the game would class this is a seperate match. If a user did this repeatedly, the game could be 'won' by creating multiple instances where the game has classed a matching pair. 
+
+The bug:
+![Bug eleven](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/bugs/bug-eleven.PNG)
+
+**Solution** - Adding a .removeEventListener to cards once they have been selected to prevent them from being sent to the matching checking and card flipping functions. The event listener had to be added once the game is reset.
+
 
 ## Deployment
 
