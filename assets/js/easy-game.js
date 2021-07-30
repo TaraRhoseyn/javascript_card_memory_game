@@ -134,11 +134,14 @@ function checkEasyMatch() {
     easyCardsSelectedId = [];
     resultDisplay.textContent = easyCardsRight.length; 
     if (easyCardsRight.length === fruitCardsEasy.length/2) {
-        alert('Yay, you found them all! Play again to beat your time or return home to try another difficulty.');
-        resetEasyGame();
+        setTimeout(correctMatch, 200);        
     }
 }
 
+function correctMatch() {
+    alert('Yay, you found them all! Play again to beat your time or return home to try another difficulty.');
+    resetEasyGame();
+}
 
 // Moves the counter
 // Credit for counting moves method: Michelle Toscano. https://github.com/Michelle3334/freaky_memory/blob/master/assets/js/script.js
