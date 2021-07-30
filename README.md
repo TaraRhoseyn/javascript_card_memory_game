@@ -660,6 +660,7 @@ By forking this GitHub repository you are making a copy of the original to view 
 - **Bootstrap v5** - for [layout and responsive design](https://getbootstrap.com/docs/5.0/getting-started/introduction/)
 - **Font awesome** - for [social media icons](https://fontawesome.com/)
 - **Marina Ferreira** - for [.sort method of shuffling](https://github.com/code-sketch/memory-game)
+- **Free code camp** - for setTimeout() method of [delaying a function executing](https://www.freecodecamp.org/news/javascript-timers-everything-you-need-to-know-5f31eaa37162/)
 
 ### Media
 

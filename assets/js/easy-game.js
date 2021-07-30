@@ -93,12 +93,13 @@ function flipEasyCard() {
     this.setAttribute('src', fruitCardsEasy[easyCardId].img);
     this.setAttribute('alt', fruitCardsEasy[easyCardId].name);
     if (easyCardsSelected.length === 2) {
-        setTimeout(checkEasyMatch, 300); // this calls function checkMatch after 300 milliseconds
+        checkEasyMatch(); 
+    } else if (easyCardsSelected.length > 2) {
+        this.setAttribute('src', './assets/images/fruit-card-back.png');
     }
     // Bug fix: To prevent more than 2 cards being tested at the same time the array length is limited. Credit: Stack overflow, see credits in README.md for more details
     easyCardsSelected.length = Math.min(easyCardsSelected.length, 2);
 }
-
 // Check for a match. Credit: Ania Kubrow
 function checkEasyMatch() {
     var easyCards = document.querySelectorAll('img');
@@ -115,26 +116,26 @@ function checkEasyMatch() {
         easyCards[easyCardOneId].classList.add('match');
         easyCards[easyCardTwoId].classList.add('match');
     } else {
-        // Resets card back to card back is match is not found
-        easyCards[easyCardOneId].setAttribute('src', './assets/images/fruit-card-back.png');
-        easyCards[easyCardTwoId].setAttribute('src', './assets/images/fruit-card-back.png');
-        /* Reverts alt for card images back to blank if not a match
-        This prevents cheating the game by looking at the alt tags */
-        easyCards[easyCardOneId].setAttribute('alt', 'Card back, select to flip over');
-        easyCards[easyCardTwoId].setAttribute('alt', 'Card back, select to flip over');
-        // Moves the counter
-        moveCounter();
+        // Credit for setTimeout: Free Code Camp
+        setTimeout(changeCardBack, 400);
+        function changeCardBack() {
+            easyCards[easyCardOneId].setAttribute('src', './assets/images/fruit-card-back.png');
+            easyCards[easyCardTwoId].setAttribute('src', './assets/images/fruit-card-back.png');
+            /* Reverts alt for card images back to blank if not a match
+            This prevents cheating the game by looking at the alt tags */
+            easyCards[easyCardOneId].setAttribute('alt', 'Card back, select to flip over');
+            easyCards[easyCardTwoId].setAttribute('alt', 'Card back, select to flip over');
+        };
     }
-    // Resets the array
     easyCardsSelected = [];
     easyCardsSelectedId = [];
-    // Updates score
     resultDisplay.textContent = easyCardsRight.length; 
     if (easyCardsRight.length === fruitCardsEasy.length/2) {
         alert('Yay, you found them all! Play again to beat your time or return home to try another difficulty.');
         resetEasyGame();
     }
 }
+
 
 // Moves the counter
 // Credit for counting moves method: Michelle Toscano. https://github.com/Michelle3334/freaky_memory/blob/master/assets/js/script.js
