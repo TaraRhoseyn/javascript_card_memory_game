@@ -610,6 +610,73 @@ The bug:
 
 **Solution** - Adding a .removeEventListener to cards once they have been selected to prevent them from being sent to the matching checking and card flipping functions. The event listener had to be added once the game is reset.
 
+**Bug 12** - If a user was fast enough while clicking the cards, 3 cards would appear at once on the game board. This disrupted the data stored in arrays that were tested when it comes to finding matching pairs, producing a broken game.
+
+The bug:
+![Bug twelve](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/bugs/bug-twelve.PNG)
+
+**Solution** - This bug took a few fixes in various parts of the codebase. The first step was changing the times at which different functions were executed. Originally, the function to test for matches was executed 400 miliseconds after being called, so that the user had time to view the front face of the cards before they were turned over if they weren't a match. 
+
+I created a new function that switches incorrect cards back to the card back outside of the matching function. I then took away the setTimeout time on when the matching function was called, and instead placed that setTimeout on the new changeCardBack function instead.
+
+Original code:`
+
+```
+// in flipEasyCard()
+if (easyCardsSelected.length === 2) {
+        setTimeout(checkEasyMatch, 300); // this calls function checkMatch after 300 milliseconds
+    }
+
+// in checkEasyMatch()
+if (easyCardsSelected[0] === easyCardsSelected[1] && easyCardOneId !== easyCardTwoId) {
+        easyCardsRight.push(easyCardsSelected);
+        // Moves the counter
+        moveCounter();
+        // Gives feedback to user that they found a match
+        easyCards[easyCardOneId].classList.add('match');
+        easyCards[easyCardTwoId].classList.add('match');
+    } else {
+        // Resets card back to card back is match is not found
+        easyCards[easyCardOneId].setAttribute('src', './assets/images/fruit-card-back.png');
+        easyCards[easyCardTwoId].setAttribute('src', './assets/images/fruit-card-back.png');
+        /* Reverts alt for card images back to blank if not a match
+        This prevents cheating the game by looking at the alt tags */
+        easyCards[easyCardOneId].setAttribute('alt', 'Card back, select to flip over');
+        easyCards[easyCardTwoId].setAttribute('alt', 'Card back, select to flip over');
+        // Moves the counter
+        moveCounter();
+    }
+```
+
+Updated code:
+
+```
+// in flipEasyCard()
+if (easyCardsSelected.length === 2) {
+        checkEasyMatch();
+    }
+
+// in checkEasyMatch()
+if (easyCardsSelected[0] === easyCardsSelected[1] && easyCardOneId !== easyCardTwoId) {
+        easyCardsRight.push(easyCardsSelected);
+        // Moves the counter
+        moveCounter();
+        // Gives feedback to user that they found a match
+        easyCards[easyCardOneId].classList.add('match');
+        easyCards[easyCardTwoId].classList.add('match');
+    } else {
+        // Credit for setTimeout: Free Code Camp
+        setTimeout(changeCardBack, 400);
+        function changeCardBack() {
+            easyCards[easyCardOneId].setAttribute('src', './assets/images/fruit-card-back.png');
+            easyCards[easyCardTwoId].setAttribute('src', './assets/images/fruit-card-back.png');
+            /* Reverts alt for card images back to blank if not a match
+            This prevents cheating the game by looking at the alt tags */
+            easyCards[easyCardOneId].setAttribute('alt', 'Card back, select to flip over');
+            easyCards[easyCardTwoId].setAttribute('alt', 'Card back, select to flip over');
+        };
+    }
+```
 
 ## Deployment
 
