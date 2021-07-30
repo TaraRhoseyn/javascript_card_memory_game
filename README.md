@@ -320,8 +320,7 @@ When a matched pair of cards is found by the user the game generates a green bor
 
 **User stories covered by this feature:** 
 
-2. As a first-time user, I want to use the game to challenge my memory. 
-5. As a first-time user, I want to keep track of my score to monitor my performance in the game. 
+5. As a first-time user, I want to keep track of my score to monitor my performance in the game.
 
 #### Features for future releases
 
