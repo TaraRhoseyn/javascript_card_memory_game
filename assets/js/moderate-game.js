@@ -70,8 +70,8 @@ function checkMatch() {
         moveCounter();
         // Bug fix: Remove event listener from selected cards to prevent users
         // cheating by clicking the same pair more than once
-        modCards[modCardOneId].removeEventListener("click", flipEasyCard);
-        modCards[modCardTwoId].removeEventListener("click", flipEasyCard);
+        modCards[modCardOneId].removeEventListener("click", flipModCard);
+        modCards[modCardTwoId].removeEventListener("click", flipModCard);
         // Gives feedback to user that they found a match
         modCards[modCardOneId].classList.add('match');
         modCards[modCardTwoId].classList.add('match');
