@@ -435,7 +435,7 @@ The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMem
 | Read instructions and game objectives on home page      |      No action required, instructions are loaded above-the-fold on home page      | To find instructions that are clear, readable and easily understood | Works as expected |
 
 
-[Screenshot to show user story](https://github.com/TaraRhoseyn/CardiffSwimCentreMS1/blob/main/docs/testing/user-story-1-11.png)
+[Screenshot to show user story](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/testing/user-story-1-11.png)
 
 *2. As a first-time user, I want to use the game to challenge my memory.*
 
