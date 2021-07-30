@@ -617,7 +617,7 @@ The bug:
 
 **Solution** - This bug took a few fixes in various parts of the codebase. The first step was changing the times at which different functions were executed. Originally, the function to test for matches was executed 400 miliseconds after being called, so that the user had time to view the front face of the cards before they were turned over if they weren't a match. 
 
-I created a new function that switches incorrect cards back to the card back outside of the matching function. I then took away the setTimeout time on when the matching function was called, and instead placed that setTimeout on the new changeCardBack function instead.
+I created a new function that switches incorrect cards back to the card back outside of the matching function. I then took away the setTimeout time on when the matching function was called, and instead placed that setTimeout on the new changeCardBack function instead. So when a card is clicked, the match function is executed immediately but the card stays for 400 miliseconds and is then turned back by a seperate function.
 
 Original code:`
 
@@ -665,7 +665,6 @@ if (easyCardsSelected[0] === easyCardsSelected[1] && easyCardOneId !== easyCardT
         easyCards[easyCardOneId].classList.add('match');
         easyCards[easyCardTwoId].classList.add('match');
     } else {
-        // Credit for setTimeout: Free Code Camp
         setTimeout(changeCardBack, 400);
         function changeCardBack() {
             easyCards[easyCardOneId].setAttribute('src', './assets/images/fruit-card-back.png');
@@ -677,6 +676,25 @@ if (easyCardsSelected[0] === easyCardsSelected[1] && easyCardOneId !== easyCardT
         };
     }
 ```
+
+I also put some limitations on the variable where the selected cards were stored to prevent users from being able to add more cards: 
+
+```
+else if (hardCardsSelected.length > 2) {
+        this.setAttribute('src', './assets/images/fruit-card-back.png');
+    }
+    // Bug fix: To prevent more than 2 cards being tested at the same time the array length is limited. Credit: Stack overflow, see credits in README.md for more details
+    hardCardsSelected.length = Math.min(hardCardsSelected.length, 2);
+```
+
+**Bug 13** - By implementing code in bug 12 fix, I accidentally created a state in which a user would finish the game and the final correct pair would not be fully turned over and no correct feedback (the green border) would be given.
+
+The bug:
+![Bug thirteen](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/bugs/bug-thirteen.PNG)
+
+**Solution** - Changed changeCardBack() function to a new function, correctMatch() that executed the resetEasyGame() function, where the cards would be 
+
+
 
 ## Deployment
 
