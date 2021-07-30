@@ -683,7 +683,6 @@ I also put some limitations on the variable where the selected cards were stored
 else if (hardCardsSelected.length > 2) {
         this.setAttribute('src', './assets/images/fruit-card-back.png');
     }
-    // Bug fix: To prevent more than 2 cards being tested at the same time the array length is limited. Credit: Stack overflow, see credits in README.md for more details
     hardCardsSelected.length = Math.min(hardCardsSelected.length, 2);
 ```
 
@@ -692,7 +691,7 @@ else if (hardCardsSelected.length > 2) {
 The bug:
 ![Bug thirteen](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/bugs/bug-thirteen.PNG)
 
-**Solution** - Changed changeCardBack() function to a new function, correctMatch() that executed the resetEasyGame() function, where the cards would be 
+**Solution** - Changed changeCardBack() function to a new function, correctMatch() that executed the resetEasyGame() function, allowing a rest period of 400 
 
 
 
