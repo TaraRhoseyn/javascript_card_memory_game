@@ -340,7 +340,14 @@ Wireframes:
 - [Easy mode of the game](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/wireframes/wireframe-easy-game.pdf)
 - [Moderate mode of the game](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/wireframes/wireframe-moderate-game.pdf)
 - [Hard mode of the game](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/wireframes/wireframe-hard-game.pdf)
+- [Contact page](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/wireframes/wireframe-contact.pdf)
 
+**Design changes from prototyping to production:**
+
+1. Changed text of 'Return home' button to 'Select difficulty' to make it clearer to the user the result of the clicking the button and how it should be used while playing the game. 
+2. Changed some of the text of buttons on the contact page, for example 'Send email'to 'Send message', to make the tone of the page more informal and inviting.
+3. Made a 404.html page. 
+ 
 ## Technologies used
 
 ### Languages
