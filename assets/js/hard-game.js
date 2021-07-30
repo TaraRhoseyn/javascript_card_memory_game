@@ -95,13 +95,18 @@ function checkHardMatch() {
         hardCards[hardCardOneId].classList.add('match');
         hardCards[hardCardTwoId].classList.add('match');
     } else {
-        hardCards[hardCardOneId].setAttribute('src', './assets/images/fruit-card-back.png');
-        hardCards[hardCardTwoId].setAttribute('src', './assets/images/fruit-card-back.png');
-        /* Reverts alt for card images back to blank if not a match
-        This prevents cheating the game by looking at the alt tags */
-        hardCards[hardCardOneId].setAttribute('alt', 'Card back, select to flip over');
-        hardCards[hardCardTwoId].setAttribute('alt', 'Card back, select to flip over');
         moveCounter();
+        // Credit for setTimeout: Free Code Camp
+        // Bug fix: Prevents users from breaking the game from selecting cards too fast. Allows match to be tested immediately but the cards to remain for 400 miliseconds
+        setTimeout(changeCardBack, 400);
+        function changeCardBack() {
+            hardCards[hardCardOneId].setAttribute('src', './assets/images/fruit-card-back.png');
+            hardCards[hardCardTwoId].setAttribute('src', './assets/images/fruit-card-back.png');
+            /* Reverts alt for card images back to blank if not a match
+            This prevents cheating the game by looking at the alt tags */
+            hardCards[hardCardOneId].setAttribute('alt', 'Card back, select to flip over');
+            hardCards[hardCardTwoId].setAttribute('alt', 'Card back, select to flip over');
+        };
     }
     // Resets array of cards
     hardCardsSelected = [];
