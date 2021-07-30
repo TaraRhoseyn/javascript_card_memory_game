@@ -87,8 +87,8 @@ function checkHardMatch() {
         moveCounter();
         // Bug fix: Remove event listener from selected cards to prevent users
         // cheating by clicking the same pair more than once
-        hardCards[hardCardOneId].removeEventListener("click", flipEasyCard);
-        hardCards[hardCardTwoId].removeEventListener("click", flipEasyCard);
+        hardCards[hardCardOneId].removeEventListener("click", flipHardCard);
+        hardCards[hardCardTwoId].removeEventListener("click", flipHardCard);
         // Gives feedback to user that they found a match
         hardCards[hardCardOneId].classList.add('match');
         hardCards[hardCardTwoId].classList.add('match');

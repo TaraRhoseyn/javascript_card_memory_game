@@ -104,7 +104,6 @@ function checkEasyMatch() {
      to make sure users cannot pick the same card twice to count as a match */
     if (easyCardsSelected[0] === easyCardsSelected[1] && easyCardOneId !== easyCardTwoId) {
         easyCardsRight.push(easyCardsSelected);
-        console.log(easyCardsRight);
         // Moves the counter
         moveCounter();
         // Bug fix: Remove event listener from selected cards to prevent users
