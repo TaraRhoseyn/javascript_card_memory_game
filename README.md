@@ -435,7 +435,7 @@ The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMem
 | Read instructions and game objectives on home page      |      No action required, instructions are loaded above-the-fold on home page      | To find instructions that are clear, readable and easily understood | Works as expected |
 
 
-[Screenshot to show user story](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/testing/user-story-1-11.png)
+[Screenshot to show user story](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/testing/user-story-1.PNG)
 
 *2. As a first-time user, I want to use the game to challenge my memory.*
 
@@ -466,7 +466,7 @@ The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMem
  ---------------------------------- | :------------------------------------ | ---------------------------------------- | ---------------- |
 | All webpages fully responsive |   No action required  | All content to be present and arranged in a sensible layout | Works as expected |
 
-[Screenshot to show user story](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/testing/user-story-4.png)
+[Screenshot to show user story](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/testing/user-story-4.PNG)
 
 *5. As a first-time user, I want to keep track of my score to monitor my performance in the game.*
 
@@ -484,7 +484,7 @@ The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMem
 | Timer on all game difficulty levels |   Select game difficulty | Timer that runs from the game being generated to the game being completed  | Works as expected |
 | A 'moves' tracker that lets me know how many moves it takes me to complete the game |  Select game difficulty  | To view a 'moves' tracker that is clear and understandable | Works as expected |
 
-[Screenshot to show user story](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/testing/user-story-6-10.png)
+[Screenshot to show user story](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/testing/user-story-6-10.PNG)
 
 *7. As a first-time user, I want the ability to select what level difficulty I want to play at.*
 
@@ -518,7 +518,7 @@ The website passes with [0 errors](https://github.com/TaraRhoseyn/CI_MS2_CardMem
 | Timer on all game difficulty levels |   Select game difficulty | Timer that runs from the game being generated to the game being completed  | Works as expected |
 | A 'moves' tracker that lets me know how many moves it takes me to complete the game |  Select game difficulty  | To view a 'moves' tracker that is clear and understandable | Works as expected |
 
-[Screenshot to show user story](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/testing/user-story-6-10.png)
+[Screenshot to show user story](https://github.com/TaraRhoseyn/CI_MS2_CardMemoryGame/blob/main/docs/testing/user-story-6-10.PNG)
 
 *11. As a regular visitor, I want to be able to play a variety of difficulty levels so that the game remains fresh and interesting.*
 
